@@ -1,0 +1,155 @@
+Region,BlockNumber,BlockName,SiteID,SiteName,YearSample,SampleDate,SurveyQualifier,ZeroTideTime,SurveyStartTime,PitCount,Comments
+KEP,5,KEFJ,KEP_B05_SI_04,Nuka Passage,2007,2007-06-12,Site Sampled,.,.,.,
+KEP,5,KEFJ,KEP_B05_SI_03,Nuka Bay,2007,2007-06-14,Site Sampled,.,.,.,
+KEP,5,KEFJ,KEP_B05_SI_05,Harris Bay,2007,2007-06-16,Site Sampled,.,.,.,tx ends near a cobble/boulder field with many otter pits and spraint (primarily mussel)
+KEP,5,KEFJ,KEP_B05_SI_02,McCarty Fjord,2007,2007-06-16,Site Sampled,.,.,.,
+KEP,5,KEFJ,KEP_B05_SI_01,Aialik Bay,2007,2007-06-18,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_05,Takli Island,2007,2007-06-28,Site Sampled,.,.,.,"All mussels taken from all plots where present, sizes<15 mm not included due to sieve size"
+AKP,10,KATM,AKP_B10_SI_04,Amalik Bay,2007,2007-06-29,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_03,Kinak Bay,2007,2007-07-01,Site Sampled,.,.,.,"Almost no clams, should proabably lower tx to the 0 tide line; All mussels taken from all plots where present. Almost no clams at +.5, should change to 0 tidal elevation in future"
+AKP,10,KATM,AKP_B10_SI_02,Kaflia Bay,2007,2007-07-02,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_01,Kukak Bay,2007,2007-07-03,Site Sampled,.,.,.,All mussels taken from all plots where present
+AKP,10,KATM,AKP_B10_SS_01,Ninagiak Island,2007,2007-07-04,Site Sampled,.,.,.,"Bedrock consistently though site - not able to dig deeper than 9in., but as shallow as 2in"
+PWS,8,WPWS,PWS_B08_SS_05,Northwest Bay,2007,2007-07-11,Site Sampled,.,.,.,"Oiling in several plots. reasonably sure mtr were sampled at all quads when present. Quad 1-4 primary substrate gravel, secondary cobble/boulder. Quads 5-12 primary substrate cobble/boulder, secondary gravel."
+PWS,8,WPWS,PWS_B08_SS_04,Disk Island,2007,2007-07-12,Site Sampled,.,.,.,"primary substrate gravel, secondary sand. Woody debris in many plots. numbers of modiolus in raw data too low for size freq and no data on which quads were sampled for mussels. So the few that were in the raw size table were deleted."
+PWS,8,WPWS,PWS_B08_SI_01,Hogan Bay,2007,2007-07-13,Site Sampled,.,.,.,"primary substrate gravel, secondary sand"
+PWS,8,WPWS,PWS_B08_SI_02,Iktua Bay,2007,2007-07-14,Site Sampled,.,.,.,"primary substrate cobble, secondary gravel. numbers of modiolus in quads marked as not sampled for mussels in raw data too low for size freq. So the few that were in the raw size table were deleted."
+PWS,8,WPWS,PWS_B08_SI_03,Whale Bay,2007,2007-07-15,Site Sampled,.,.,.,"primary substrate cobble, secondary gravel"
+PWS,8,WPWS,PWS_B08_SI_04,Johnson Bay,2007,2007-07-16,Site Sampled,.,.,.,"primary substrate cobble, secondary gravel."
+PWS,8,WPWS,PWS_B08_SI_05,Herring Bay,2007,2007-07-17,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SS_02,Herring Bay- Southwest,2007,2007-07-17,Site Sampled,.,.,.,Lingering oil site; cobble with surf; No clams or mussels found so crew moved to herring si_05 on same day
+KEP,5,KEFJ,KEP_B05_SI_03,Nuka Bay,2009,2009-06-20,Site Sampled,.,.,.,"mostly mussel top layer with lots of organic, cobble, pebble, gravel. Lots of braided freshwater. Quads at 0 and 0.5 level moved horizontally to avoid freshwtaer"
+KEP,5,KEFJ,KEP_B05_SI_02,McCarty Fjord,2009,2009-06-22,Site Sampled,.,.,.,
+KEP,5,KEFJ,KEP_B05_SI_05,Harris Bay,2009,2009-06-23,Site Sampled,.,.,.,
+KEP,5,KEFJ,KEP_B05_SI_01,Aialik Bay,2009,2009-06-24,Site Sampled,.,.,.,
+KEP,5,KEFJ,KEP_B05_SI_04,Nuka Passage,2009,2009-06-27,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_01,Kukak Bay,2009,2009-07-05,Site Sampled,.,.,.,"trimbled the 0.5 tidal elevation only. No records indicate if mussels were sampled in all quads or not. Mussel size data present in quads 5, 7, 9, 11 so those quads have mussel counts. All other quads have mussel counts of null."
+AKP,10,KATM,AKP_B10_SI_05,Takli Island,2009,2009-07-06,Site Sampled,.,.,.,all quads had sand.
+AKP,10,KATM,AKP_B10_SI_03,Kinak Bay,2009,2009-07-07,Site Sampled,.,.,.,"2 lines of quads sampled, both ~0MLLW. Field notes state that quads numbered here as 7-12 are closer to the original site established in 2007 and should be used for long term analyses. mussel data exists in older spreadsheets but no records indicate which"
+AKP,10,KATM,AKP_B10_SI_04,Amalik Bay,2009,2009-07-08,Site Sampled,.,.,.,"sand in all quads. mussel data exists in older spreadsheets but no records indicate which quads were sampled, so counts set to 0 if notes indicated mussels were sampled in a quad and set to null if no info."
+AKP,10,KATM,AKP_B10_SI_02,Kaflia Bay,2009,2009-07-10,Site Sampled,.,.,.,No records indicate if mussels were sampled in all quads or not. Mussel size data present in quads 7 and 9 so those quads have mussel counts. All other quads have mussel counts of null.
+KEP,5,KEFJ,KEP_B05_SI_04,Nuka Passage,2011,2011-06-12,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_03,Whale Bay,2011,2011-06-13,Site Sampled,.,.,.,"transect split into two 50 M sections. Coarse substrate at start, more clay-like at end."
+KEP,5,KEFJ,KEP_B05_SI_03,Nuka Bay,2011,2011-06-14,Site Sampled,.,.,.,
+KEP,5,KEFJ,KEP_B05_SI_02,McCarty Fjord,2011,2011-06-15,Site Sampled,.,.,.,"2 hr. delay in tide, lots of clam litter and small pits"
+PWS,8,WPWS,PWS_B08_SI_02,Iktua Bay,2011,2011-06-15,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_01,Hogan Bay,2011,2011-06-16,Site Sampled,.,.,.,"GPS very inaccurate in this bay, unable to get readin on transect end, transect was laid at 0.0M contour on either side of the stream resulting in a split transect (0M-38M one side of stream, 38M-100M other side of stream)"
+KEP,5,KEFJ,KEP_B05_SI_05,Harris Bay,2011,2011-06-17,Site Sampled,.,.,.,"few clams in middle quads, lots of H2O runoff, 0 and 0.5 rebar easy to find"
+KEP,5,KEFJ,KEP_B05_SI_01,Aialik Bay,2011,2011-06-18,Site Sampled,.,.,.,lots of pits and clam litter
+PWS,8,WPWS,PWS_B08_SI_05,Herring Bay,2011,2011-06-18,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_04,Johnson Bay,2011,2011-06-19,Site Sampled,.,.,.,
+PWS,9,EPWS,PWS_B09_SE_04,Simpson Bay,2012,2012-07-02,Site Sampled,.,.,.,
+PWS,9,EPWS,PWS_B09_SE_05,Observation Island,2012,2012-07-03,Site Sampled,.,.,.,
+PWS,9,EPWS,PWS_B09_SE_03,Olsen Bay,2012,2012-07-04,Site Sampled,.,.,.,
+PWS,9,EPWS,PWS_B09_SE_02,Port Fidalgo,2012,2012-07-05,Site Sampled,.,.,.,
+PWS,9,EPWS,PWS_B09_SE_01,Galena Bay,2012,2012-07-06,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_03,Jakalof Bay,2013,2013-05-07,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_02,China Poot Bay,2013,2013-05-09,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_04,Port Graham,2013,2013-05-10,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_01,Bear Cove,2013,2013-05-12,Site Sampled,.,.,.,
+PWS,7,NPWS,PWS_B07_SE_03,Bettles Bay,2013,2013-06-07,Site Sampled,.,.,.,MANY SEOT Pits around site. This site is a large delta. Relatively easy sieving- goes quickly. numbers of mytilus and modiolus in raw data too low for size freq and no data on which quads were sampled for mytilus. So the few that were in the raw size tabl
+PWS,7,NPWS,PWS_B07_SE_04,Perry Island,2013,2013-06-08,Site Sampled,.,.,.,"some quads difficult digging, but all were easy sieving. numbers of mytilus and modiolus in raw data too low for size freq and no data on which quads were sampled for mytilus. So the few that were in the raw size table were deleted."
+PWS,7,NPWS,PWS_B07_SE_01,Cedar Bay,2013,2013-06-09,Site Sampled,.,.,.,site is in a bight with eelgrass bed approaching 0MLLW.  The first six quads located in VERY loose mud/eelgrass. numbers of mytilus and modiolus in raw data too low for size freq and no data on which quads were sampled for mytilus. So the few that were in
+PWS,7,NPWS,PWS_B07_SE_05,Unakwik Inlet,2013,2013-06-10,Site Sampled,.,.,.,
+PWS,7,NPWS,PWS_B07_SE_02,Esther Passage,2013,2013-06-12,Site Sampled,.,.,.,numbers of mytilus and modiolus in raw data too low for size freq and no data on which quads were sampled for mytilus. So the few that were in the raw size table were deleted.
+KEP,5,KEFJ,KEP_B05_SI_04,Nuka Passage,2013,2013-06-21,Site Sampled,.,.,.,numbers of mytilus in raw data too low for size freq and no data on which quads were sampled for mytilus. So the few that were in the raw size table were deleted.
+PWS,8,WPWS,PWS_B08_SI_04,Johnson Bay,2013,2013-06-21,Site Sampled,.,.,.,no sea stars.
+KEP,5,KEFJ,KEP_B05_SI_03,Nuka Bay,2013,2013-06-22,Site Sampled,.,.,.,numbers of mytilus in raw data too low for size freq and no data on which quads were sampled for mytilus. So the few that were in the raw size table were deleted.
+KEP,5,KEFJ,KEP_B05_SI_02,McCarty Fjord,2013,2013-06-23,Site Sampled,.,.,.,numbers of mytilus in raw data too low for size freq and no data on which quads were sampled for mytilus. So the few that were in the raw size table were deleted.
+PWS,8,WPWS,PWS_B08_SI_03,Whale Bay,2013,2013-06-23,Site Sampled,.,.,.,"no sea stars, transect split horizontal between quad 5 and 6. Quad 5 just before 47meters, while 6 after 52 meters"
+PWS,8,WPWS,PWS_B08_SI_02,Iktua Bay,2013,2013-06-24,Site Sampled,.,.,.,"many sea otter pits along horizontal tape, no sea stars on horizontal but numerous below 0MLLW."
+KEP,5,KEFJ,KEP_B05_SI_05,Harris Bay,2013,2013-06-25,Site Sampled,.,.,.,otter pits throughout; not really a stream through the site but lots of water runoff through first half of transect. numbers of mytilus in raw data too low for size freq and no data on which quads were sampled for mytilus. So the few that were in the raw
+KEP,5,KEFJ,KEP_B05_SI_01,Aialik Bay,2013,2013-06-26,Site Sampled,.,.,.,numbers of mytilus in raw data too low for size freq and no data on which quads were sampled for mytilus. So the few that were in the raw size table were deleted.
+PWS,8,WPWS,PWS_B08_SI_01,Hogan Bay,2013,2013-06-26,Site Sampled,.,.,.,"many sea otter pits along horizontal tape, no sea stars"
+PWS,8,WPWS,PWS_B08_SI_05,Herring Bay,2013,2013-06-27,Site Sampled,.,.,.,"numerous SEOT pits throughout site, no sea stars found"
+AKP,10,KATM,AKP_B10_SI_05,Takli Island,2013,2013-07-06,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_04,Amalik Bay,2013,2013-07-07,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_03,Kinak Bay,2013,2013-07-08,Site Sampled,.,.,.,mussels from quads 9-12 were not separated by quad. Sizes are in size table with no quad number. Counts are entered as null values for those quads in the count table.
+AKP,10,KATM,AKP_B10_SI_02,Kaflia Bay,2013,2013-07-09,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_01,Kukak Bay,2013,2013-07-10,Site Sampled,.,.,.,"some mytilus in raw data, but numbers too low for sz freq and can't be certain ALL from the quad were collected- so not good for density either. So deleted from this data set."
+PWS,9,EPWS,PWS_B09_SE_01,Galena Bay,2014,2014-05-26,Site Sampled,.,.,.,
+PWS,9,EPWS,PWS_B09_SE_02,Port Fidalgo,2014,2014-05-28,Site Sampled,.,.,.,"quad 1 & 2 in freshwater stream/heavy runoff. Lots of otter pits and shell litter. Quads were easy digging and sieving, but difficult/time consuming to pick out clams- because of keeping mussels and so many pebbles that wouldn't go thru sieve."
+PWS,9,EPWS,PWS_B09_SE_04,Simpson Bay,2014,2014-05-29,Site Sampled,.,.,.,
+PWS,9,EPWS,PWS_B09_SE_03,Olsen Bay,2014,2014-05-30,Site Sampled,.,.,.,"good digging, good sifting, good times"
+PWS,9,EPWS,PWS_B09_SE_05,Observation Island,2014,2014-06-01,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_04,Port Graham,2015,2015-05-04,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_02,China Poot Bay,2015,2015-05-06,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_01,Bear Cove,2015,2015-05-07,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_03,Jakalof Bay,2015,2015-05-08,Site Sampled,.,.,.,
+PWS,7,NPWS,PWS_B07_SE_03,Bettles Bay,2015,2015-05-16,Site Sampled,.,.,.,recruitment of urchins and leukoma evident
+PWS,7,NPWS,PWS_B07_SE_01,Cedar Bay,2015,2015-05-17,Site Sampled,.,.,.,"sediment below 0MLLW was extremely soft, so site sampled at 0.5m."
+PWS,7,NPWS,PWS_B07_SE_05,Unakwik Inlet,2015,2015-05-18,Site Sampled,.,.,.,"abundant sea stars (pycno & derm), many pits- some SEOT  but mostly star. Recent urchin recruitment."
+PWS,7,NPWS,PWS_B07_SE_04,Perry Island,2015,2015-05-19,Site Sampled,.,.,.,"very soft, had to wait for tide to rise to sieve. Many SEOT pits at site."
+PWS,7,NPWS,PWS_B07_SE_02,Esther Passage,2015,2015-05-20,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_05,Herring Bay,2015,2015-06-01,Site Sampled,.,.,.,"SEOT pits throughout site, 2-8 pits per sq meter. Oil present at site."
+PWS,8,WPWS,PWS_B08_SI_04,Johnson Bay,2015,2015-06-02,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_02,Iktua Bay,2015,2015-06-04,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_03,Whale Bay,2015,2015-06-05,Site Sampled,.,.,.,Site was a continuous 100m due to change in stream flow. SEOT pits at site
+PWS,8,WPWS,PWS_B08_SI_01,Hogan Bay,2015,2015-06-06,Site Sampled,.,.,.,This site changes significantly due to the stream flow. The first several quads (approx 4) are on the edge of the stream and are likely to be heavily influenced by fresh water.
+KEP,5,KEFJ,KEP_B05_SI_04,Nuka Passage,2015,2015-06-15,Site Sampled,.,.,.,"Lots of organic material, woody detritus & spruce needles, water turned at ~0900"
+KEP,5,KEFJ,KEP_B05_SI_03,Nuka Bay,2015,2015-06-16,Site Sampled,.,.,.,"Lots of freshwater rivvlets and run-off thoughout. Also, lots of mussels."
+KEP,5,KEFJ,KEP_B05_SI_02,McCarty Fjord,2015,2015-06-17,Site Sampled,.,.,.,thick covering of mussels
+KEP,5,KEFJ,KEP_B05_SI_05,Harris Bay,2015,2015-06-19,Site Sampled,.,.,.,lots of pits and shell litter
+KEP,5,KEFJ,KEP_B05_SI_01,Aialik Bay,2015,2015-06-20,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_04,Amalik Bay,2015,2015-06-30,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_05,Takli Island,2015,2015-07-01,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_03,Kinak Bay,2015,2015-07-03,Site Sampled,.,.,.,Started at water line at time of 0mllw from given location. Lots of mussels.
+AKP,10,KATM,AKP_B10_SI_01,Kukak Bay,2015,2015-07-04,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_02,Kaflia Bay,2015,2015-07-06,Site Sampled,.,.,.,Sampled at the 0.5 m line. Site notes and data indicate site was sampled over 2 days.
+KEP,4,KBAY,KEP_B04_SE_04,Port Graham,2017,2017-04-26,Site Sampled,7:20,7:25,26,Updated Coordinates: 59.34436/-151.81454
+KEP,4,KBAY,KEP_B04_SE_01,Bear Cove,2017,2017-04-28,Site Sampled,8:54,8:55,122,Updated Coordinates: 59.72216/-151.05341
+KEP,4,KBAY,KEP_B04_SE_03,Jakalof Bay,2017,2017-04-29,Site Sampled,9:48,9:48,56,need updated coordinates
+PWS,8,WPWS,PWS_B08_SI_03,Whale Bay,2017,2017-05-24,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_02,Iktua Bay,2017,2017-05-25,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_04,Johnson Bay,2017,2017-05-26,Site Sampled,.,.,.,Shell litter collected from swath 1m below tape
+PWS,8,WPWS,PWS_B08_SI_01,Hogan Bay,2017,2017-05-27,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_05,Herring Bay,2017,2017-05-28,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_04,Amalik Bay,2017,2017-06-22,Site Sampled,.,.,0,No pits on 2m swath for the entire 100m tx. Shell litter was collected from 1m swath below tx.
+KEP,5,KEFJ,KEP_B05_SI_04,Nuka Passage,2017,2017-06-22,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_05,Takli Island,2017,2017-06-23,Site Sampled,.,.,.,bear delays redug quad 1; lots of small leucoma
+KEP,5,KEFJ,KEP_B05_SI_03,Nuka Bay,2017,2017-06-23,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_03,Kinak Bay,2017,2017-06-24,Site Sampled,.,.,0,No fresh shell litter observed in swath. No pits were present in swath.
+KEP,5,KEFJ,KEP_B05_SI_02,McCarty Fjord,2017,2017-06-24,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_01,Kukak Bay,2017,2017-06-25,Site Sampled,.,.,0,No fresh shell litter observed in swath. No pits were present in swath.
+KEP,5,KEFJ,KEP_B05_SI_05,Harris Bay,2017,2017-06-25,Site Sampled,.,.,.,
+AKP,10,KATM,AKP_B10_SI_02,Kaflia Bay,2017,2017-06-26,Site Sampled,.,.,.,No fresh shell litter observed in swath. Some shell litter present farther down in intertidal. Cobble layer on surface removed to get sediment grain sample and juv clam sample.
+KEP,5,KEFJ,KEP_B05_SI_01,Aialik Bay,2017,2017-06-26,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_03,Jakalof Bay,2019,2019-05-17,Site Sampled,6:40,7:10,23,"Tide Delay, waited for rebar start to show, sampled quads 1-9 on 5/17, sampled quads 10-12 on 5/22"
+KEP,4,KBAY,KEP_B04_SE_01,Bear Cove,2019,2019-05-18,Site Sampled,7:30,7:35,39,"so much cobble, and breakfast burritos delivered"
+KEP,4,KBAY,KEP_B04_SE_02,China Poot Bay,2019,2019-05-20,Site Sampled,8:40,9:15,12,"MASSIVE mussel recruitment, known tide delay of approx. 1 hour, waited for GPS point to be accessible and then sampled"
+KEP,4,KBAY,KEP_B04_SE_04,Port Graham,2019,2019-05-21,Site Sampled,9:11,9:15,26,Sensors all missing from site
+PWS,8,WPWS,PWS_B08_SI_02,Iktua Bay,2019,2019-06-03,Site Sampled,6:25,6:25,10,
+PWS,8,WPWS,PWS_B08_SI_01,Hogan Bay,2019,2019-06-04,Site Sampled,7:03,7:03,50,
+PWS,8,WPWS,PWS_B08_SI_03,Whale Bay,2019,2019-06-05,Site Sampled,7:42,7:45,26,
+PWS,8,WPWS,PWS_B08_SI_04,Johnson Bay,2019,2019-06-06,Site Sampled,8:35,8:35,3,
+PWS,8,WPWS,PWS_B08_SI_05,Herring Bay,2019,2019-06-07,Site Sampled,9:38,9:38,33,
+KEP,5,KEFJ,KEP_B05_SI_03,Nuka Bay,2019,2019-06-15,Site Sampled,5:30,5:45,1,Strong stream flowing through site
+KEP,5,KEFJ,KEP_B05_SI_04,Nuka Passage,2019,2019-06-16,Site Sampled,6:00,6:00,4,
+KEP,5,KEFJ,KEP_B05_SI_02,McCarty Fjord,2019,2019-06-17,Site Sampled,6:25,8:25,11,No shell litter present
+KEP,5,KEFJ,KEP_B05_SI_05,Harris Bay,2019,2019-06-19,Site Sampled,8:05,8:05,9,
+KEP,5,KEFJ,KEP_B05_SI_01,Aialik Bay,2019,2019-06-20,Site Sampled,8:40,8:35,11,Lots of pits below zero line.
+AKP,10,KATM,AKP_B10_SI_01,Kukak Bay,2019,2019-07-02,Site Sampled,7:20,7:20,0,
+AKP,10,KATM,AKP_B10_SI_02,Kaflia Bay,2019,2019-07-03,Site Sampled,7:50,7:50,0,
+AKP,10,KATM,AKP_B10_SI_04,Amalik Bay,2019,2019-07-04,Site Sampled,8:20,8:40,0,
+AKP,10,KATM,AKP_B10_SI_05,Takli Island,2019,2019-07-05,Site Sampled,9:20,9:20,14,no bears today!!!
+AKP,10,KATM,AKP_B10_SI_03,Kinak Bay,2019,2019-07-06,Site Sampled,10:15,10:15,0,
+KEP,4,KBAY,KEP_B04_SE_01,Bear Cove,2021,2021-04-27,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_04,Port Graham,2021,2021-04-28,Site Sampled,.,.,.,
+KEP,4,KBAY,KEP_B04_SE_03,Jakalof Bay,2021,2021-04-29,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_01,Hogan Bay,2021,2021-05-26,Site Sampled,5:55,5:57,19,
+PWS,8,WPWS,PWS_B08_SI_05,Herring Bay,2021,2021-05-27,Site Sampled,6:45,6:45,30,Photos on Cole's iPhone
+KEP,4,KBAY,KEP_B04_SE_02,China Poot Bay,2021,2021-05-28,Site Sampled,.,.,.,
+PWS,8,WPWS,PWS_B08_SI_04,Johnson Bay,2021,2021-05-28,Site Sampled,7:35,7:36,15,No fresh shell litter present
+PWS,8,WPWS,PWS_B08_SI_03,Whale Bay,2021,2021-05-29,Site Sampled,8:30,8:37,24,No fresh shell litter present
+PWS,8,WPWS,PWS_B08_SI_02,Iktua Bay,2021,2021-05-30,Site Sampled,9:35,9:38,40,
+KEP,5,KEFJ,KEP_B05_SI_04,Nuka Passage,2021,2021-06-23,Site Sampled,5:05,5:10,2,No shell litter seen
+KEP,5,KEFJ,KEP_B05_SI_03,Nuka Bay,2021,2021-06-24,No - Inclement Weather,6:00,6:00,.,Site could not be sampled
+KEP,5,KEFJ,KEP_B05_SI_02,McCarty Fjord,2021,2021-06-25,Site Sampled,6:25,8:25,19,No shell litter seen
+KEP,5,KEFJ,KEP_B05_SI_05,Harris Bay,2021,2021-06-27,Site Sampled,8:00,8:05,0,
+KEP,5,KEFJ,KEP_B05_SI_01,Aialik Bay,2021,2021-06-28,Site Sampled,9:00,9:00,15,
+AKP,10,KATM,AKP_B10_SI_04,Amalik Bay,2021,2021-07-08,Site Sampled,7:30,7:30,10,Looked for shell litter but none present.
+AKP,10,KATM,AKP_B10_SI_05,Takli Island,2021,2021-07-10,Site Sampled,8:15,8:20,12,"lots of shell litter (old and new), eelgrass more extensive than previous years"
+AKP,10,KATM,AKP_B10_SI_03,Kinak Bay,2021,2021-07-11,Site Sampled,8:45,8:45,0,37 Evasterias alongtx at low tide
+AKP,10,KATM,AKP_B10_SI_02,Kaflia Bay,2021,2021-07-12,Site Sampled,9:35,9:35,3,
+AKP,10,KATM,AKP_B10_SI_01,Kukak Bay,2021,2021-07-13,Site Sampled,10:20,10:20,2,
+KEP,4,KBAY,KEP_B04_SE_02,China Poot Bay,2017,.,Site Sampled,.,.,4,"need updated coordinates & MISSING information: date, obs, tide time, tape lay time, photos, missed quads, missed spp?"
