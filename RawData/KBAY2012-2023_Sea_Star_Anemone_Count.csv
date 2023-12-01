@@ -1,0 +1,374 @@
+Year,Date,Region,Site,latitude,longitude,Stratum,Phylum,Species,Abundance (# ind/100 m2)
+2012,5/5/2012,Kachemak Bay,Bishop's Beach,-151.601783,59.642783,high,Cnidaria,Anthopleura artemisia,1
+2012,5/5/2012,Kachemak Bay,Bishop's Beach,-151.601783,59.642783,mid,Cnidaria,Anthopleura artemisia,31
+2012,5/5/2012,Kachemak Bay,Bishop's Beach,-151.601783,59.642783,low,Cnidaria,Urticina crassicornis,4
+2012,5/5/2012,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Cnidaria,Anthopleura artemisia,80
+2012,5/5/2012,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Cnidaria,Urticina crassicornis,2
+2012,5/5/2012,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Cnidaria,Urticina crassicornis,8
+2012,5/5/2012,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Echinodermata,Evasterias troschelii,1
+2012,5/5/2012,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Echinodermata,Evasterias troschelii,2
+2012,5/5/2012,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Echinodermata,Solaster spp.,1
+2012,5/6/2012,Kachemak Bay,Cohen Island,-151.47695,59.539133,high,Cnidaria,Anthopleura artemisia,1
+2012,5/6/2012,Kachemak Bay,Cohen Island,-151.47695,59.539133,low,Cnidaria,Urticina crassicornis,6
+2012,5/6/2012,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Cnidaria,Urticina crassicornis,14
+2012,5/6/2012,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Evasterias troschelii,2
+2012,5/6/2012,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Henricia leviuscula,2
+2012,5/6/2012,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Solaster spp.,1
+2012,5/4/2012,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Cnidaria,Urticina crassicornis,6
+2012,5/4/2012,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Cnidaria,Urticina crassicornis,7
+2012,5/4/2012,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Echinodermata,Henricia leviuscula,3
+2012,5/4/2012,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Echinodermata,Henricia leviuscula,6
+2012,5/4/2012,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Echinodermata,Orthasterias koehleri,1
+2012,5/4/2012,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Echinodermata,Orthasterias koehleri,1
+2012,5/7/2012,Kachemak Bay,Port Graham ,-151.894167,59.373333,- 1 m,Cnidaria,Urticina crassicornis,2
+2012,5/7/2012,Kachemak Bay,Port Graham ,-151.894167,59.373333,mid,Cnidaria,Urticina crassicornis,2
+2012,5/7/2012,Kachemak Bay,Port Graham ,-151.894167,59.373333,low,Cnidaria,Urticina crassicornis,12
+2012,5/7/2012,Kachemak Bay,Port Graham ,-151.894167,59.373333,- 1 m,Echinodermata,Evasterias troschelii,1
+2012,5/7/2012,Kachemak Bay,Port Graham ,-151.894167,59.373333,- 1 m,Echinodermata,Henricia leviuscula,3
+2012,5/7/2012,Kachemak Bay,Port Graham ,-151.894167,59.373333,low,Echinodermata,Henricia leviuscula,3
+2012,5/7/2012,Kachemak Bay,Port Graham ,-151.894167,59.373333,- 1 m,Echinodermata,Orthasterias koehleri,3
+2012,5/7/2012,Kachemak Bay,Port Graham ,-151.894167,59.373333,low,Echinodermata,Pycnopodia helianthoides,1
+2013,5/12/2013,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Cnidaria,Anthopleura artemisia,3
+2013,5/12/2013,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Cnidaria,Urticina crassicornis,5
+2013,5/12/2013,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Echinodermata,Evasterias troschelii,1
+2013,5/9/2013,Kachemak Bay,Cohen Island,-151.47695,59.539133,low,Cnidaria,Urticina crassicornis,2
+2013,5/9/2013,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Cnidaria,Urticina crassicornis,19
+2013,5/9/2013,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Evasterias troschelii,1
+2013,6/8/2013,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Cnidaria,Anthopleura artemisia,1
+2013,6/8/2013,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Cnidaria,Urticina crassicornis,1
+2013,6/8/2013,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Cnidaria,Urticina crassicornis,10
+2013,6/8/2013,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Evasterias troschelii,6
+2013,6/8/2013,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Pisaster ochraceus,1
+2013,6/8/2013,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Echinodermata,Pisaster ochraceus,1
+2013,6/8/2013,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Solaster spp.,1
+2013,5/8/2013,Kachemak Bay,Outside Beach,-151.7085,59.464233,mid,Cnidaria,Urticina crassicornis,1
+2013,5/8/2013,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Cnidaria,Urticina crassicornis,4
+2013,5/8/2013,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Cnidaria,Urticina crassicornis,11
+2013,5/8/2013,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Echinodermata,Evasterias troschelii,1
+2013,5/8/2013,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Echinodermata,Henricia leviuscula,1
+2013,5/8/2013,Kachemak Bay,Outside Beach,-151.7085,59.464233,mid,Echinodermata,Orthasterias koehleri,1
+2013,5/10/2013,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Cnidaria,Urticina crassicornis,3
+2013,5/10/2013,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Cnidaria,Urticina crassicornis,19
+2013,5/10/2013,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Echinodermata,Henricia leviuscula,3
+2013,5/10/2013,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Echinodermata,Orthasterias koehleri,1
+2013,5/10/2013,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Orthasterias koehleri,10
+2013,5/10/2013,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Pycnopodia helianthoides,1
+2013,5/10/2013,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Echinodermata,Solaster spp.,1
+2014,4/30/2014,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Cnidaria,Anthopleura artemisia,8
+2014,4/30/2014,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Cnidaria,Anthopleura artemisia,17
+2014,4/30/2014,Kachemak Bay,Bluff Point,-151.671167,59.6567,high,Cnidaria,Anthopleura artemisia,21
+2014,4/30/2014,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Cnidaria,Urticina crassicornis,15
+2014,5/1/2014,Kachemak Bay,Cohen Island,-151.47695,59.539133,low,Cnidaria,Anthopleura artemisia,1
+2014,5/1/2014,Kachemak Bay,Cohen Island,-151.47695,59.539133,low,Cnidaria,Urticina crassicornis,8
+2014,5/1/2014,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Cnidaria,Urticina crassicornis,31
+2014,5/1/2014,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Evasterias troschelii,8
+2014,5/1/2014,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Orthasterias koehleri,1
+2014,6/13/2014,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Cnidaria,Urticina crassicornis,1
+2014,6/13/2014,Kachemak Bay,Elephant Island,-151.505881,59.513961,mid,Cnidaria,Urticina crassicornis,1
+2014,6/13/2014,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Cnidaria,Urticina crassicornis,4
+2014,6/13/2014,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Echinodermata,Evasterias troschelii,2
+2014,6/13/2014,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Evasterias troschelii,17
+2014,6/13/2014,Kachemak Bay,Elephant Island,-151.505881,59.513961,mid,Echinodermata,Orthasterias koehleri,1
+2014,6/13/2014,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Orthasterias koehleri,2
+2014,6/13/2014,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Pycnopodia helianthoides,1
+2014,6/13/2014,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Solaster spp.,3
+2014,4/28/2014,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Cnidaria,Urticina crassicornis,4
+2014,4/28/2014,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Cnidaria,Urticina crassicornis,15
+2014,4/28/2014,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Echinodermata,Evasterias troschelii,2
+2014,4/28/2014,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Echinodermata,Evasterias troschelii,3
+2014,4/28/2014,Kachemak Bay,Outside Beach,-151.7085,59.464233,mid,Echinodermata,Henricia leviuscula,1
+2014,4/28/2014,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Echinodermata,Pycnopodia helianthoides,1
+2014,4/29/2014,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Cnidaria,Anthopleura artemisia,2
+2014,4/29/2014,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Cnidaria,Urticina crassicornis,1
+2014,4/29/2014,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Cnidaria,Urticina crassicornis,18
+2014,4/29/2014,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Echinodermata,Evasterias troschelii,1
+2014,4/29/2014,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Evasterias troschelii,3
+2014,4/29/2014,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Echinodermata,Henricia leviuscula,5
+2014,4/29/2014,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Henricia leviuscula,6
+2014,4/29/2014,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Orthasterias koehleri,8
+2014,4/29/2014,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Pycnopodia helianthoides,2
+2015,5/5/2015,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Cnidaria,Anthopleura artemisia,37
+2015,5/5/2015,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Cnidaria,Anthopleura artemisia,124
+2015,5/5/2015,Kachemak Bay,Bluff Point,-151.671167,59.6567,high,Cnidaria,Anthopleura artemisia,236
+2015,5/5/2015,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Cnidaria,Urticina crassicornis,9
+2015,5/5/2015,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Echinodermata,Evasterias troschelii,1
+2015,5/6/2015,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Cnidaria,Anthopleura artemisia,1
+2015,5/6/2015,Kachemak Bay,Cohen Island,-151.47695,59.539133,low,Cnidaria,Anthopleura artemisia,1
+2015,5/6/2015,Kachemak Bay,Cohen Island,-151.47695,59.539133,mid,Cnidaria,Urticina crassicornis,1
+2015,5/6/2015,Kachemak Bay,Cohen Island,-151.47695,59.539133,low,Cnidaria,Urticina crassicornis,28
+2015,5/6/2015,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Cnidaria,Urticina crassicornis,68
+2015,5/6/2015,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Evasterias troschelii,3
+2015,5/6/2015,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Henricia leviuscula,1
+2015,5/6/2015,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Lethasterias nanimensis,1
+2015,5/6/2015,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Orthasterias koehleri,1
+2015,5/6/2015,Kachemak Bay,Cohen Island,-151.47695,59.539133,mid,Echinodermata,Solaster spp.,1
+2015,5/7/2015,Kachemak Bay,Elephant Island,-151.505881,59.513961,mid,Cnidaria,Anthopleura artemisia,1
+2015,5/7/2015,Kachemak Bay,Elephant Island,-151.505881,59.513961,mid,Cnidaria,Urticina crassicornis,1
+2015,5/7/2015,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Cnidaria,Urticina crassicornis,5
+2015,5/7/2015,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Cnidaria,Urticina crassicornis,12
+2015,5/7/2015,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Echinodermata,Evasterias troschelii,3
+2015,5/7/2015,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Evasterias troschelii,33
+2015,5/7/2015,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Orthasterias koehleri,1
+2015,5/7/2015,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Echinodermata,Pisaster ochraceus,1
+2015,5/7/2015,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Echinodermata,Solaster spp.,1
+2015,5/7/2015,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Solaster spp.,3
+2015,4/18/2015,Kachemak Bay,Outside Beach,-151.7085,59.464233,mid,Cnidaria,Urticina crassicornis,7
+2015,4/18/2015,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Cnidaria,Urticina crassicornis,9
+2015,4/18/2015,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Cnidaria,Urticina crassicornis,12
+2015,4/18/2015,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Echinodermata,Henricia leviuscula,3
+2015,4/18/2015,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Echinodermata,Orthasterias koehleri,3
+2015,5/4/2015,Kachemak Bay,Port Graham,-151.894167,59.373333,high,Cnidaria,Urticina crassicornis,1
+2015,5/4/2015,Kachemak Bay,Port Graham,-151.894167,59.373333,mid,Cnidaria,Urticina crassicornis,1
+2015,5/4/2015,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Cnidaria,Urticina crassicornis,9
+2015,5/4/2015,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Cnidaria,Urticina crassicornis,50
+2015,5/4/2015,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Evasterias troschelii,1
+2015,5/4/2015,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Henricia leviuscula,2
+2015,5/4/2015,Kachemak Bay,Port Graham,-151.894167,59.373333,mid,Echinodermata,Henricia leviuscula,6
+2015,5/4/2015,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Echinodermata,Orthasterias koehleri,2
+2015,5/4/2015,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Orthasterias koehleri,8
+2015,5/4/2015,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Pycnopodia helianthoides,1
+2016,5/8/2016,Kachemak Bay,Bishop's Beach,-151.601783,59.642783,high,Cnidaria,Anthopleura artemisia,92
+2016,5/8/2016,Kachemak Bay,Bishop's Beach,-151.601783,59.642783,low,Cnidaria,Anthopleura artemisia,92
+2016,5/8/2016,Kachemak Bay,Bishop's Beach,-151.601783,59.642783,mid,Cnidaria,Anthopleura artemisia,108
+2016,5/8/2016,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Cnidaria,Anthopleura artemisia,22
+2016,5/8/2016,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Cnidaria,Anthopleura artemisia,83
+2016,5/8/2016,Kachemak Bay,Bluff Point,-151.671167,59.6567,high,Cnidaria,Anthopleura artemisia,331
+2016,5/8/2016,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Cnidaria,Urticina crassicornis,1
+2016,5/8/2016,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Cnidaria,Urticina crassicornis,23
+2016,5/8/2016,Kachemak Bay,Bluff Point,-151.671167,59.6567,high,Echinodermata,Asterias sp.,1
+2016,5/8/2016,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Echinodermata,Solaster spp.,2
+2016,5/7/2016,Kachemak Bay,Cohen Island,-151.47695,59.539133,mid,Cnidaria,Urticina crassicornis,3
+2016,5/7/2016,Kachemak Bay,Cohen Island,-151.47695,59.539133,low,Cnidaria,Urticina crassicornis,6
+2016,5/7/2016,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Cnidaria,Urticina crassicornis,32
+2016,5/7/2016,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Evasterias troschelii,29
+2016,5/7/2016,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Echinodermata,Henricia leviuscula,1
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Cnidaria,Anthopleura artemisia,2
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,high,Cnidaria,Urticina crassicornis,1
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Cnidaria,Urticina crassicornis,5
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,mid,Cnidaria,Urticina crassicornis,6
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Cnidaria,Urticina crassicornis,10
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Dermasterias imbricata,1
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,low,Echinodermata,Evasterias troschelii,16
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Evasterias troschelii,92
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Henricia leviuscula,1
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Pycnopodia helianthoides,1
+2016,5/4/2016,Kachemak Bay,Elephant Island,-151.505881,59.513961,- 1 m,Echinodermata,Solaster spp.,4
+2016,5/6/2016,Kachemak Bay,Outside Beach,-151.7085,59.464233,mid,Cnidaria,Urticina crassicornis,3
+2016,5/6/2016,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Cnidaria,Urticina crassicornis,10
+2016,5/6/2016,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Cnidaria,Urticina crassicornis,28
+2016,5/6/2016,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Echinodermata,Henricia leviuscula,1
+2016,5/6/2016,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Echinodermata,Henricia leviuscula,2
+2016,5/6/2016,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Echinodermata,Orthasterias koehleri,2
+2016,5/6/2016,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Echinodermata,Solaster spp.,1
+2016,5/9/2016,Kachemak Bay,Port Graham,-151.894167,59.373333,mid,Cnidaria,Urticina crassicornis,9
+2016,5/9/2016,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Cnidaria,Urticina crassicornis,13
+2016,5/9/2016,Kachemak Bay,Port Graham,-151.894167,59.373333,low,Cnidaria,Urticina crassicornis,39
+2016,5/9/2016,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Dermasterias imbricata,1
+2016,5/9/2016,Kachemak Bay,Port Graham,-151.894167,59.373333,mid,Echinodermata,Henricia leviuscula,1
+2016,5/9/2016,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Henricia leviuscula,3
+2016,5/9/2016,Kachemak Bay,Port Graham,-151.894167,59.373333,mid,Echinodermata,Orthasterias koehleri,1
+2016,5/9/2016,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Echinodermata,Orthasterias koehleri,20
+2017,4/27/2017,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,high,Cnidaria,Anthopleura artemisia,11
+2017,4/27/2017,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Anthopleura artemisia,24
+2017,4/27/2017,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,mid,Cnidaria,Anthopleura artemisia,67
+2017,4/27/2017,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,unidentified red anemone,1
+2017,4/27/2017,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Urticina crassicornis,3
+2017,4/27/2017,Kachemak Bay,Bluff Point,59.6567,-151.671167,mid,Cnidaria,Anthopleura artemisia,11
+2017,4/27/2017,Kachemak Bay,Bluff Point,59.6567,-151.671167,high,Cnidaria,Anthopleura artemisia,167
+2017,4/27/2017,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Anthopleura artemisia,167
+2017,4/27/2017,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Urticina crassicornis,13
+2017,4/27/2017,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Echinodermata,Solaster spp.,2
+2017,4/28/2017,Kachemak Bay,Cohen Island,59.539133,-151.47695,low,Cnidaria,Anthopleura artemisia,2
+2017,4/28/2017,Kachemak Bay,Cohen Island,59.539133,-151.47695,mid,Cnidaria,Anthopleura artemisia,2
+2017,4/28/2017,Kachemak Bay,Cohen Island,59.539133,-151.47695,mid,Cnidaria,unidentified red anemone,1
+2017,4/28/2017,Kachemak Bay,Cohen Island,59.539133,-151.47695,- 1 m,Cnidaria,unidentified red anemone,3
+2017,4/28/2017,Kachemak Bay,Cohen Island,59.539133,-151.47695,low,Cnidaria,unidentified red anemone,4
+2017,4/28/2017,Kachemak Bay,Cohen Island,59.539133,-151.47695,low,Cnidaria,Urticina crassicornis,25
+2017,4/28/2017,Kachemak Bay,Cohen Island,59.539133,-151.47695,- 1 m,Cnidaria,Urticina crassicornis,34
+2017,4/30/2017,Kachemak Bay,Elephant Island,59.51401944,-151.5056528,low,Cnidaria,unidentified red anemone,1
+2017,4/30/2017,Kachemak Bay,Elephant Island,59.51401944,-151.5056528,mid,Cnidaria,unidentified red anemone,2
+2017,4/30/2017,Kachemak Bay,Elephant Island,59.51401944,-151.5056528,low,Cnidaria,Urticina crassicornis,1
+2017,4/30/2017,Kachemak Bay,Elephant Island,59.51401944,-151.5056528,- 1 m,Cnidaria,Urticina crassicornis,9
+2017,4/25/2017,Kachemak Bay,Outside Beach,59.46471944,-151.706825,high,Cnidaria,unidentified red anemone,2
+2017,4/25/2017,Kachemak Bay,Outside Beach,59.46471944,-151.706825,- 1 m,Cnidaria,unidentified red anemone,4
+2017,4/25/2017,Kachemak Bay,Outside Beach,59.46471944,-151.706825,low,Cnidaria,unidentified red anemone,8
+2017,4/25/2017,Kachemak Bay,Outside Beach,59.46471944,-151.706825,mid,Cnidaria,unidentified red anemone,11
+2017,4/25/2017,Kachemak Bay,Outside Beach,59.46471944,-151.706825,mid,Cnidaria,Urticina crassicornis,3
+2017,4/25/2017,Kachemak Bay,Outside Beach,59.46471944,-151.706825,low,Cnidaria,Urticina crassicornis,9
+2017,4/25/2017,Kachemak Bay,Outside Beach,59.46471944,-151.706825,- 1 m,Cnidaria,Urticina crassicornis,21
+2017,4/25/2017,Kachemak Bay,Outside Beach,59.46471944,-151.706825,- 1 m,Echinodermata,Henricia leviuscula,1
+2017,4/26/2017,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Cnidaria,unidentified red anemone,4
+2017,4/26/2017,Kachemak Bay,Port Graham,59.373333,-151.894167,- 1 m,Cnidaria,Urticina crassicornis,1
+2017,4/26/2017,Kachemak Bay,Port Graham,59.373333,-151.894167,mid,Cnidaria,Urticina crassicornis,11
+2017,4/26/2017,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Cnidaria,Urticina crassicornis,28
+2017,4/26/2017,Kachemak Bay,Port Graham,59.373333,-151.894167,- 1 m,Echinodermata,Henricia leviuscula,1
+2017,4/26/2017,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Echinodermata,Henricia leviuscula,1
+2017,4/26/2017,Kachemak Bay,Port Graham,59.373333,-151.894167,- 1 m,Echinodermata,Orthasterias koehleri,1
+2018,5/17/2018,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Anthopleura artemisia,2
+2018,5/17/2018,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,high,Cnidaria,Anthopleura artemisia,85
+2018,5/17/2018,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,mid,Cnidaria,Anthopleura artemisia,133
+2018,5/17/2018,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Urticina crassicornis,2
+2018,5/17/2018,Kachemak Bay,Bluff Point,59.6567,-151.671167,mid,Cnidaria,Anthopleura artemisia,33
+2018,5/17/2018,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Anthopleura artemisia,47
+2018,5/17/2018,Kachemak Bay,Bluff Point,59.6567,-151.671167,high,Cnidaria,Anthopleura artemisia,411
+2018,5/17/2018,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Urticina crassicornis,7
+2018,5/16/2018,Kachemak Bay,Cohen Island,59.539133,-151.47695,mid,Cnidaria,Anthopleura artemisia,1
+2018,5/16/2018,Kachemak Bay,Cohen Island,59.539133,-151.47695,mid,Cnidaria,Epiactis prolifera,18
+2018,5/16/2018,Kachemak Bay,Cohen Island,59.539133,-151.47695,low,Cnidaria,unidentified red anemone,1
+2018,5/16/2018,Kachemak Bay,Cohen Island,59.539133,-151.47695,- 1 m,Cnidaria,unidentified red anemone,3
+2018,5/16/2018,Kachemak Bay,Cohen Island,59.539133,-151.47695,low,Cnidaria,Urticina crassicornis,26
+2018,5/16/2018,Kachemak Bay,Cohen Island,59.539133,-151.47695,- 1 m,Cnidaria,Urticina crassicornis,27
+2018,5/18/2018,Kachemak Bay,Elephant Island,59.51401944,-151.5056528,mid,Cnidaria,unidentified red anemone,10
+2018,5/18/2018,Kachemak Bay,Elephant Island,59.51401944,-151.5056528,- 1 m,Cnidaria,Urticina crassicornis,3
+2018,5/18/2018,Kachemak Bay,Elephant Island,59.51401944,-151.5056528,mid,Cnidaria,Urticina crassicornis,3
+2018,5/18/2018,Kachemak Bay,Elephant Island,59.51401944,-151.5056528,low,Cnidaria,Urticina crassicornis,8
+2018,5/18/2018,Kachemak Bay,Elephant Island,59.51401944,-151.5056528,- 1 m,Echinodermata,Pisaster ochraceus,1
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,mid,Cnidaria,Anthopleura artemisia,1
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,mid,Cnidaria,Epiactis prolifera,1
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,low,Cnidaria,Epiactis prolifera,2
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,high,Cnidaria,unidentified red anemone,2
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,- 1 m,Cnidaria,unidentified red anemone,5
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,low,Cnidaria,unidentified red anemone,9
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,mid,Cnidaria,unidentified red anemone,17
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,mid,Cnidaria,Urticina crassicornis,11
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,- 1 m,Cnidaria,Urticina crassicornis,16
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,low,Cnidaria,Urticina crassicornis,20
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,- 1 m,Echinodermata,Henricia leviuscula,1
+2018,5/14/2018,Kachemak Bay,Outside Beach,59.46471944,-151.706825,mid,Echinodermata,Henricia leviuscula,1
+2018,5/15/2018,Kachemak Bay,Port Graham,59.373333,-151.894167,- 1 m,Cnidaria,Metridium sp.,2
+2018,5/15/2018,Kachemak Bay,Port Graham,59.373333,-151.894167,mid,Cnidaria,Metridium sp.,7
+2018,5/15/2018,Kachemak Bay,Port Graham,59.373333,-151.894167,- 1 m,Cnidaria,unidentified red anemone,3
+2018,5/15/2018,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Cnidaria,Urticina crassicornis,10
+2018,5/15/2018,Kachemak Bay,Port Graham,59.373333,-151.894167,mid,Cnidaria,Urticina crassicornis,10
+2018,5/15/2018,Kachemak Bay,Port Graham,59.373333,-151.894167,- 1 m,Cnidaria,Urticina crassicornis,31
+2018,5/15/2018,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Echinodermata,Henricia leviuscula,6
+2018,5/15/2018,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Echinodermata,Orthasterias koehleri,1
+2019,5/19/2019,Kachemak Bay,Bishop's Beach,-151.601783,59.642783,high,Cnidaria,Anthopleura artemisia,14
+2019,5/19/2019,Kachemak Bay,Bishop's Beach,-151.601783,59.642783,mid,Cnidaria,Anthopleura artemisia,67
+2019,5/19/2019,Kachemak Bay,Bishop's Beach,-151.601783,59.642783,low,Cnidaria,Urticina crassicornis,4
+2019,5/19/2019,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Cnidaria,Anthopleura artemisia,29
+2019,5/19/2019,Kachemak Bay,Bluff Point,-151.671167,59.6567,high,Cnidaria,Anthopleura artemisia,78
+2019,5/19/2019,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Cnidaria,Anthopleura artemisia,114
+2019,5/19/2019,Kachemak Bay,Bluff Point,-151.671167,59.6567,mid,Cnidaria,Urticina crassicornis,1
+2019,5/19/2019,Kachemak Bay,Bluff Point,-151.671167,59.6567,low,Cnidaria,Urticina crassicornis,9
+2019,5/20/2019,Kachemak Bay,Cohen Island,-151.47695,59.539133,low,Cnidaria,Anthopleura artemisia,1
+2019,5/20/2019,Kachemak Bay,Cohen Island,-151.47695,59.539133,low,Cnidaria,unidentified red anemone,4
+2019,5/20/2019,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Cnidaria,unidentified red anemone,9
+2019,5/20/2019,Kachemak Bay,Cohen Island,-151.47695,59.539133,low,Cnidaria,Urticina crassicornis,13
+2019,5/20/2019,Kachemak Bay,Cohen Island,-151.47695,59.539133,- 1 m,Cnidaria,Urticina crassicornis,42
+2019,5/18/2019,Kachemak Bay,Elephant Island,-151.505881,59.513961,mid,Cnidaria,unidentified red anemone,6
+2019,5/18/2019,Kachemak Bay,Elephant Island,-151.505881,59.513961,mid,Cnidaria,Urticina crassicornis,1
+2019,5/17/2019,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Cnidaria,unidentified red anemone,4
+2019,5/17/2019,Kachemak Bay,Outside Beach,-151.7085,59.464233,mid,Cnidaria,Urticina crassicornis,2
+2019,5/17/2019,Kachemak Bay,Outside Beach,-151.7085,59.464233,low,Cnidaria,Urticina crassicornis,4
+2019,5/17/2019,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Cnidaria,Urticina crassicornis,15
+2019,5/17/2019,Kachemak Bay,Outside Beach,-151.7085,59.464233,- 1 m,Echinodermata,Henricia leviuscula,9
+2019,5/21/2019,Kachemak Bay,Port Graham,-151.894167,59.373333,high,Cnidaria,Urticina crassicornis,1
+2019,5/21/2019,Kachemak Bay,Port Graham,-151.894167,59.373333,- 1 m,Cnidaria,Urticina crassicornis,13
+2020,6/6/2020,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Anthopleura artemisia,48
+2020,6/6/2020,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,mid,Cnidaria,Anthopleura artemisia,137
+2020,6/6/2020,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Urticina crassicornis,19
+2020,6/7/2020,Kachemak Bay,Bluff Point,59.6567,-151.671167,mid,Cnidaria,Anthopleura artemisia,17
+2020,6/7/2020,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Anthopleura artemisia,53
+2020,6/7/2020,Kachemak Bay,Bluff Point,59.6567,-151.671167,high,Cnidaria,Anthopleura artemisia,91
+2020,6/7/2020,Kachemak Bay,Bluff Point,59.6567,-151.671167,mid,Cnidaria,Urticina crassicornis,2
+2020,6/7/2020,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Urticina crassicornis,6
+2020,6/3/2020,Kachemak Bay,Cohen Island,59.539133,-151.47695,mid,Cnidaria,Urticina crassicornis,1
+2020,6/3/2020,Kachemak Bay,Cohen Island,59.539133,-151.47695,low,Cnidaria,Urticina crassicornis,12
+2020,6/3/2020,Kachemak Bay,Cohen Island,59.539133,-151.47695,-1 m,Cnidaria,Urticina crassicornis,37
+2020,6/3/2020,Kachemak Bay,Cohen Island,59.539133,-151.47695,-1 m,Echinodermata,Evasterias troschelii,1
+2020,6/3/2020,Kachemak Bay,Cohen Island,59.539133,-151.47695,-1 m,Echinodermata,Henricia leviuscula,1
+2020,6/3/2020,Kachemak Bay,Elephant Island,59.547222,-151.513889,mid,Cnidaria,unidentified red anemone,2
+2020,6/3/2020,Kachemak Bay,Elephant Island,59.547222,-151.513889,low,Cnidaria,Urticina crassicornis,3
+2020,6/3/2020,Kachemak Bay,Elephant Island,59.547222,-151.513889,mid,Cnidaria,Urticina crassicornis,4
+2020,6/3/2020,Kachemak Bay,Elephant Island,59.547222,-151.513889,-1 m,Cnidaria,Urticina crassicornis,9
+2020,6/3/2020,Kachemak Bay,Elephant Island,59.547222,-151.513889,-1 m,Echinodermata,Henricia leviuscula,1
+2020,6/9/2020,Kachemak Bay,Outside Beach,59.473611,-151.894167,mid,Cnidaria,Urticina crassicornis,6
+2020,6/9/2020,Kachemak Bay,Outside Beach,59.473611,-151.894167,-1 m,Cnidaria,Urticina crassicornis,7
+2020,6/9/2020,Kachemak Bay,Outside Beach,59.473611,-151.894167,low,Cnidaria,Urticina crassicornis,10
+2020,6/9/2020,Kachemak Bay,Outside Beach,59.473611,-151.894167,low,Echinodermata,Henricia leviuscula,1
+2020,6/9/2020,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Cnidaria,unidentified red anemone,1
+2020,6/9/2020,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Cnidaria,Urticina crassicornis,6
+2020,6/9/2020,Kachemak Bay,Port Graham,59.373333,-151.894167,-1 m,Cnidaria,Urticina crassicornis,6
+2020,6/9/2020,Kachemak Bay,Port Graham,59.373333,-151.894167,-1 m,Echinodermata,Henricia leviuscula,1
+2020,6/9/2020,Kachemak Bay,Port Graham,59.373333,-151.894167,mid,Echinodermata,Henricia leviuscula,2
+2021,4/27/2021,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,mid,Cnidaria,Anthopleura artemisia,9
+2021,4/27/2021,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Anthopleura artemisia,42
+2021,4/27/2021,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,high,Cnidaria,Anthopleura artemisia,120
+2021,4/27/2021,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Urticina crassicornis,5
+2021,4/27/2021,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Echinodermata,Evasterias troschelii,1
+2021,4/27/2021,Kachemak Bay,Bluff Point,59.6567,-151.671167,mid,Cnidaria,Anthopleura artemisia,12
+2021,4/27/2021,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Anthopleura artemisia,43
+2021,4/27/2021,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,red anemone,1
+2021,4/27/2021,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Urticina crassicornis,8
+2021,4/29/2021,Kachemak Bay,Cohen Island,59.539133,-151.47695,low,Cnidaria,red anemone,3
+2021,4/29/2021,Kachemak Bay,Cohen Island,59.539133,-151.47695,-1 m,Cnidaria,red anemone,11
+2021,4/29/2021,Kachemak Bay,Cohen Island,59.539133,-151.47695,low,Cnidaria,Urticina crassicornis,48
+2021,4/29/2021,Kachemak Bay,Cohen Island,59.539133,-151.47695,-1 m,Cnidaria,Urticina crassicornis,56
+2021,4/29/2021,Kachemak Bay,Elephant Island,59.547222,-151.513889,mid,Cnidaria,Urticina crassicornis,6
+2021,4/28/2021,Kachemak Bay,Outside Beach,59.473611,-151.894167,mid,Cnidaria,Anthopleura artemisia,3
+2021,4/28/2021,Kachemak Bay,Outside Beach,59.473611,-151.894167,mid,Cnidaria,red anemone,1
+2021,4/28/2021,Kachemak Bay,Outside Beach,59.473611,-151.894167,low,Cnidaria,red anemone,3
+2021,4/28/2021,Kachemak Bay,Outside Beach,59.473611,-151.894167,-1 m,Cnidaria,Urticina crassicornis,2
+2021,4/28/2021,Kachemak Bay,Outside Beach,59.473611,-151.894167,mid,Cnidaria,Urticina crassicornis,3
+2021,4/28/2021,Kachemak Bay,Outside Beach,59.473611,-151.894167,low,Cnidaria,Urticina crassicornis,6
+2021,4/28/2021,Kachemak Bay,Port Graham,59.373333,-151.894167,-1 m,Cnidaria,Urticina crassicornis,4
+2021,4/28/2021,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Cnidaria,Urticina crassicornis,11
+2021,4/28/2021,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Echinodermata,Evasterias troschelii,1
+2021,4/28/2021,Kachemak Bay,Port Graham,59.373333,-151.894167,-1 m,Echinodermata,Evasterias troschelii,1
+2022,5/16/2022,Kachemak Bay,Outside Beach,59.473611,-151.894167,mid,Cnidaria,Urticina crassicornis,9
+2022,5/16/2022,Kachemak Bay,Outside Beach,59.473611,-151.894167,mid,Cnidaria,red anemone,8
+2022,5/16/2022,Kachemak Bay,Outside Beach,59.473611,-151.894167,low,Cnidaria,Urticina crassicornis,18
+2022,5/16/2022,Kachemak Bay,Outside Beach,59.473611,-151.894167,low,Cnidaria,red anemone,3
+2022,5/16/2022,Kachemak Bay,Outside Beach,59.473611,-151.894167,-1 m,Cnidaria,Urticina crassicornis,22
+2022,5/18/2022,Kachemak Bay,Cohen Island,59.539133,-151.47695,low,Cnidaria,Urticina crassicornis,6
+2022,5/18/2022,Kachemak Bay,Cohen Island,59.539133,-151.47695,-1 m,Cnidaria,Urticina crassicornis,68
+2022,5/18/2022,Kachemak Bay,Cohen Island,59.539133,-151.47695,-1 m,Cnidaria,red anemone,4
+2022,5/17/2022,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Echinodermata,Evasterias troschelii,1
+2022,5/17/2022,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Urticina crassicornis,4
+2022,5/17/2022,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Anthopleura artemisia,15
+2022,5/17/2022,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,mid,Cnidaria,Anthopleura artemisia,122
+2022,5/17/2022,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Anthopleura artemisia,3
+2022,5/17/2022,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,red anemone,2
+2022,5/16/2022,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Cnidaria,Urticina crassicornis,4
+2022,5/16/2022,Kachemak Bay,Port Graham,59.373333,-151.894167,-1 m,Cnidaria,Urticina crassicornis,1
+2022,5/18/2022,Kachemak Bay,Elephant Island,59.547222,-151.513889,low,Cnidaria,Urticina crassicornis,1
+2022,5/18/2022,Kachemak Bay,Elephant Island,59.547222,-151.513889,low,Echinodermata,Pisaster ochraceus,1
+2022,5/18/2022,Kachemak Bay,Elephant Island,59.547222,-151.513889,-1 m,Cnidaria,Urticina crassicornis,2
+2023,5/17/2023,Kachemak Bay,Outside Beach,59.473611,-151.894167,mid,Cnidaria,Urticina crassicornis,2
+2023,5/17/2023,Kachemak Bay,Outside Beach,59.473611,-151.894167,mid,Cnidaria,red anemone,3
+2023,5/17/2023,Kachemak Bay,Outside Beach,59.473611,-151.894167,low,Cnidaria,Urticina crassicornis,7
+2023,5/17/2023,Kachemak Bay,Outside Beach,59.473611,-151.894167,low,Cnidaria,red anemone,4
+2023,5/17/2023,Kachemak Bay,Outside Beach,59.473611,-151.894167,-1 m,Cnidaria,Urticina crassicornis,10
+2023,5/17/2023,Kachemak Bay,Outside Beach,59.473611,-151.894167,-1 m,Cnidaria,red anemone,2
+2023,5/18/2023,Kachemak Bay,Cohen Island,59.539133,-151.47695,low,Cnidaria,Urticina crassicornis,3
+2023,5/18/2023,Kachemak Bay,Cohen Island,59.539133,-151.47695,-1 m,Cnidaria,Urticina crassicornis,77
+2023,5/18/2023,Kachemak Bay,Cohen Island,59.539133,-151.47695,-1 m,Cnidaria,red anemone,1
+2023,5/18/2023,Kachemak Bay,Cohen Island,59.539133,-151.47695,-1 m,Echinodermata,Solaster stimpsoni,1
+2023,5/20/2023,Kachemak Bay,Bluff Point,59.6567,-151.671167,high,Cnidaria,Anthopleura artemisia,10
+2023,5/20/2023,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Anthopleura artemisia,8
+2023,5/20/2023,Kachemak Bay,Bluff Point,59.6567,-151.671167,low,Cnidaria,Urticina crassicornis,4
+2023,5/20/2023,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,high,Cnidaria,Anthopleura artemisia,22
+2023,5/20/2023,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,high,Cnidaria,Urticina crassicornis,1
+2023,5/20/2023,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,mid,Cnidaria,Anthopleura artemisia,351
+2023,5/20/2023,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,mid,Cnidaria,Urticina crassicornis,1
+2023,5/20/2023,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,mid,Echinodermata,Evasterias troschelii,1
+2023,5/20/2023,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Anthopleura artemisia,8
+2023,5/20/2023,Kachemak Bay,Bishop's Beach,59.642783,-151.601783,low,Cnidaria,Urticina crassicornis,4
+2023,5/21/2023,Kachemak Bay,Port Graham,59.373333,-151.894167,high,Cnidaria,Anthopleura artemisia,2
+2023,5/21/2023,Kachemak Bay,Port Graham,59.373333,-151.894167,mid,Cnidaria,red anemone,1
+2023,5/21/2023,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Echinodermata,Evasterias troschelii,1
+2023,5/21/2023,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Echinodermata,Orthasterias koehleri,7
+2023,5/21/2023,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Echinodermata,Henricia leviuscula,2
+2023,5/21/2023,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Cnidaria,Urticina crassicornis,13
+2023,5/21/2023,Kachemak Bay,Port Graham,59.373333,-151.894167,low,Cnidaria,red anemone,1
+2023,5/21/2023,Kachemak Bay,Port Graham,59.373333,-151.894167,-1 m,Echinodermata,Orthasterias koehleri,10
+2023,5/21/2023,Kachemak Bay,Port Graham,59.373333,-151.894167,-1 m,Echinodermata,Henricia leviuscula,2
+2023,5/21/2023,Kachemak Bay,Port Graham,59.373333,-151.894167,-1 m,Cnidaria,Urticina crassicornis,5
+2023,5/19/2023,Kachemak Bay,Elephant Island,59.547222,-151.513889,mid,Cnidaria,Anthopleura artemisia,5
+2023,5/19/2023,Kachemak Bay,Elephant Island,59.547222,-151.513889,low,Cnidaria,Urticina crassicornis,3
+2023,5/19/2023,Kachemak Bay,Elephant Island,59.547222,-151.513889,low,Cnidaria,Anthopleura artemisia,1
+2023,5/19/2023,Kachemak Bay,Elephant Island,59.547222,-151.513889,-1 m,Echinodermata,Evasterias troschelii,3
+2023,5/19/2023,Kachemak Bay,Elephant Island,59.547222,-151.513889,-1 m,Echinodermata,Orthasterias koehleri,1
+2023,5/19/2023,Kachemak Bay,Elephant Island,59.547222,-151.513889,-1 m,Echinodermata,Pisaster ochraceus,1
+2023,5/19/2023,Kachemak Bay,Elephant Island,59.547222,-151.513889,-1 m,Cnidaria,Urticina crassicornis,8

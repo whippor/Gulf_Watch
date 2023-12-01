@@ -68,7 +68,7 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
                      mean = mean   (xx[[col]], na.rm=na.rm),
                      sd   = sd     (xx[[col]], na.rm=na.rm)
                    )
-  detach::plyr               },
+                 },
                  measurevar
   )
   
@@ -97,10 +97,14 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
 counts_wide <-  read_csv("Data/KBAYKATMKEFJWPWS_2007-2021_Soft_Sediment_Bivalve_Count.csv", 
                          col_types = cols(YearSample = col_character()))
 
+str(counts_wide)
+
 counts_long <- counts_wide %>%
   pivot_longer(Mytilus_trossulus:Unid_Mussel, names_to = 'species', values_to = 'count') %>%
   filter(count != '.') %>%
   mutate(count = as.numeric(count))
+
+str(counts_long)
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # MANIPULATE DATA                                                              ####
@@ -124,6 +128,15 @@ count_summary %>%
   geom_point(position=pd) +
   theme_bw() +
   facet_wrap('SiteName', scales = 'free')
+
+# KBAY ONLY
+counts_long %>%
+  filter(SiteName %in% c("Bear Cove", 
+                         "China Poot Bay",
+                         "Jakalof Bay",
+                         "Port Graham")) %>%
+  ggplot(aes(x = YearSample, y = count, color = SiteName)) +
+  stat_summary(fun = "mean")
   
 
 ############### SUBSECTION HERE
@@ -179,3 +192,6 @@ otter_split_list$abbv <-  trimws(otter_split_list$abbv, which = "both")
 # join abbvs to ottersums
 otter_final <- ottersums %>%
   left_join(otter_split_list, by = 'abbv')
+
+# site names
+list(unique(counts_long$SiteName))

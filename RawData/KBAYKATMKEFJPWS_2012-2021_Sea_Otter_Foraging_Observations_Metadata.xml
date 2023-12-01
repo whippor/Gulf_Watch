@@ -1,0 +1,2576 @@
+
+<!-- Record created using version 2.0.6 of the USGS Metadata Wizard tool. (https://github.com/usgs/fort-pymdwizard) -->
+<metadata>
+<idinfo>
+<citation>
+<citeinfo>
+<origin>Kimberly A. Kloecker</origin>
+<pubdate>2021</pubdate>
+<title>Gulf Watch Alaska, Nearshore Monitoring Component: Sea Otter Foraging Observations from Kachemak Bay, Prince William Sound, Katmai National Park and Preserve, and Kenai Fjords National Park, 2012-2021</title>
+<geoform>tabular digital data</geoform>
+<pubinfo>
+<pubplace>Anchorage, Alaska</pubplace>
+<publish>U.S. Geological Survey, Alaska Science Center</publish>
+</pubinfo>
+<othercit>Suggested Citation: Kloecker, K. A. 2021, Gulf Watch Alaska, Nearshore Monitoring Component: Sea Otter Foraging Observations from Kachemak Bay, Prince William Sound, Katmai National Park and Preserve, and Kenai Fjords National Park, 2012-2021: U.S. Geological Survey data release, http://dx.doi.org/10.5066/F7N29V4R-xxx.</othercit>
+<onlink>http://dx.doi.org/10.5066/F7N29V4R-XXX</onlink>
+<onlink>https://alaska.usgs.gov/portal/project.php?project_id=99</onlink>
+<onlink>http://science.nature.nps.gov/im/units/swan/monitor/nearshore.cfm</onlink>
+<lworkcit>
+<citeinfo>
+<origin>The Exxon Valdez Oil Spill Trustee Council (EVOSTC)</origin>
+<pubdate>Unknown</pubdate>
+<title>Gulf Watch Alaska</title>
+<geoform>Website</geoform>
+<pubinfo>
+<pubplace>Anchorage, Alaska</pubplace>
+<publish>The Exxon Valdez Oil Spill Trustee Council (EVOSTC)</publish>
+</pubinfo>
+<othercit>Gulf Watch Alaska is the long-term ecosystem monitoring program of the Exxon Valdez Oil Spill Trustee Council for the marine ecosystem affected by the 1989 oil spill.</othercit>
+<onlink>http://www.gulfwatchalaska.org/</onlink>
+</citeinfo>
+</lworkcit>
+</citeinfo>
+</citation>
+<descript>
+<abstract>This data is part of the Gulf Watch Alaska (GWA) long term monitoring program, benthic monitoring component and a seasonal diet study in Kenai Fjords National Park. The dataset is a comma separated file exported from a Microsoft Access database. The data consists of observations made of foraging sea otters (Enhydra lutris). Observers used Questar field model spotting scopes and binoculars to identify prey. Date, local time, dive duration, success, prey type, prey size, prey number, handling time and surface time are all recorded. Sites are in Alaska and include locations in Kachemak Bay, Katmai National Park and Preserve, Kenai Fjords National Park and Prince William Sound. This data in this file were collected 2012-2021.</abstract>
+<purpose>The purpose of this data is to allow comparison of a set of sea otter forage data metrics across time and geographic location. Metrics include: foraging success rate, composition of prey, mean size and/or size frequency distribution of common prey, number of prey items per dive, and rate of energetic return. Comparisons include metrics from one location over time or from one time across locations.</purpose>
+<supplinf>This foraging data set is a component of the benthic monitoring portion of the Gulf Watch Alaska (GWA) program. The Exxon Valdez Oil Spill Trustee Council and state and federal agencies are supporting a five-year, $12 million long-term monitoring program in the Gulf of Alaska region affected by the 1989 Exxon Valdez oil spill. The monitoring program, called GulfWatch, includes 25 principal scientists and seeks to provide data to identify and help understand the impacts of multiple ecosystem factors on the recovery of injured resources. This program is expected to be 20 years in total length, but planned and funded in five-year increments. It builds upon the past 23 years of restoration research and monitoring by the EVOSTC and federal and state agencies. Monitoring efforts will span a range of species and marine conditions, organized in three components, with integrated data management and synthesis of science information provided across the components. The program includes sites in Prince William Sound, lower Cook Inlet and the outer Kenai Peninsula coast. Environmental Drivers component – oceanography, plankton Benthic component – intertidal invertebrate & algae, sea otters, seabirds, lingering oil Pelagic component – whales, seabirds, forage fish</supplinf>
+</descript>
+<timeperd>
+<timeinfo>
+<rngdates>
+<begdate>2012</begdate>
+<enddate>2021</enddate>
+</rngdates>
+</timeinfo>
+<current>ground condition</current>
+</timeperd>
+<status>
+<progress>Complete</progress>
+<update>None planned</update>
+</status>
+<spdom>
+<descgeog>Three main regions throughout the Gulf of Alaska are included in the study design: Prince William Sound (eastern, western, and northern blocks), Kenai Peninsula (Kachemak Bay and Kenai Fjords National Park blocks), and Katmai Coast (Katmai National Park and Preserve block). Forage data is collected from up to 5 sites within a sampling block in each region.</descgeog>
+<bounding>
+<westbc>-156.0300</westbc>
+<eastbc>-144.4100</eastbc>
+<northbc>61.8000</northbc>
+<southbc>57.0300</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>ISO 19115 Topic Category</themekt>
+<themekey>biota</themekey>
+<themekey>environment</themekey>
+</theme>
+<theme>
+<themekt>None</themekt>
+<themekey>sea otters</themekey>
+</theme>
+<theme>
+<themekt>None</themekt>
+<themekey>Enhydra lutris</themekey>
+</theme>
+<theme>
+<themekt>USGS Biocomplexity Thesaurus</themekt>
+<themekey>foraging behavior</themekey>
+<themekey>prey</themekey>
+<themekey>marine ecology</themekey>
+<themekey>synecology</themekey>
+<themekey>monitoring</themekey>
+<themekey>coastal ecosystems</themekey>
+</theme>
+<place>
+<placekt>Geographic Names Information System</placekt>
+<placekey>Prince William Sound</placekey>
+<placekey>Kenai Fjords National Park</placekey>
+<placekey>Katmai National Park and Preserve</placekey>
+<placekey>Kachemak Bay</placekey>
+<placekey>Gulf of Alaska</placekey>
+</place>
+</keywords>
+<taxonomy>
+<keywtax>
+<taxonkt>None</taxonkt>
+<taxonkey>sea otters</taxonkey>
+<taxonkey>Enhydra lutris</taxonkey>
+<taxonkey>marine benthic invertebrates</taxonkey>
+</keywtax>
+<taxonsys>
+<classsys>
+<classcit>
+<citeinfo>
+<origin>ITIS: Integrated Taxonomic Information System</origin>
+<pubdate>20150421</pubdate>
+<title>ITIS</title>
+<geoform>database</geoform>
+<othercit>Disclaimer: ITIS taxonomy is based on the latest scientific consensus available, and is provided as a general reference source for interested parties. However, it is not a legal authority for statutory or regulatory purposes. While every effort has been made to provide the most reliable and up-to-date information available, ultimate legal requirements with respect to species are contained in provisions of treaties to which the United States is a party, wildlife statutes, regulations, and any applicable notices that have been published in the Federal Register. For further information on U.S. legal requirements with respect to protected taxa, please contact the U.S. Fish and Wildlife Service. Retrieved [August, 27, 2013], from the Integrated Taxonomic Information System on-line database, http://www.itis.gov.</othercit>
+<onlink>http://www.itis.gov/</onlink>
+</citeinfo>
+</classcit>
+</classsys>
+<classsys>
+<classcit>
+<citeinfo>
+<origin>WoRMS Editorial Board</origin>
+<pubdate>20161215</pubdate>
+<title>World Register of Marine Species</title>
+<geoform>database</geoform>
+<othercit>Note to users: The WoRMS Editorial Board maintains this register, but is aware that the content can have omissions and errors. If you come across any error or incomplete information or you are willing to contribute to this initiative, please contact us at info@marinespecies.org. © WoRMS Editorial Board. The text on the WoRMS pages is open-access under the terms of the Creative Commons Attribution License, which permits unrestricted use provided it is cited as requested on the WoRMS webpages, unless stated otherwise on the individual pages. Images are by default open-access under the terms of the CC BY-NC-SA license, unless stated otherwise.</othercit>
+<onlink>http://doi.org/10.14284/170</onlink>
+</citeinfo>
+</classcit>
+</classsys>
+<taxonpro>Prey are identified while the otter is handling the items during a post dive surface interval. Observers use binoculars (10x42) and spotting scopes (field model scope, Questar Corp, New Hope, PA) to note identifying features of prey as well as characteristic handling methods that assist in identification.</taxonpro>
+</taxonsys>
+<taxongen>This data set contains foraging observations for northern sea otters, Enhydra lutris kenyoni. Prey items are varied and often not identified to species so broader groupings are used when applicable. Sea otters consume a wide variety of prey, primarily benthic invertebrates from hard and soft substrates, but also fish such as sand lance or lumpsuckers on occasion. Often prey cannot be identified and is entered as 'uni' for unidentifiable.</taxongen>
+<taxoncl>
+<taxonrn>Kingdom</taxonrn>
+<taxonrv>Animalia</taxonrv>
+<common>Animal</common>
+<common>animaux</common>
+<common>animals</common>
+<taxoncl>
+<taxonrn>Subkingdom</taxonrn>
+<taxonrv>Bilateria</taxonrv>
+<taxoncl>
+<taxonrn>Infrakingdom</taxonrn>
+<taxonrv>Protostomia</taxonrv>
+<taxoncl>
+<taxonrn>Superphylum</taxonrn>
+<taxonrv>Ecdysozoa</taxonrv>
+<taxoncl>
+<taxonrn>Phylum</taxonrn>
+<taxonrv>Arthropoda</taxonrv>
+<common>Artrópode</common>
+<common>arthropodes</common>
+<common>arthropods</common>
+<taxoncl>
+<taxonrn>Subphylum</taxonrn>
+<taxonrv>Crustacea</taxonrv>
+<common>crustacés</common>
+<common>crustáceo</common>
+<common>crustaceans</common>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Maxillopoda</taxonrv>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Thecostraca</taxonrv>
+<taxoncl>
+<taxonrn>Infraclass</taxonrn>
+<taxonrv>Cirripedia</taxonrv>
+<common>barnacles</common>
+<common>bernacles</common>
+<taxoncl>
+<taxonrn>Superorder</taxonrn>
+<taxonrv>Thoracica</taxonrv>
+<common>barnacles; bas</common>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Sessilia</taxonrv>
+<common>sessile barnacles</common>
+<common>bas</common>
+<taxoncl>
+<taxonrn>Suborder</taxonrn>
+<taxonrv>Balanomorpha</taxonrv>
+<common>acorn barnacles</common>
+<common>bas</common>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Balanoidea</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Balanidae</taxonrv>
+<common>bas</common>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Balanus</taxonrv>
+<common>bas</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Malacostraca</taxonrv>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Eumalacostraca</taxonrv>
+<taxoncl>
+<taxonrn>Superorder</taxonrn>
+<taxonrv>Eucarida</taxonrv>
+<common>camarão</common>
+<common>caranguejo</common>
+<common>ermitão</common>
+<common>lagosta</common>
+<common>siri</common>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Decapoda</taxonrv>
+<common>crabs; cra</common>
+<common>crayfishes</common>
+<common>lobsters</common>
+<common>prawns</common>
+<common>shrimp</common>
+<common>crabes</common>
+<common>crevettes</common>
+<common>écrevisses</common>
+<common>homards</common>
+<taxoncl>
+<taxonrn>Suborder</taxonrn>
+<taxonrv>Pleocyemata</taxonrv>
+<taxoncl>
+<taxonrn>Infraorder</taxonrn>
+<taxonrv>Brachyura</taxonrv>
+<common>short-tailed crabs</common>
+<common>any crab; cra</common>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Majoidea</taxonrv>
+<common>spider crabs</common>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Epialtidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Pugettia</taxonrv>
+<common>pus</common>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Pugettia producta</taxonrv>
+<common>northern kelp crab; pus</common>
+</taxoncl>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Pugettia gracilis</taxonrv>
+<common>graceful kelp crab; pus</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Oregoniidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Chionoecetes</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Chionoecetes bairdi</taxonrv>
+<common>Tanner crab; chb</common>
+<common>southern Tanner crab</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Hyas</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Hyas lyratus</taxonrv>
+<common>Pacific lyre crab, hyl</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Cancroidea</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Cheiragonidae</taxonrv>
+<common>helmet crabs</common>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Telmessus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Telmessus cheiragonus</taxonrv>
+<common>helmet crab; tec</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Cancridae</taxonrv>
+<common>rock crabs</common>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Cancer</taxonrv>
+<common>Cancer crabs; can</common>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Cancer productus</taxonrv>
+<common>red rock crab; cap</common>
+</taxoncl>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Cancer magister</taxonrv>
+<common>Dungeness crab; cam</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Infraorder</taxonrn>
+<taxonrv>Anomura</taxonrv>
+<common>any crab; cra</common>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Paguroidea</taxonrv>
+<common>any crab; cra</common>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Lithodidae</taxonrv>
+<common>stone and king crabs, cra</common>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Paralithodes</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Paralithodes camtschaticus</taxonrv>
+<common>red king crab, pac</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Paguridae</taxonrv>
+<common>right-handed hermit crabs, pag</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Infraorder</taxonrn>
+<taxonrv>Caridea</taxonrv>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Pandaloidea</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Pandalidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Pandalus</taxonrv>
+<common>Pandalus shrimp, pas</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Superphylum</taxonrn>
+<taxonrv>Lophozoa</taxonrv>
+<taxoncl>
+<taxonrn>Phylum</taxonrn>
+<taxonrv>Mollusca</taxonrv>
+<common>mollusques</common>
+<common>molusco</common>
+<common>molluscs</common>
+<common>mollusks</common>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Gastropoda</taxonrv>
+<common>gastropods</common>
+<common>slugs</common>
+<common>snails; sna</common>
+<common>escargots</common>
+<common>gastéropodes</common>
+<common>limaces</common>
+<common>caracol</common>
+<common>caramujo</common>
+<common>lesma</common>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Neotaenioglossa</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Ranellidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Fusitriton</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Fusitriton oregonensis</taxonrv>
+<common>Oregon triton; fuo</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Ranellidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Euspira</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Euspira lewisii</taxonrv>
+<common>Lewis' moonsnail, eul</common>
+<common>current accepted name, Neverita lewisii</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Prosobranchia</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Neogastropoda</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Muricidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Nucella</taxonrv>
+<common>nus</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Buccinidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Neptunea</taxonrv>
+<common>whelks, nes</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Polyplacophora</taxonrv>
+<common>any chiton; chi</common>
+<common>poliplacoforo</common>
+<common>quíton</common>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Neoloricata</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Chitonida</taxonrv>
+<taxoncl>
+<taxonrn>Suborder</taxonrn>
+<taxonrv>Ischnochitonina</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Mopaliidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Katharina</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Katharina tunicata</taxonrv>
+<common>black katy, KAT</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Suborder</taxonrn>
+<taxonrv>Acanthochitonina</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Acanthochitonidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Cryptochiton</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Cryptochiton stelleri</taxonrv>
+<common>giant Pacific chiton; crs</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Bivalvia</taxonrv>
+<common>bivalves, biv</common>
+<common>clams; any clam; cla</common>
+<common>bivalves</common>
+<common>palourdes</common>
+<common>bivalve</common>
+<common>mexilhão</common>
+<common>ostra</common>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Protobranchia</taxonrv>
+</taxoncl>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Pteriomorphia</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Mytiloida</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Mytilidae</taxonrv>
+<common>mussel; mus</common>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Mytilus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Mytilus trossulus</taxonrv>
+<common>Pacific blue mussel, foolish mussel; mtr</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Musculus</taxonrv>
+<common>msc</common>
+</taxoncl>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Modiolus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Modiolus modiolus</taxonrv>
+<common>northern horsemussel, mom</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Ostreoida</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Pectinidae</taxonrv>
+<common>any scallop, sca</common>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Chlamys</taxonrv>
+<common>Chlamys scallops; chl</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Anomiidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Pododesmus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Pododesmus macrochisma</taxonrv>
+<common>Alaska rock jingle; pom</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Ostreidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Magallana</taxonrv>
+</taxoncl>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Magallana gigas</taxonrv>
+<common>Pacific oyster; former name Crassostrea gigas; crg</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Heterodonta</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Veneroida</taxonrv>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Cardioidea</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Cardiidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Clinocardium</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Clinocardium nuttallii</taxonrv>
+<common>Nuttall cockle; cln</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Serripes</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Serripes groenlandicus</taxonrv>
+<common>Greenland cockle; seg</common>
+<common>Greenland smoothcockle</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Veneroidea</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Veneridae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Saxidomus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Saxidomus gigantea</taxonrv>
+<common>Washington butterclam; sag</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Humilaria</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Humilaria kennerleyi</taxonrv>
+<common>Kennerley's venus; huk</common>
+<common>Kennerley venus</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Protothaca</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Protothaca staminea</taxonrv>
+<common>Leukoma staminea; prs</common>
+<common>Pacific littleneck; prs</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Tellinoidea</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Tellinidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Macoma</taxonrv>
+<common>Macoma species; mas</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Psammobiidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Gari</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Gari californica</taxonrv>
+<common>California sunsetclam; gac</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Mactroidea</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Mactridae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Mactromeris</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Mactromeris polynyma</taxonrv>
+<common>Arctic surfclam; map</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Tresus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Tresus capax</taxonrv>
+<common>gaper clam; trc</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Myoida</taxonrv>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Myoidea</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Myidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Mya</taxonrv>
+<common>Mya species; mys</common>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Mya arenaria</taxonrv>
+<common>softshell clam; mya</common>
+<common>softshell</common>
+</taxoncl>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Mya truncata</taxonrv>
+<common>truncate softshell clam; myt</common>
+<common>truncate softshell</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Autobranchia</taxonrv>
+<taxoncl>
+<taxonrn>Superfamily</taxonrn>
+<taxonrv>Solenoidea</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Solenidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Solen</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Solen sicarius</taxonrv>
+<common>Jackknife clam; ssi</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Pharidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Siliqua</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Siliqua patula</taxonrv>
+<common>Pacific razor clam; sip</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Cephalopoda</taxonrv>
+<common>octopuses</common>
+<common>squids</common>
+<common>calmars</common>
+<common>encornets</common>
+<common>pieuvres</common>
+<common>poulpes</common>
+<common>náutilo</common>
+<common>polvo</common>
+<common>cefalopode</common>
+<common>lula</common>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Coleoidea</taxonrv>
+<taxoncl>
+<taxonrn>Superorder</taxonrn>
+<taxonrv>Octobrachia</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Octopoda</taxonrv>
+<taxoncl>
+<taxonrn>Suborder</taxonrn>
+<taxonrv>Incirrina</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Octopodidae</taxonrv>
+<taxoncl>
+<taxonrn>Subfamily</taxonrn>
+<taxonrv>Octopodinae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Enteroctopus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Enteroctopus dofleini</taxonrv>
+<common>giant Pacific octopus; ocd</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Infrakingdom</taxonrn>
+<taxonrv>Deuterostomia</taxonrv>
+<taxoncl>
+<taxonrn>Phylum</taxonrn>
+<taxonrv>Echinodermata</taxonrv>
+<common>echinoderms</common>
+<common>échinodermes</common>
+<common>bolacha da praia</common>
+<common>equinoderma</common>
+<common>equinodermata</common>
+<common>estrela do mar</common>
+<common>ouriço do mar</common>
+<taxoncl>
+<taxonrn>Subphylum</taxonrn>
+<taxonrv>Echinozoa</taxonrv>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Echinoidea</taxonrv>
+<common>heart urchins</common>
+<common>sand dollars</common>
+<common>sea urchins</common>
+<common>châtaignes de mer</common>
+<common>clypéastres</common>
+<common>oursins</common>
+<common>bolacha da praia</common>
+<common>equinóide</common>
+<common>ouriço do mar</common>
+<common>heart urchins</common>
+<common>sand dollars</common>
+<common>sea urchins</common>
+<common>urchins</common>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Euechinoidea</taxonrv>
+<taxoncl>
+<taxonrn>Superorder</taxonrn>
+<taxonrv>Echinacea</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Echinoida</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Strongylocentrotidae</taxonrv>
+<common>urchin; urc</common>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Strongylocentrotus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Strongylocentrotus droebachiensis</taxonrv>
+<common>green urchin; std</common>
+</taxoncl>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Strongylocentrotus franciscanus</taxonrv>
+<common>red urchin; stf</common>
+</taxoncl>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Strongylocentrotus purpuratus</taxonrv>
+<common>purple urchin; stp</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Superorder</taxonrn>
+<taxonrv>Gnathostomata</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Clypeasteroida</taxonrv>
+<common>sand dollars</common>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Dendrasteridae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Dendraster</taxonrv>
+<common>sand dollar; den</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Holothuroidea</taxonrv>
+<common>sea cucumbers; cuc</common>
+<common>holotúria</common>
+<common>pepino do mar</common>
+<common>cocombres de mer</common>
+<common>sea cucumbers</common>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Actinopoda</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Synallactida</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Stichopodidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Apostichopus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Apostichopus</taxonrv>
+<common>California sea cucumber; apc</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Dendrochirotida</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Cucumariidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Cucumaria</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Cucumaria miniata</taxonrv>
+<common>orange sea cucumber; cum</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Subphylum</taxonrn>
+<taxonrv>Asterozoa</taxonrv>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Asteroidea</taxonrv>
+<common>sea stars; sta</common>
+<common>starfishes</common>
+<common>étoiles de mer</common>
+<common>stelléridés</common>
+<common>estrela do mar</common>
+<common>sea stars</common>
+<common>starfishes</common>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Spinulosida</taxonrv>
+<taxoncl>
+<taxonrn>Suborder</taxonrn>
+<taxonrv>Eugnathina</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Solasteridae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Solaster</taxonrv>
+<common>sun star; sos</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Forcipulatida</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Asteriidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Evasterias</taxonrv>
+<common>evt</common>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Evasterias troscheli</taxonrv>
+<common>mottled sea star; evt</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Leptasterias</taxonrv>
+<common>les</common>
+</taxoncl>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Pisaster</taxonrv>
+<common>Pisaster species; pis</common>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Pisaster ochraceus</taxonrv>
+<common>pis</common>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Pycnopodia</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Pycnopodia helianthoides</taxonrv>
+<common>sunflower star; pyh</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Ophiuroidea</taxonrv>
+<common>basket stars; gos</common>
+<common>brittlestars; ops</common>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Phrynophiurida</taxonrv>
+<common>euryhaline brittle stars; ops</common>
+<common>euryhaline brittle stars</common>
+<taxoncl>
+<taxonrn>Suborder</taxonrn>
+<taxonrv>Euryalina</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Gorgonocephalidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Gorgonocephalus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Gorgonocephalus eucnemis</taxonrv>
+<common>basket star; gos</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Phylum</taxonrn>
+<taxonrv>Chordata</taxonrv>
+<common>cordés</common>
+<common>cordado</common>
+<common>chordates</common>
+<taxoncl>
+<taxonrn>Subphylum</taxonrn>
+<taxonrv>Vertebrata</taxonrv>
+<common>vertebrado</common>
+<common>vertébrés</common>
+<common>vertebrates</common>
+<taxoncl>
+<taxonrn>Infraphylum</taxonrn>
+<taxonrv>Gnathostomata</taxonrv>
+<taxoncl>
+<taxonrn>Superclass</taxonrn>
+<taxonrv>Osteichthyes</taxonrv>
+<common>bony fishes; fis</common>
+<common>poissons osseux</common>
+<common>osteíceto</common>
+<common>peixe ósseo</common>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Actinopteryqii</taxonrv>
+<common>ray-finned fishes</common>
+<taxoncl>
+<taxonrn>Infraclass</taxonrn>
+<taxonrv>Teleostei</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Perciformes</taxonrv>
+<common>Perch-like fishes</common>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Ammodytidae</taxonrv>
+<common>sand lances</common>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Ammodytes</taxonrv>
+<common>sand lances</common>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Ammpdytes hexapterus</taxonrv>
+<common>Pacific sand lance; amh</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Scorpaeniformes</taxonrv>
+<common>chabots, rascasses, mail-cheeked fishes, scorpion fishes, sculpins</common>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Cyclopteridae</taxonrv>
+<common>lumpfishes, snailfishes, lumpsuckers</common>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Aptocyclus</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Aptocyclus ventricosus</taxonrv>
+<common>smooth lumpsucker; apv</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Superclass</taxonrn>
+<taxonrv>Chondrichthyes</taxonrv>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Chondrichthyes</taxonrv>
+<common>cartilaginous fishes</common>
+<common>rays</common>
+<common>sharks</common>
+<common>condrictes</common>
+<common>peixe cartilaginoso</common>
+<common>tubarão</common>
+<common>poissons cartilagineux</common>
+<common>raies</common>
+<common>requins</common>
+<taxoncl>
+<taxonrn>Subclass</taxonrn>
+<taxonrv>Elasmobranchii</taxonrv>
+<common>cartilaginous fishes</common>
+<common>rays</common>
+<common>sharks</common>
+<common>skates; skate egg case egc</common>
+<common>torpedoes</common>
+<taxoncl>
+<taxonrn>Superorder</taxonrn>
+<taxonrv>Euselachii</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Rajiformes</taxonrv>
+<common>rays</common>
+<common>sawfishes</common>
+<common>skates; skate egg case; egc</common>
+<common>poissons-scie</common>
+<common>raies</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Subphylum</taxonrn>
+<taxonrv>Urochordata</taxonrv>
+<common>urocordado</common>
+<common>tunicates, sea squirts, salps, ascidies</common>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Ascidiacea</taxonrv>
+<common>ascidians</common>
+<common>sessile tunicates</common>
+<common>ascídia</common>
+<common>ascidies</common>
+<common>tuniqués sessiles</common>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Pleurogona</taxonrv>
+<taxoncl>
+<taxonrn>Suborder</taxonrn>
+<taxonrv>Stolidobranchia</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Pyuridae</taxonrv>
+<taxoncl>
+<taxonrn>Genua</taxonrn>
+<taxonrv>Halocynthia</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Halocynthia aurantium</taxonrv>
+<common>Sea peach, haa</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Phylum</taxonrn>
+<taxonrv>Annelida</taxonrv>
+<common>marine annelid worms; wor</common>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Polychaeta</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Echiuroidea</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Urechidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Urechis</taxonrv>
+<common>fat innkeeper worm; ecs</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+<taxoncl>
+<taxonrn>Phylum</taxonrn>
+<taxonrv>Sipuncula</taxonrv>
+<taxoncl>
+<taxonrn>Class</taxonrn>
+<taxonrv>Phascolosomatidea</taxonrv>
+<taxoncl>
+<taxonrn>Order</taxonrn>
+<taxonrv>Phascolosomatida</taxonrv>
+<taxoncl>
+<taxonrn>Family</taxonrn>
+<taxonrv>Phascolosomatidae</taxonrv>
+<taxoncl>
+<taxonrn>Genus</taxonrn>
+<taxonrv>Phascolosoma</taxonrv>
+<taxoncl>
+<taxonrn>Species</taxonrn>
+<taxonrv>Phascolosoma (Phascolosoma) agassizii</taxonrv>
+<common>peanut worm; pha</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxonomy>
+<accconst>None</accconst>
+<useconst>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government. Any person using the information here should fully understand the data collection procedures before beginning analyses. The burden for determining fitness of use lies entirely with the user. For purposes of publication of dissemination, citations or credit should be given to the authors and USGS. USGS grants to the public a non-exclusive, royalty-free license to use these data for non-commercial educational or scientific research purposes. Please let owner know when data are used and cite primary authors and database when using or publishing these data. This material is based upon work funded by the Exxon Valdez Oil Spill Trustee Council under Project/Program No. 12120114-R. Any opinions, findings, conclusions, or recommendations expressed herein are those of the author(s) and do not necessarily reflect the views or positions of the Trustee Council.</useconst>
+<ptcontac>
+<cntinfo>
+<cntperp>
+<cntper>Kim Kloecker</cntper>
+<cntorg>U.S. Geological Survey, ALASKA REGION</cntorg>
+</cntperp>
+<cntpos>Biologist</cntpos>
+<cntaddr>
+<addrtype>mailing address</addrtype>
+<address>4210 University Drive</address>
+<city>Anchorage</city>
+<state>AK</state>
+<postal>99508</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>907-786-7196</cntvoice>
+<cntfax>907-786-7150</cntfax>
+<cntemail>kkloecker@usgs.gov</cntemail>
+</cntinfo>
+</ptcontac>
+<native>The original data is stored as an Microsoft Access database in a Windows operating environment, but has been exported as a comma separated text file for dissemination.</native>
+</idinfo>
+<dataqual>
+<attracc>
+<attraccr>Focal otter foraging locations are estimated based on estimated distance and angle from observers and features marked on GPS base maps (e.g. emergent rocks, easily distinguished points on islands) and therefore should be considered accurate within 100 meters. Number of prey items per dive is more accurate for larger items (e.g. octopus compared to mussels). Size class of prey items is based on visual comparison of item to the width of the otter's paw (average in Alaska is 52 millimeters).</attraccr>
+</attracc>
+<logic>We carry out a lengthy quality assurance-quality control (QAQC) procedure for foraging data. Rows are checked against field data sheets for missing values, outliers, and inconsistencies. Prey codes are verified. Uniqueness of bout identifiers is verified. Observer and otter locations are plotted and checked for validity.</logic>
+<complete>Due to the observational nature of collecting foraging data, there will always be missing data. Some fields are not relevant to deriving meaning, e.g. observer, or can be assigned, e.g. unique bout identifier. Other fields are more critical to analyses and users must decide how to treat missing data before conducting analyses. This data set has been checked and in instances where missing data could be assigned, it was done so.</complete>
+<posacc>
+<horizpa>
+<horizpar>NA</horizpar>
+</horizpa>
+</posacc>
+<lineage>
+<method>
+<methtype>Field</methtype>
+<methodid>
+<methkt>None</methkt>
+<methkey>forage observations</methkey>
+</methodid>
+<methdesc>Experienced observers made detailed observations on tagged or untagged foraging sea otters from terrestrial vantage points throughout the study regions. Using 10x42 binoculars, Questar 50x80 spotting scopes and stopwatches, the observers followed single otters through successive dives, collectively referred to as a bout. They recorded the apparent sex and ageclass of the focal otter, the start and end time of observations, as well as dive times, surface intervals, foraging success and the type, number and size relative to the focal otter's paw width of prey captured. Handling time for prey consumption and portion lost, stolen, or given to a pup was also recorded.</methdesc>
+<methcite>
+<citeinfo>
+<origin>Bodkin, J.L.</origin>
+<pubdate>2011</pubdate>
+<title>SOP for collecting sea otter forage data - Version 3.1</title>
+<geoform>document</geoform>
+<othercit>Bodkin, J. L. 2011. SOP for collecting sea otter forage data - Version 3.1: Southwest Alaska Inventory and Monitoring Network. Natural Resource Report NPS/SWAN/NRR—2011/394. National Park Service, Fort Collins, Colorado.</othercit>
+<onlink>https://science.nature.nps.gov/im/units/swan/assets/docs/reports/protocols/nearshore/BodkinJ_2010_SWAN_SeaOtterForageSOP_2170929.pdf</onlink>
+<onlink>NPS SWAN (Southwest Alaska Network), Inventory & Monitoring, Marine Nearshore component, protocols, sea otter protocols, sea otter foraging</onlink>
+</citeinfo>
+</methcite>
+</method>
+<srcinfo>
+<srccite>
+<citeinfo>
+<origin>Unknown, many</origin>
+<pubdate>Unpublished material</pubdate>
+<title>GWA and SWAN sea otter foraging field data sheets</title>
+<geoform>document</geoform>
+</citeinfo>
+</srccite>
+<typesrc>paper</typesrc>
+<srctime>
+<timeinfo>
+<rngdates>
+<begdate>20150424</begdate>
+<enddate>20210826</enddate>
+</rngdates>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>raw field data sheets & field notebooks</srccitea>
+<srccontr>Original observations recorded by observer or recorder on field data sheets or field notebooks. Prior to electronic entry, unique forage bout identifiers were often added to the raw data sheets, often in permanent marker as opposed pencil which the data were recorded with.</srccontr>
+</srcinfo>
+<procstep>
+<procdesc>Observational data are collected by experienced field observers using 10x42 binoculars, high power spotting scopes, and stop watches. Raw data are recorded on field data sheets by the observer or a data recorder. Locations are obtained by moving the map panning arrow on the handheld GPS to the focal otter's location and recording the coordinates. Time of day is obtained from the GPS or observer's/recorder's watch. Dive times and surface times are obtained from the stop watch.</procdesc>
+<srcused>Bodkin, J. L. 2011. SOP for collecting sea otter forage data - Version 3.1: Southwest Alaska Inventory and Monitoring Network. Natural Resource Report NPS/SWAN/NRR—2011/394. National Park Service, Fort Collins, Colorado</srcused>
+<procdate>Unknown</procdate>
+</procstep>
+<procstep>
+<procdesc>Pre2014 field data were entered into Microsoft Excel spreadhseets. 2014 onwards raw field data entered into Microsoft Access data entry electronic form. Raw field data were entered into Microsoft Access database using a data entry form with built in validations. Access data were exported and the Excel data appended to create the csv described here.</procdesc>
+<srcused>Bodkin, J. L. 2011. SOP for collecting sea otter forage data - Version 3.1: Southwest Alaska Inventory and Monitoring Network. Natural Resource Report NPS/SWAN/NRR—2011/394. National Park Service, Fort Collins, Colorado.</srcused>
+<procdate>Unknown</procdate>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<indspref>Regions in this data set are described without coordinates, e.g. Katmai National Park and Preserve. Sites are described with site names and/or codes that have coordinates for location purposes. Site coordinates are not the same as focal otter coordinates. Focal otter locations are described either with location names, e.g. McCarty Lagoon, and/or coordinates. (see direct spatial reference method).</indspref>
+<direct>Point</direct>
+</spdoinfo>
+<spref>
+<horizsys>
+<geograph>
+<latres>0.00000001</latres>
+<longres>0.00000001</longres>
+<geogunit>Decimal degrees</geogunit>
+</geograph>
+<geodetic>
+<horizdn>World Geodetic System of 1984</horizdn>
+<ellips>World Geodetic System of 1984</ellips>
+<semiaxis>6378137</semiaxis>
+<denflat>298.25722210088</denflat>
+</geodetic>
+</horizsys>
+</spref>
+<eainfo>
+<detailed>
+<enttyp>
+<enttypl>NearshoreSystemsInGOA_SOP02_SeaOtterForageObservations_2010-2021.csv</enttypl>
+<enttypd>This is a combination of spreadsheet data and Microsoft Access data exported as a comma delimited file. Each record (row) represents one prey item or in the case of an unsuccessful dive, no prey items- retrieved by foraging sea otters. The unit of analyses is the unique bout which is comprised of one or more dives and each dive is comprised of one or more rows of prey retrieved. Each record also holds additional information about the focal otter, bout, dive, and/or prey item.</enttypd>
+<enttypds>producer defined</enttypds>
+</enttyp>
+<attr>
+<attrlabl>bout_id</attrlabl>
+<attrdef>Unique identifier of foraging bout. Unique identifier 1 is assigned to the first observed bout. The next foraging bout, whether the same otter or a different otter receives unique identifier 2, etc. Bout identifier changes every time there is a break in the dive sequence. Every bout within 1 electronic file needs to have a unique bout number. Observers should identify unique bouts on their field data sheets, then data entry should ensure unique bout number within file. In this data set various bout identification schemes have been used in the original spreadsheets and transferred to the compilation.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<udom>Bout identifiers are unique to each actual bout. Typically they are comprised of a concatenation of bout date; observer initials, and a sequential number for the observer for the day.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>study_cd</attrlabl>
+<attrdef>Sea otter foraging data is collected for a variety of studies. This field identifies which study each bout was collected under.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv>GWA</edomv>
+<edomvd>Gulf Watch Alaska long term monitoring program, nearshore component, funding from Exxon Valdez Oil Spill Trustee Council, U.S. Geological Survey, and National Park Service</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>KF1</edomv>
+<edomvd>Kenai Fjords Natural Resources Preservation Project study, funding from U.S. Geological Survey</edomvd>
+<edomvds>USGS Alaska Science Center sea otter and coastal ecosystem project Dean, T. A., and J. L. Bodkin. 2011. Protocol narrative for marine nearshore ecosystem monitoring in the Southwest Alaska Network of National Parks: Version 1.0. Natural Resource Report NPS/SWAN/NRR—2011/449. National Park Service, Fort Collins, Colorado.</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>PAC</edomv>
+<edomvd>Pacific Nearshore Study, funding from U.S. Geological Survey DOI on the Landscape program</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>bout_date</attrlabl>
+<attrdef>Date observations were made</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>20100612</rdommin>
+<rdommax>20210826</rdommax>
+<attrunit>date</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>start_time</attrlabl>
+<attrdef>Time of day (Alaska time) that observer began collecting foraging data for the recorded bout.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>05:30</rdommin>
+<rdommax>21:50</rdommax>
+<attrunit>hh:mm Military time</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>end_time</attrlabl>
+<attrdef>Time of day (Alaska time) that the observer finished collecting foraging data on focal otter.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>05:40</rdommin>
+<rdommax>22:09</rdommax>
+<attrunit>hh:mm Military time</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>obs_lat</attrlabl>
+<attrdef>latitude of the observer for the bout.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin> 58.0298</rdommin>
+<rdommax>60.954532</rdommax>
+<attrunit>decimal degrees</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>obs_long</attrlabl>
+<attrdef>longitude of the observer for the bout.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin> -154.5437</rdommin>
+<rdommax>-145.72238</rdommax>
+<attrunit>decimal degrees</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>otter_lat</attrlabl>
+<attrdef>Focal otter latitude for the bout, may be different for each dive (see dive_otter_lat) but often is one location for an entire bout.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>54.02552</rdommin>
+<rdommax>60.95178</rdommax>
+<attrunit>decimal degrees</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>otter_long</attrlabl>
+<attrdef>Focal otter longitude for the bout, may be different for each dive (see dive_otter_long) but often is one location for an entire bout.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>-154.54521</rdommin>
+<rdommax>-145.72099</rdommax>
+<attrunit>decimal degrees</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>otter_id</attrlabl>
+<attrdef>Unique identifier for an individual study otter. Usually a combination of SO (for sea otter), capture year, and a sequential number.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<udom>Tagged study otters will have unique identifiers . Examples include: SO-05-01, or Gold 4/5/Left</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>sex_cd</attrlabl>
+<attrdef>sex of focal otter</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv>u</edomv>
+<edomvd>unknown sex or not recorded</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>f</edomv>
+<edomvd>Female</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>m</edomv>
+<edomvd>Male</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>u</edomv>
+<edomvd>Unknown, undetermined</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>ageclass_cd</attrlabl>
+<attrdef>Field estimate of ageclass of focal otter</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv>u</edomv>
+<edomvd>unknown ageclass or not recorded</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>a</edomv>
+<edomvd>Adult, approximately 3-10 year old otter based on size, grizzle, behavior</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>o</edomv>
+<edomvd>Aged Adult, geriatric otter, approximately older than 10 years based on appearance.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>j</edomv>
+<edomvd>Juvenile focal otter, older than a weanling or pup, but not adult, approximately 1-3 based on appearance and behavior</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>s</edomv>
+<edomvd>Subadult, in this data set essentially the same as a juvenile</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>p</edomv>
+<edomvd>Pup, still dependent and with mother. This age designation is only used if the pup is the focal otter that feeding observations are being collected on. Approximately less than 8 months based on appearance and behavior.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>u</edomv>
+<edomvd>Unknown, undetermined</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>pupsize_cd</attrlabl>
+<attrdef>Does the focal otter have a pup and if so, what is the general size of the pup. This field in other foraging datasets has a null value or NA for male focal otters, but that is not the case in this data set.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data for pup size for male otters or females too young to bear pups. "u" is only used if the pup status of an adult female is unknown.</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>u</edomv>
+<edomvd>Unknown, undetermined, or not recorded</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>y</edomv>
+<edomvd>Yes, focal female does have a dependent pup but the age of the pup was not determined or recorded.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>n</edomv>
+<edomvd>No</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>l</edomv>
+<edomvd>Focal otter has a Large pup. Pup size based on visual appearance and behaviors</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>m</edomv>
+<edomvd>Focal otter has a Medium size pup. Pup size estimate based on visual appearance and behavior.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>s</edomv>
+<edomvd>Focal otter has a Small pup. Pup size estimate based on visual observations and behaviors.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>d</edomv>
+<edomvd>Focal otter has a dead pup.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>territorial_male_flg</attrlabl>
+<attrdef>Flag indicating if male focal otter is a territorial male or not. Not territorial also includes unknown territorial status. This is not easy to determine in unmarked otters, but can sometimes be deduced by the otter's behavior patterns, such as patrolling, dominance over other males, consorting with females, and checking on all the otters in the area.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>Female otters should not have a flag for territorial male status, so this field should be empty if the otter is a female or unknown sex otter.</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>0</edomv>
+<edomvd>Not a territorial male or unknown status</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>1</edomv>
+<edomvd>Territorial male</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>missing value, no entry</edomv>
+<edomvd>Female otters should not have a flag for territorial male status, so this field should be empty if the otter is a female or unknown sex otter.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>region_cd</attrlabl>
+<attrdef>Largest Spatial Designation for these analyses. The Gulf Watch Alaska Benthic Monitoring component has three regions where monitoring sites are located.</attrdef>
+<attrdefs>Dean, T. A., and J. L. Bodkin. 2011. Protocol narrative for marine nearshore ecosystem monitoring in the Southwest Alaska Network of National Parks: Version 1.0. Natural Resource Report NPS/SWAN/NRR—2011/449. National Park Service, Fort Collins, Colorado.</attrdefs>
+<attrdomv>
+<edom>
+<edomv>PWS</edomv>
+<edomvd>Prince William Sound</edomvd>
+<edomvds>producer defined Dean, T. A., and J. L. Bodkin. 2011. Protocol narrative for marine nearshore ecosystem monitoring in the Southwest Alaska Network of National Parks: Version 1.0. Natural Resource Report NPS/SWAN/NRR—2011/449. National Park Service, Fort Collins, Colorado.</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>AKP</edomv>
+<edomvd>Alaska Peninsula</edomvd>
+<edomvds>producer defined Dean, T. A., and J. L. Bodkin. 2011. Protocol narrative for marine nearshore ecosystem monitoring in the Southwest Alaska Network of National Parks: Version 1.0. Natural Resource Report NPS/SWAN/NRR—2011/449. National Park Service, Fort Collins, Colorado.</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>KEP</edomv>
+<edomvd>Kenai Peninsula</edomvd>
+<edomvds>producer defined Dean, T. A., and J. L. Bodkin. 2011. Protocol narrative for marine nearshore ecosystem monitoring in the Southwest Alaska Network of National Parks: Version 1.0. Natural Resource Report NPS/SWAN/NRR—2011/449. National Park Service, Fort Collins, Colorado.</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>area_cd</attrlabl>
+<attrdef>A smaller geographic designation than region</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv>KATM</edomv>
+<edomvd>Katmai National Park and Preserve</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>KEFJ</edomv>
+<edomvd>Kenai Fjords National Park</edomvd>
+<edomvds>USGS Alaska Science Center sea otter and coastal ecosystem project</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>WPWS</edomv>
+<edomvd>western Prince William Sound</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>EPWS</edomv>
+<edomvd>eastern Prince William Sound</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>NPWS</edomv>
+<edomvd>northern Prince William Sound</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>KBAY</edomv>
+<edomvd>Kachemak Bay</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>site_name</attrlabl>
+<attrdef>Smallest designated spatial scale in the Gulf Watch Alaska nearshore monitoring program. For sea otter foraging this represents an area within a 10 kilometer buffer around each rocky intertidal sampling site, more specific location of focal otter than the region or block. In sea otter foraging data sets the site_name field is a combination of site_ID and site_name used in other nearshore data sets. In the sea otter foraging data there is one spatial unit more localized than site, specific_location_txt. Since the protocol calls for this data to be analyzed at the Region level, we have not standardized specific_location_txt names. The Nearshore Monitoring Protocol uses the same site designations for other monitoring components that are used in this dataset.</attrdef>
+<attrdefs>producer defined and Dean, T. A., J. L. Bodkin, H.A. Coletti. 2014. Protocol narrative for marine nearshore ecosystem monitoring in the Gulf of Alaska: Version 1.1. Natural Resource Report NPS/SWAN/NRR— 2014/756. National Park Service, Fort Collins, Colorado.</attrdefs>
+<attrdomv>
+<edom>
+<edomv>Amalik Bay, AKP_B10_RI_04</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites on the Alaska Peninsula in Block 10 (KATM).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Kukak Bay, AKP_B10_RI_01</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites on the Alaska Peninsula in Block 10 (KATM).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Takli Island, AKP_B10_RI_05</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites on the Alaska Peninsula in Block 10 (KATM).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>KATM New Site, will need to be added to LU table</edomv>
+<edomvd>Designation used for site_name when the focal otter is on the Alaska Peninsula in Block 10 (KATM) but not within a designated site buffer. LU table refers to look-up table in the database.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Aialik Bay, KEP_B05_RI_01</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites on the Kenai Peninsula in Block 05 (KEFJ).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>McCarty Fjord, KEP_B05_RI_02</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites on the Kenai Peninsula in Block 05 (KEFJ).</edomvd>
+<edomvds>USGS Alaska Science Center</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Nuka Bay, KEP_B05_RI_03</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites on the Kenai Peninsula in Block 05 (KEFJ).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Nuka Passage, KEP_B05_RI_04</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites on the Kenai Peninsula in Block 05 (KEFJ).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Harris Bay, KEP_B05_RI_05</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites on the Kenai Peninsula in Block 05 (KEFJ).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>KEFJ New Site, will need to be added to LU table</edomv>
+<edomvd>Designation used for site_name when the focal otter is on the Kenai Peninsula in Block 05 (KEFJ) but not within a designated site buffer.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Iktua Bay, PWS_B08_RI_02</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites in western Prince William Sound (Block 08 WPWS).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Whale Bay, PWS_B08_RI_03</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites in western Prince William Sound (Block 08 WPWS).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Johnson Bay, PWS_B08_RI_04</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites in western Prince William Sound (Block 08 WPWS).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Herring Bay, PWS_B08_RI_05</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites in western Prince William Sound (Block 08 WPWS).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>WPWS New Site, will need to be added to LU table</edomv>
+<edomvd>Designation used for site_name when the focal otter is in the Prince William Sound region, western Block 08 (WPWS) but not within a designated site buffer.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Bettles Bay, PWS_B07_RE_03</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites in northern Prince William Sound (Block 07 NPWS).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Galena</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites in eastern Prince William Sound (Block 09 EPWS).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Olsen Island, PWS_B09_RE_03</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites in eastern Prince William Sound (Block 09 EPWS).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Simpson Bay, PWS_B09_RE_04</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites in northern Prince William Sound (Block 09 EPWS).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Observation Island, PWS_B09_RE_05</edomv>
+<edomvd>One of 5 rocky intertidal sampling sites in eastern Prince William Sound (Block 09 EPWS).</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Bishop's, KEP_B04_RE_01</edomv>
+<edomvd>One of 6 rocky intertidal sampling sites inKachemak Bay (Block 04 KBAY).</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Cohen, KEP_B04_RE_03</edomv>
+<edomvd>One of 6 rocky intertidal sampling sites in Kachemak Bay (Block 04 KBAY).</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Outside, KEP_B04_RE_04</edomv>
+<edomvd>One of 6 rocky intertidal sampling sites in Kachemak Bay (Block 04 KBAY).</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Port Graham, KEP_B04_RE_05</edomv>
+<edomvd>One of 6 rocky intertidal sampling sites in Kachemak Bay (Block 04 KBAY).</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Elephant, KEP_B04_RE_06</edomv>
+<edomvd>One of 6 rocky intertidal sampling sites in Kachemak Bay (Block 04 KBAY).</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Peterson, including China Poot vicinity</edomv>
+<edomvd>One of the soft sediment sampling sites in Kachemak Bay (Block 04 KBAY).</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>Bear, in vicinity of GWA soft site</edomv>
+<edomvd>One of the soft sediment sampling sites in Kachemak Bay (Block 04 KBAY).</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>specific_location_txt</attrlabl>
+<attrdef>The smallest spatial scale foraging data is defined at. This is a text field rather than a defined field so observers can be more descriptive.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<udom>The list of specific locations is quite long and will vary by observer. Some are really descriptive and some are more general. It is recommended to use lat longs or region/area for grouping in analyses rather than this field.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>visibility_cd</attrlabl>
+<attrdef>Code for visibility, in this data a term for the observer's confidence in their observations. The term is a subjective, bout specific, assessment of items that affect an observer's ability to collect foraging data: distance of focal otter, elevation of observer, precipitation, surf/surge/chop, is the otter surfacing in kelp or amongst wash rocks, light level and quality, and any other conditions that are impacting the data collection effort.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv>un</edomv>
+<edomvd>unknown or unrecorded visibility</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>ex</edomv>
+<edomvd>excellent</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>vg</edomv>
+<edomvd>very good</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>go</edomv>
+<edomvd>good</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>fa</edomv>
+<edomvd>fair</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>po</edomv>
+<edomvd>poor</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>un</edomv>
+<edomvd>unknown, or not recorded</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>bout_comment_txt</attrlabl>
+<attrdef>Text field containing comments about the foraging bout</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<udom>Many notes are made here but most common are reasons for ending a bout, information about the focal otter or location</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>dive_otter_lat</attrlabl>
+<attrdef>focal otter latitude for the dive, may be different for each dive but often is one location for an entire bout (see otter_lat).</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>58.05479</rdommin>
+<rdommax>60.40598</rdommax>
+<attrunit>decimal degrees</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>dive_otter_long</attrlabl>
+<attrdef>focal otter longitude for the dive, may be different for each dive but often is one location for an entire bout (see otter_long).</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>-154.52237</rdommin>
+<rdommax>-147.63837</rdommax>
+<attrunit>decimal degrees</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>dive_num</attrlabl>
+<attrdef>Sequential integer number assigned to each dive within a bout. Each bout begins with its own dive number 1. The protocol calls for recording 20 dives within each bout but often the bout ends early because the focal otter leaves, finishes feeding or is interrupted by another animal. Occasionally bouts will have more than 20 dives but it is unclear why the observer chose to continue beyond twenty dives.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>1</rdommin>
+<rdommax>41</rdommax>
+<attrunit>each dive</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>dive_time</attrlabl>
+<attrdef>Time in seconds spent by focal otter searching for or retrieving prey, underwater or off emergent rocks or in kelp canopy. Dive_time is recorded even if no prey is retrieved.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>1</rdommin>
+<rdommax>660</rdommax>
+<attrunit>seconds</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>surface_time</attrlabl>
+<attrdef>Surface time, time in seconds that focal otter spends on surface, including time spent handling prey, consuming prey, grooming, interacting with other non-focal otters, moving locations, etc. Surface times in excess of 600 seconds, if not directly associated with feeding, generate the end of the bout.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>2</rdommin>
+<rdommax>2948</rdommax>
+<attrunit>seconds</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>success_cd</attrlabl>
+<attrdef>Did the focal otter successfully retrieve prey on its dive. In other foraging data sets this is called dive outcome.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv>u</edomv>
+<edomvd>unknown, or unrecorded</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>u</edomv>
+<edomvd>Unknown, undetermined</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>y</edomv>
+<edomvd>Yes</edomvd>
+<edomvds>USGS Alaska Science Center sea otter and coastal ecosystem project</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>n</edomv>
+<edomvd>No</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>c</edomv>
+<edomvd>carryover, a prey item that was dropped or partially consumed was re-retrieved.</edomvd>
+<edomvds>USGS Alaska Science Center sea otter and coastal ecosystem project</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>t</edomv>
+<edomvd>travel, observer decides dive was a travel dive not a foraging dive.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>x</edomv>
+<edomvd>Non-feeding dive, observer decides dive was not a feeding dive. This often occurs when a focal otter is interrupted by another otter.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>dive_comment_txt</attrlabl>
+<attrdef>Any comments the observer feels are relevant to the specific dive. There are other comment fields for the bout and individual prey items.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<udom>Notes are too varied to reproduce in list form.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>preytype_cd</attrlabl>
+<attrdef>3 letter code for prey item retrieved on successful or carry over dives.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>Empty cell for all dives that are not foraging dives (travel, unknown, evasive). All foraging dives should have a prey code, including "uni" for unidentified prey.</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<codesetd>
+<codesetn>Sea otter prey codes</codesetn>
+<codesets>See taxonomy section of this metadata record. preytype_cd "alg" "oth" and "uni" are not in the taxonomy section. "alg" refers to prey that an otter is eating off of a piece of algae. "oth" refers to "other" prey not yet in the database. "uni" refers to prey the observer was unable to identify.</codesets>
+</codesetd>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>prey_qty</attrlabl>
+<attrdef>Number of each prey item retrieved</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data- whether for a non-foraging dive, unsuccessful foraging dive, or unrecorded data for prey quantity.</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>1</rdommin>
+<rdommax>106</rdommax>
+<attrunit>each prey item</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>preysize_cdXXXXFIXFIXFIX</attrlabl>
+<attrdef>Estimated size, relative to otter paw width, of each prey item. Analysis steps translate the size code to actual millimeters based on paw measurements of captured otters.</attrdef>
+<attrdefs>Bodkin, J. L. 2011. SOP for collecting sea otter forage data - Version 3.1: Southwest Alaska Inventory and Monitoring Network. Natural Resource Report NPS/SWAN/NRR—2011/394. National Park Service, Fort Collins, Colorado.</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data for non-foraging or unsuccessful dives</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>1a</edomv>
+<edomvd>Prey smaller than one-third of the paw width of the focal otter</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>1b</edomv>
+<edomvd>Prey larger than one-third paw width but smaller than the larger third of the paw</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>1c</edomv>
+<edomvd>Prey larger than two-thirds of the paw width of the focal otter but still smaller than one full paw width.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>2a</edomv>
+<edomvd>Prey smaller than one and one-third of the paw width of the focal otter.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>2b</edomv>
+<edomvd>Prey larger than one and one-third paw width but smaller than the larger one and a third of the paw width.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>2c</edomv>
+<edomvd>Prey larger than one and two-thirds of the paw width of the focal otter but still smaller than two full paw widths.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>3a</edomv>
+<edomvd>Prey smaller than two and one-third of the paw width of the focal otter.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>3b</edomv>
+<edomvd>Prey larger than two and one-third paw width but smaller than the larger two and a third of the paw width.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>3c</edomv>
+<edomvd>Prey larger than two and two-thirds of the paw width of the focal otter but still smaller than three full paw widths.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>4z</edomv>
+<edomvd>Prey larger than three paw widths of the focal otter; observer should try to estimate prey size in centimeters if possible.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>9z</edomv>
+<edomvd>unknown prey size</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>1z</edomv>
+<edomvd>Prey is smaller than 1 paw width but observer could not distinguish further. Also used for data from older studies when a, b, c categories were not in use.</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>2z</edomv>
+<edomvd>Prey is smaller than21 paw widths but observer could not distinguish further. Also used for data from older studies when a, b, c categories were not in use.</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>3z</edomv>
+<edomvd>Prey is smaller than 3 paw widths but observer could not distinguish further. Also used for data from older studies when a, b, c categories were not in use.</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>prey_size_cm</attrlabl>
+<attrdef>For large prey items, observers may choose to estimate the overall largest size in centimeters of the item. Prey_size_cd should be blank if pre_size_cm is used.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>12</rdommin>
+<rdommax>130</rdommax>
+<attrunit>centimeter</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>not_eaten_pct</attrlabl>
+<attrdef>Proportion of prey not consumed by the focal otter</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>0.0</rdommin>
+<rdommax>1.0</rdommax>
+<attrunit>decimal fraction</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>not_eaten_reason_cd</attrlabl>
+<attrdef>If Prop_Lost is greater than zero, then a description of why the prey wasn't consumed by the focal otter goes here.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>p</edomv>
+<edomvd>to pup, prey not consumed by the focal otter was given to or taken by the focal otter's pup</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>s</edomv>
+<edomvd>stolen, the prey not consumed by the focal otter was stolen by another otter that is not the pup of the focal otter</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>d</edomv>
+<edomvd>dropped, prey not consumed by the focal otter that is dropped rather than stolen or given away</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>c</edomv>
+<edomvd>carryover; the otter retrieved this item on the previous dive and is simply retrieving it again.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<edom>
+<edomv>u</edomv>
+<edomvd>Unknown reason why an otter did not fully consume a prey item.</edomvd>
+<edomvds>producer defined</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>handling_time</attrlabl>
+<attrdef>Handling time, the amount of time in seconds that the focal otter uses to manipulate and consume each prey item. Usually equal to surface time unless the otter spends more than 10 seconds grooming or engaging in activity other than prey handling and consumption. Here, HT is set to a blank cell unless the observer records a specific HT on the field data sheet.</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<rdom>
+<rdommin>3</rdommin>
+<rdommax>855</rdommax>
+<attrunit>seconds</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>prey_comment_txt</attrlabl>
+<attrdef>observer comments about a specific prey item</attrdef>
+<attrdefs>producer defined</attrdefs>
+<attrdomv>
+<edom>
+<edomv><< empty cell >></edomv>
+<edomvd>No Data</edomvd>
+<edomvds>Producer defined</edomvds>
+</edom>
+</attrdomv>
+<attrdomv>
+<udom>Notes are too varied to reproduce in list form.</udom>
+</attrdomv>
+</attr>
+</detailed>
+<overview>
+<eaover>Sea otter foraging observations have been used in multiple studies for a variety of reasons. We present the GWA Benthic monitoring SOP for reference here. The data in this dataset may be comparable to other foraging data collected under different SOPs because they have core metrics in common. Discuss options with the authors of such data sets before proceeding. This dataset consists of observations made of foraging sea otters in Alaska. Observers used Questar field spotting scopes and binoculars to identify prey. Location is noted to the scale of region, sometimes site, and sometimes with coordinates. Date, local time, dive duration, success, prey type, prey size, prey number, handling time and surface time are all recorded. Sites include Kachemak Bay, Katmai National Park, Kenai Fjords, and Prince William Sound. The time interval includes 2012-2021.</eaover>
+<eadetcit>U.S. Geological Survey Alaska Science Center sea otter and coastal ecosystem project Dean, T. A., and J. L. Bodkin. 2011. Protocol narrative for marine nearshore ecosystem monitoring in the Southwest Alaska Network of National Parks: Version 1.0. Natural Resource Report NPS/SWAN/NRR—2011/449. National Park Service, Fort Collins, Colorado. Bodkin, J. L. 2011. SOP for collecting sea otter forage data - Version 3.1: Southwest Alaska Inventory and Monitoring Network. Natural Resource Report NPS/SWAN/NRR—2011/394. National Park Service, Fort Collins, Colorado.</eadetcit>
+</overview>
+</eainfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntorgp>
+<cntorg>U.S. Geological Survey, Alaska Science Center</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>4210 University Drive</address>
+<city>Anchorage</city>
+<state>Alaska</state>
+<postal>99508</postal>
+</cntaddr>
+<cntvoice>907-786-7000</cntvoice>
+<cntemail>ascweb@usgs.gov</cntemail>
+</cntinfo>
+</distrib>
+<resdesc>GWA sea otter foraging data 2012-2016, comma separated values tabular data file.</resdesc>
+<distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. This material is based upon work funded by the Exxon Valdez Oil Spill Trustee Council under Project/Program No. 12120114-R. Any opinions, findings, conclusions, or recommendations expressed herein are those of the author(s) and do not necessarily reflect the views or positions of the Trustee Council.</distliab>
+<stdorder>
+<digform>
+<digtinfo>
+<formname>CSV</formname>
+<formvern>None</formvern>
+<filedec>No compression applied.</filedec>
+<transize>2.5</transize>
+</digtinfo>
+<digtopt>
+<onlinopt>
+<computer>
+<networka>
+<networkr>http://dx.doi.org/10.5066/F7N29V4R-xxx</networkr>
+</networka>
+</computer>
+</onlinopt>
+</digtopt>
+</digform>
+<fees>None</fees>
+</stdorder>
+</distinfo>
+<metainfo>
+<metd>20211130</metd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>U.S. Geological Survey Alaska Science Center</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>4210 University Drive</address>
+<city>Anchorage</city>
+<state>Alaska</state>
+<postal>99508</postal>
+</cntaddr>
+<cntvoice>907-786-7000</cntvoice>
+<cntemail>ascweb@usgs.gov</cntemail>
+</cntinfo>
+</metc>
+<metstdn>FGDC Biological Data Profile of the Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001.1-1999</metstdv>
+</metainfo>
+</metadata>

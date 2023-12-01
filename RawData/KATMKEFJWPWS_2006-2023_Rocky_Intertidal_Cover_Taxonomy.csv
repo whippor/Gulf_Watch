@@ -1,0 +1,100 @@
+Kingdom,Phylum,Class,Order,Family,Genus,Species,Sampling_ScientificName,Type,Taxon_Authority,Taxon_AuthorityID
+Plantae,Chlorophyta,Ulvophyceae,Acrosiphoniales,Acrosiphoniaceae,Acrosiphonia,Acrosiphonia spp.,.,green algae,AlgaeBase,33576
+Plantae,Rhodophyta,Florideophyceae,Ahnfeltiales,Ahnfeltiaceae,Ahnfeltia,Ahnfeltia fastigiata,.,red algae,AlgaeBase,4428
+Chromista,Ochrophyta,Phaeophyceae,Laminariales,Alariaceae,Alaria,Alaria marginata,.,brown algae,AlgaeBase,3649
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Ralfsiaceae,Analipus,Analipus japonicus,.,brown algae,AlgaeBase,3874
+Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,Anthopleura artemisia,.,anemone,ITIS,52554
+Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,Anthopleura elegantissima,.,anemone,ITIS,52552
+Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Anthopleura,Anthopleura xanthogrammica,.,anemone,ITIS,52553
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Ceramiaceae,Antithamnionella,Antithamnionella pacifica,.,red algae,AlgaeBase,12796
+Animalia,Anthropoda,Maxillopoda,Sessilia,Balanidae,Balanus,Balanus glandula,.,crustacean,ITIS,89609
+Animalia,Anthropoda,Maxillopoda,Sessilia,Balanidae,Balanus,Balanus spp.,.,crustacean,ITIS,89600
+Plantae,Chlorophyta,Ulvophyceae,Ulvales,Kornmanniaceae,Blidingia,Blidingia minima var. minima,.,green algae,ITIS,6505
+Plantae,Rhodophyta,Bangiophyceae,Bangiales,Bangiaceae,Boreophyllum,Boreophyllum spp.,.,red algae,AlgaeBase,51256
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Callithamniaceae,Callithamnion,Callithamnion pikeanum,.,red algae,AlgaeBase,4922
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Ceramiaceae,Ceramium,Ceramium pacificum,.,red algae,AlgaeBase,4935
+Plantae,Chlorophyta,Ulvophyceae,Cladophorales,Cladophoraceae,Chaetomorpha,Chaetomorpha melagonium,.,green algae,AlgaeBase,42
+Plantae,Chlorophyta,Ulvophyceae,Cladophorales,Cladophoraceae,Chaetomorpha,Chaetomorpha spp.,.,green algae,AlgaeBase,35
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Chordariaceae,Chordaria,Chordaria flagelliformis,.,brown algae,AlgaeBase,51
+Animalia,Anthropoda,Maxillopoda,Sessilia,Chthamalidae,Chthamalus,Chthamalus dalli,.,crustacean,ITIS,89592
+Plantae,Chlorophyta,Ulvophyceae,Cladophorales,Cladophoraceae,Cladophora,Cladophora spp.,.,green algae,AlgaeBase,37
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Chordariaceae,Coilodesme,Coilodesme bulligera,.,brown algae,AlgaeBase,839
+Plantae,Rhodophyta,Florideophyceae,Gigartinales,Dumontiaceae,Constantinea,Constantinea subulifera,.,red algae,AlgaeBase,4330
+Plantae,Rhodophyta,Florideophyceae,Corallinales,Corallinoideae,Corallina,Corallina spp.,.,red algae,AlgaeBase,93
+Chromista,Ochrophyta,Phaeophyceae,Laminariales,Agaraceae,Costaria,Costaria costata,.,brown algae,AlgaeBase,4005
+Animalia,Mollusca,Polyplacophora,Chitonida,Acanthochitonidae,Cryptochiton,Cryptochiton stelleri,.,chiton,ITIS,79032
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Delesseriaceae,Cryptopleura,Cryptopleura ruprechtiana,.,red algae,AlgaeBase,4948
+Plantae,Rhodophyta,Florideophyceae,Gigartinales,Dumontiaceae,Cryptosiphonia,Cryptosiphonia woodii,.,red algae,AlgaeBase,4950
+Chromista,Ochrophyta,Phaeophyceae,Desmarestiales,Desmarestiaceae,Desmarestia,Desmarestia aculeata,.,brown algae,AlgaeBase,65
+Plantae,Rhodophyta,Florideophyceae,Palmariales,Palmariaceae,Devalerea,Devalerea spp.,.,red algae,AlgaeBase,32942
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Chordariaceae,Dictyosiphon,Dictyosiphon foeniculaceus,.,brown algae,AlgaeBase,73
+Plantae,Rhodophyta,Florideophyceae,Gigartinales,Dumontiaceae,Dumontia,Dumontia alaskana,.,red algae,AlgaeBase,25108
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Ectocarpaceae,Ectocarpus,Ectocarpus spp.,.,brown algae,AlgaeBase,32853
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Chordariaceae,Elachista,Elachista fucicola,.,brown algae,AlgaeBase,49
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Chordariaceae,Elachista,Elachista spp.,.,brown algae,AlgaeBase,42
+Plantae,Rhodophyta,Florideophyceae,Gigartinales,Endocladiaceae,Endocladia,Endocladia muricata,.,red algae,AlgaeBase,4954
+Animalia,Cnidaria,Anthozoa,Actiniaria,Actiniidae,Epiactis,Epiactis spp.,.,anemone,ITIS,52562
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Chordariaceae,Eudesme,Eudesme virescens,.,brown algae,AlgaeBase,52
+Animalia,Bryozoa,Gymnolaemata,Cheilostomata,Eurystomellidae,Eurystomella,Eurystomella bilabiata,.,bryozoan,ITIS,156416
+Chromista,Ochrophyta,Phaeophyceae,Fucales,Fucaceae,Fucus ,Fucus distichus,.,brown algae,AlgaeBase,352
+Plantae,Rhodophyta,Florideophyceae,Gigartinales,Endocladiaceae,Gloiopeltis,Gloiopeltis furcata,.,red algae,AlgaeBase,4341
+Plantae,Rhodophyta,Florideophyceae,Gracilariales,Gracilariaceae,Gracilaria,Gracilaria pacifica,.,red algae,AlgaeBase,4965
+Plantae,Rhodophyta,Florideophyceae,Palmariales,Palmariaceae,Halosaccion,Halosaccion glandiforme,.,red algae,AlgaeBase,4969
+Animalia,Mollusca,Bivalvia,Myoida,Hiatelloidea,Hiatella,Hiatella arctica,.,mollusk,ITIS,81765
+Plantae,Rhodophyta,Florideophyceae,Hildenbrandiales,Hildenbrandiaceae,Hildenbrandia,Hildenbrandia spp.,.,red algae,AlgaeBase,22
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Chordariaceae,Leathesia,Leathesia marina,.,brown algae,AlgaeBase,12461
+Plantae,Rhodophyta,Florideophyceae,Gigartinales,Phyllophoraceae,Mastocarpus,Mastocarpus spp.,.,red algae,AlgaeBase,20
+Plantae,Rhodophyta,Florideophyceae,Gigartinales,Gigartinaceae,Mazzaella,Mazzaella parksii,.,red algae,AlgaeBase,60696
+Plantae,Rhodophyta,Florideophyceae,Gigartinales,Gigartinaceae,Mazzaella,Mazzaella phyllocarpa,.,red algae,AlgaeBase,12717
+Plantae,Rhodophyta,Florideophyceae,Gigartinales,Gigartinaceae,Mazzaella,Mazzaella spp.,.,red algae,AlgaeBase,35003
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Scytosiphonaceae,Melanosiphon,Melanosiphon intestinalis,.,brown algae,AlgaeBase,852
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Scytosiphonaceae,Melanosiphon,Melanosiphon spp.,.,brown algae,AlgaeBase,33369
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Delesseriaceae,Membranoptera,Membranoptera spinulosa,.,red algae,AlgaeBase,4747
+Animalia,Cnidaria,Anthozoa,Actiniaria,Metridiidae,Metridium,Metridium senile,.,anemone,ITIS,52737
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Ceramiaceae,Microcladia,Microcladia borealis,.,red algae,AlgaeBase,5006
+Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Modiolus,Modiolus modiolus,.,mollusk,ITIS,79501
+Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Musculus,Musculus spp.,.,mollusk,ITIS,79472
+Animalia,Mollusca,Bivalvia,Myoida,Myidae,Mya,Mya truncata,.,mollusk,ITIS,81694
+Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,Mytilus trossulus,.,mollusk,ITIS,567928
+Plantae,Rhodophyta,Florideophyceae,Nemaliales,Nemaliaceae,Nemalion,Nemalion elminthoides,.,red algae,AlgaeBase,28
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Wrangeliaceae,Neoptilota,Neoptilota asplenioides,.,red algae,AlgaeBase,4678
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Rhodomelaceae,Neorhodomela,Neorhodomela larix,.,red algae,AlgaeBase,5012
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Rhodomelaceae,Neorhodomela,Neorhodomela oregona,.,red algae,AlgaeBase,4816
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Rhodomelaceae,Neorhodomela,Neorhodomela spp.,.,red algae,AlgaeBase,36938
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Rhodomelaceae,Odonthalia,Odonthalia floccosa,.,red algae,AlgaeBase,5017
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Rhodomelaceae,Odonthalia,Odonthalia spp.,.,red algae,AlgaeBase,32792
+Plantae,Rhodophyta,Florideophyceae,Palmariales,Palmariaceae,Palmaria,Palmaria callophylloides,.,red algae,AlgaeBase,17538
+Plantae,Rhodophyta,Florideophyceae,Palmariales,Palmariaceae,Palmaria,Palmaria hecatensis,.,red algae,AlgaeBase,5021
+Plantae,Rhodophyta,Florideophyceae,Palmariales,Palmariaceae,Palmaria,Palmaria mollis,.,red algae,AlgaeBase,5022
+Plantae,Rhodophyta,Florideophyceae,Palmariales,Palmariaceae,Palmaria,Palmaria spp.,.,red algae,AlgaeBase,37291
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Scytosiphonaceae,Petalonia,Petalonia fascia,.,brown algae,AlgaeBase,75
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Delesseriaceae,Phycodrys,Phycodrys fimbriata,.,red algae,AlgaeBase,4755
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Delesseriaceae,Phycodrys,Phycodrys spp.,.,red algae,AlgaeBase,32780
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Wrangeliaceae,Pleonosporium,Pleonosporium vancouverianum,.,red algae,AlgaeBase,5275
+Plantae,Rhodophyta,Florideophyceae,Plocamiales,Plocamiaceae,Plocamium,Plocamium pacificum,.,red algae,AlgaeBase,15740
+Animalia,Mollusca,Bivalvia,Ostreoida,Anomiidae,Pododesmus,Pododesmus macrochisma,.,mollusk,ITIS,79792
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Rhodomelaceae,Polyostea,Polyostea spp.,.,red algae,AlgaeBase,42654
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Rhodomelaceae,Polysiphonia,Polysiphonia spp.,.,red algae,AlgaeBase,37461
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Rhodomelaceae,Pterosiphonia ,Pterosiphonia bipinnata,.,red algae,AlgaeBase,4851
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Rhodomelaceae,Pterosiphonia,Pterosiphonia spp.,.,red algae,AlgaeBase,33076
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Wrangeliaceae,Ptilota,Ptilota spp.,.,red algae,AlgaeBase,32773
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Acinetosporaceae,Pylaiella,Pylaiella littoralis,.,brown algae,AlgaeBase,47
+Plantae,Rhodophyta,Bangiophyceae,Bangiales,Bangiaceae,Pyropia,Pyropia spp.,.,red algae,AlgaeBase,50308
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Ralfsiaceae,Ralfsia,Ralfsia fungiformis,.,brown algae,AlgaeBase,994
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Ralfsiaceae,Ralfsia,Ralfsia spp.,.,brown algae,AlgaeBase,32903
+Plantae,Rhodophyta,Florideophyceae,Acrochaetiales,Rhodochortonaceae,Rhodochorton,Rhodochorton purpureum,.,red algae,AlgaeBase,7
+Chromista,Ochrophyta,Phaeophyceae,Laminariales,Laminariaceae,Saccharina,Saccharina latissima,.,brown algae,AlgaeBase,129132
+Chromista,Ochrophyta,Phaeophyceae,Laminariales,Laminariaceae,Saccharina,Saccharina sessilis,.,brown algae,AlgaeBase,73746
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Scytosiphonaceae,Scytosiphon,Scytosiphon lomentaria,.,brown algae,AlgaeBase,76
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Scytosiphonaceae,Scytosiphon,Scytosiphon spp.,.,brown algae,AlgaeBase,66
+Animalia,Arthropoda,Maxillopoda,Sessilia,Archaeobalanidae,Semibalanus,Semibalanus balanoides,.,crustacean,ITIS,89687
+Animalia,Arthropoda,Maxillopoda,Sessilia,Archaeobalanidae,Semibalanus,Semibalanus cariosus,.,crustacean,ITIS,89688
+Animalia,Anthropoda,Maxillopoda,Sessilia,Archaeobalanidae,Semibalanus,Semibalanus spp.,.,crustacean,ITIS,89686
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Chordariaceae,Soranthera,Soranthera ulvoidea,.,brown algae,AlgaeBase,4899
+Chromista,Ochrophyta,Phaeophyceae,Ectocarpales,Chordariaceae,Spirorbidae,Spirorbidae spp.,.,brown algae,AlgaeBase,4899
+Animalia,Bryozoa,Gymnolaemata,Cheilostomata,Stomachetosella,Stomachetosella,Stomachetosella cruenta,.,bryozoan,ITIS,156276
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Delesseriaceae,Tokidadendron,Tokidadendron bullatum,.,red algae,AlgaeBase,12830
+Plantae,Rhodophyta,Florideophyceae,Ceramiales,Delesseriaceae,Tokidadendron,Tokidadendron spp.,.,red algae,AlgaeBase,41993
+Plantae,Chlorophyta,Ulvophyceae,Ulotrichales,Ulotrichaceae,Ulothrix,Ulothrix flacca,.,green algae,AlgaeBase,208
+Plantae,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Ulva spp.,.,green algae,ITIS,6559
+Plantae,Rhodophyta,Bangiophyceae,Bangiales,Bangiaceae,Wildemania,Wildemania spp.,.,red algae,AlgaeBase,43339
