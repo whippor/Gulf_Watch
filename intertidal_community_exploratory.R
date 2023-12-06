@@ -52,6 +52,7 @@ library(tidyverse)
 library(viridis)
 library(lubridate)
 library(GGally)
+library(worrms)
 
 ## Gives count, mean, standard deviation, standard error of the mean, and confidence interval (default 95%).
 ##   data: a data frame.
@@ -184,6 +185,8 @@ A1 <- KATMKEFJWPWS_cover %>%
 allCover <- A1 %>%
   bind_rows(K1)
 
+rm(A1, K1)
+
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # MANIPULATE DATA                                                              ####
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -198,7 +201,9 @@ overlap <- intersect(KKW_cats, KBY_cats)
 # dataframe of all species/categories
 a <- KKW_cats
 length(a) <- 115
-b <- KBY_cats
+a <- tibble(a)
+colnames(a) <- "KKW_cats"
+b <- tibble(KBY_cats)
 
 dat1_2 <- a %>%
   mutate(ID1 = KKW_cats) %>%
@@ -216,12 +221,74 @@ all_species <- full_join(dat1_2, dat2_2, by = c("ID1", "ID2")) %>%
   select(-starts_with("ID")) %>%
   arrange(KBY_cats)
 
-rm(a)
-rm(b)
+rm(a,b,dat1_2,dat2_2)
 
 
+# check all names in WORMS database and join taxonomy
+
+sp_list <- c(KKW_cats, KBY_cats)
+sp_list <- unique(sp_list)
+
+TaxWorms <- wm_records_names(name = c(sp_list))
+TaxWormsTib <- data.table::rbindlist(TaxWorms)
+
+# find unaccepted names in the dataset and replace
+unaccepted <- TaxWormsTib %>%
+  filter(status == "unaccepted")
+
+allCover_update <- allCover %>%
+  mutate(newSp = case_when(Species == "Corallina frondescens" ~ "Bossiella frondescens",
+                           Species == "Pachyarthron cretaceum" ~ "Corallina officinalis",
+                           Species == "Colpomenia bullosa" ~ "Dactylosiphon bullosus",
+                           Species == "Saccharina sessilis" ~ "Hedophyllum sessile",
+                           Species == "Eurystomella bilabiata" ~ "Integripelta bilabiata",
+                           Species == "Pododesmus macroschisma" ~ "Pododesmus macrochisma",
+                           Species == "Neoptilota asplenioides" ~ "Ptilota asplenioides",
+                           Species == "Saccharina subsimplex" ~ "Saccharina latissima",
+                           Species == "Polyostea bipinnata" ~ "Savoiea bipinnata",
+                           Species == "Pterosiphonia bipinnata" ~ "Savoiea bipinnata",
+                           Species == "Scagelia occidentale" ~ "Scagelia americana",
+                           Species == "Stomachetosella cruenta" ~ "Stomacrustula cruenta",
+                           Species == "Polysiphonia\xa0sp." ~ "Polysiphonia sp.",
+                           TRUE ~ Species), .keep = "unused") %>%
+  mutate(Species = newSp, .before = Percent_Cover, .keep = "unused")
+
+# final table with correct taxonomy
+TaxWorms_final <- wm_records_names(name = c(unique(allCover_update$Species)))
+TaxWormsTib_final <- data.table::rbindlist(TaxWorms_final)
+
+tax_join <- TaxWormsTib_final %>%
+  select(valid_name, valid_AphiaID, kingdom:genus) %>%
+  mutate(Species = valid_name, .before = valid_AphiaID) %>%
+  distinct(.keep_all = TRUE) %>%
+  filter(valid_AphiaID != 325747)
 
 
+# proper taxonomy now included for all valid identifications
+allCover_tax <- allCover_update %>%
+  left_join(tax_join, by = "Species") %>%
+  select(-valid_name) %>%
+  mutate(PercentCover = Percent_Cover, .after = "genus", .keep = "unused") %>%
+  mutate(Percent_Cover = PercentCover, .after = "genus", .keep = "unused") 
+
+rm(allCover_update, tax_join, unaccepted, TaxWormsTib, TaxWorms, TaxWorms_final)
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# VISUALIZATIONS                                                               ####
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+# how has fucus cover changed through time across all sites?
+allCover_tax %>%
+  filter(Species == "Fucus distichus") %>%
+  mutate(yr = year(SampleDate)) %>%
+  group_by(yr, SiteName, Block_Name) %>%
+  summarise(PC = mean(Percent_Cover, na.rm = TRUE)) %>%
+  ggplot(aes(x = yr, y = PC, color = Block_Name)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  theme_bw() +
+  labs(y = "Percent Cover", x = "Date")
 
 
 
