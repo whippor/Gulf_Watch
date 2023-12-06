@@ -1,0 +1,45 @@
+Kingdom,Phylum,Class,Order,Family,Genus,Species,Valid_Name,Current_SpeciesCode,Type,Taxon_Authority,Taxon_AuthorityID
+Animalia,Mollusca,Bivalvia,Myoida,Hiatellidae,Hiatella,Hiatella arctica,,HIA,clam,ITIS,81765
+Animalia,Mollusca,Bivalvia,Myoida,Hiatellidae,Panomya,Panomya ampla,,.,clam,ITIS,81774
+Animalia,Mollusca,Bivalvia,Myoida,Myidae,Mya,Mya arenaria,,MYA,clam,ITIS,81692
+Animalia,Mollusca,Bivalvia,Myoida,Myidae,Mya,Mya pseudoarenaria,,.,clam,ITIS,81693
+Animalia,Mollusca,Bivalvia,Myoida,Myidae,Mya,Mya truncata,,MYT,clam,ITIS,81694
+Animalia,Mollusca,Bivalvia,Myoida,Myidae,Mya,.,.,MYS,clam,ITIS,81691
+Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Modiolus,Modiolus modiolus,,.,mussel,ITIS,79501
+Animalia,Mollusca,Bivalvia,Mytiloida,Mytilidae,Mytilus,Mytilus trossulus,,.,mussel,ITIS,567928
+Animalia,Mollusca,Bivalvia,Nuculoida,Nuculidae,Ennucula,Ennucula tenuis,,.,clam,ITIS,567536
+Animalia,Mollusca,Bivalvia,Nuculoida,Yoldiidae,Yoldia,.,.,CLA,clam,ITIS,79258
+Animalia,Mollusca,Bivalvia,Ostreoida,Anomiidae,Pododesmus,Pododesmus macrochisma,,.,clam,ITIS,79792
+Animalia,Mollusca,Bivalvia,Pholadomyoida,Lyonsiidae,Entodesma,Entodesma navicula,,.,clam,ITIS,567538
+Animalia,Mollusca,Bivalvia,Veneroida,Astartidae,Astarte,Astarte montagui,Venus montagui,.,clam,ITIS,80837
+Animalia,Mollusca,Bivalvia,Veneroida,Cardiidae,Clinocardium,Clinocardium nuttallii,,CLN,clam,ITIS,80873
+Animalia,Mollusca,Bivalvia,Veneroida,Cardiidae,Clinocardium,.,.,CLA,clam,ITIS,80866
+Animalia,Mollusca,Bivalvia,Veneroida,Cardiidae,Serripes,Serripes groenlandicus,,.,clam,ITIS,80879
+Animalia,Mollusca,Bivalvia,Veneroida,Lasaeidae,Kellia,Kellia suborbicularis,,.,clam,ITIS,80624
+Animalia,Mollusca,Bivalvia,Veneroida,Lasaeidae,Neaeromya,Neaeromya compressa,Pseudopythina compressa,NEC,clam,ITIS,80635
+Animalia,Mollusca,Bivalvia,Veneroida,Lasaeidae,Neaeromya,Neaeromya rugifera,Orobitella rugifera,.,clam,ITIS,80636
+Animalia,Mollusca,Bivalvia,Veneroida,Lasaeidae,Rochefortia,Rochefortia tumida,Kurtiella tumida,.,clam,ITIS,568258
+Animalia,Mollusca,Bivalvia,Veneroida,Lucinidae,Lucinoma,Lucinoma annulatum,,.,clam,ITIS,80398
+Animalia,Mollusca,Bivalvia,Veneroida,Lucinidae,Parvilucina,Parvilucina tenuisculpta,,.,clam,ITIS,80387
+Animalia,Mollusca,Bivalvia,Veneroida,Mactridae,Mactromeris,Mactromeris polynyma,,.,clam,ITIS,80983
+Animalia,Mollusca,Bivalvia,Veneroida,Mactridae,Tresus,Tresus capax,,.,clam,ITIS,80955
+Animalia,Mollusca,Bivalvia,Veneroida,Mactridae,.,.,.,CLA,clam,ITIS,80942
+Animalia,Mollusca,Bivalvia,Veneroida,Pharidae,Siliqua,Siliqua patula,,SIP,clam,ITIS,81008
+Animalia,Mollusca,Bivalvia,Veneroida,Psammobiidae,Gari,Gari californica,,.,clam,ITIS,81261
+Animalia,Mollusca,Bivalvia,Veneroida,Psammobiidae,Nuttallia,Nuttallia obscurata,,.,clam,ITIS,567987
+Animalia,Mollusca,Bivalvia,Veneroida,Tellinidae,Macoma,Macoma balthica,,MAB,clam,ITIS,567846
+Animalia,Mollusca,Bivalvia,Veneroida,Tellinidae,Macoma,Macoma calcarea,,MAC,clam,ITIS,81035
+Animalia,Mollusca,Bivalvia,Veneroida,Tellinidae,Macoma,Macoma inquinata,,MAI,clam,ITIS,81051
+Animalia,Mollusca,Bivalvia,Veneroida,Tellinidae,Macoma,Macoma nasuta,,.,clam,ITIS,81050
+Animalia,Mollusca,Bivalvia,Veneroida,Tellinidae,Macoma,Macoma obliqua,,.,clam,ITIS,81040
+Animalia,Mollusca,Bivalvia,Veneroida,Tellinidae,Macoma,.,.,MAS,clam,ITIS,81033
+Animalia,Mollusca,Bivalvia,Veneroida,Tellinidae,Tellina,Tellina bodegensis,Megangulus bodegensis,.,clam,ITIS,81149
+Animalia,Mollusca,Bivalvia,Veneroida,Tellinidae,Tellina,Tellina modesta,Ameritella modesta,.,clam,ITIS,81086
+Animalia,Mollusca,Bivalvia,Veneroida,Tellinidae,Tellina,.,.,CLA,clam,ITIS,81074
+Animalia,Mollusca,Bivalvia,Veneroida,Thyasiridae,Axinopsida,Axinopsida serricata,Cryptodon serricatus,.,clam,ITIS,80500
+Animalia,Mollusca,Bivalvia,Veneroida,Turtoniidae,Turtonia,Turtonia minuta,,.,clam,ITIS,80711
+Animalia,Mollusca,Bivalvia,Veneroida,Ungulinidae,Diplodonta,Diplodonta impolita,Zemysina impolita,.,clam,ITIS,80588
+Animalia,Mollusca,Bivalvia,Veneroida,Ungulinidae,Diplodonta,.,.,DIS,clam,ITIS,80570
+Animalia,Mollusca,Bivalvia,Veneroida,Veneridae,Humilaria,Humilaria kennerleyi,,.,clam,ITIS,81462
+Animalia,Mollusca,Bivalvia,Veneroida,Veneridae,Leukoma,Leukoma staminea,,PRS,clam,WoRMS,507737
+Animalia,Mollusca,Bivalvia,Veneroida,Veneridae,Saxidomus,Saxidomus gigantea,,SAG,clam,ITIS,568268

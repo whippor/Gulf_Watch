@@ -1,10 +1,10 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #                                                                                ##
-# Gulfwatch Seagrass data exploration                                            ##
+# Gulfwatch intertidal community exploration                                     ##
 # Script created 2023-12-01                                                      ##
 # Data source: Alaska Gulf Watch                                                 ##
 # R code prepared by Ross Whippo                                                 ##
-# Last updated 2023-12-01                                                        ##
+# Last updated 2023-12-05                                                        ##
 #                                                                                ##
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -23,6 +23,11 @@
 # NONE
 
 # TO DO 
+
+# -join KBAY and other site datasets by harmonizing categories
+# -import intertidal temperature anomalies (air and water) and summarise
+# per site
+# -PCA/PERMANOVA/nMDS of communities as they relate to air and water temp anoms
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # TABLE OF CONTENTS                                                            ####
@@ -98,12 +103,86 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
 # READ IN AND PREPARE DATA                                                     ####
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-KATMKEFJWPWS_cover <- read_csv("RawData/KATMKEFJWPWS_2006-2023_Rocky_Intertidal_Percent_Cover.csv", 
-            col_types = cols(SampleDate = col_date(format = "%Y-%M-%D")))
+# calculated percent cover of sessile organisms
+KATMKEFJWPWS_cover <- read_csv("RawData/IntertidalCover/KATMKEFJWPWS_2006-2023_Rocky_Intertidal_Percent_Cover.csv")
 
-KBAY_cover <- read_csv("RawData/KBAY2012-2023_Rocky_Intertidal_Percent_Cover.csv", 
+# raw data, percent cover of sessile organisms
+KBAY_cover <- read_csv("RawData/IntertidalCover/KBAY2012-2023_Rocky_Intertidal_Percent_Cover.csv", 
                        col_types = cols(Date = col_date(format = "%m/%d/%Y"), 
                                         Replicate = col_character(), `Quadrat(m2)` = col_character()))
+
+# raw data, all layers of point contact counts
+# KATMKEFJWPWS_rawcover <- read_csv("RawData/KATMKEFJWPWS_2006-2023_Rocky_Intertidal_Cover.csv", 
+#                               col_types = cols(SampleDate = col_date(format = "%Y-%M-%d")))
+
+# join datasets together
+
+# simplify KBAY and standardize names
+K1 <- KBAY_cover %>% 
+  select(SiteName = Site, 
+         SampleDate = Date, 
+         Year, 
+         Quadrat_Num = Replicate, 
+         Elevation_Position_raw = Stratum, 
+         Species = ScientificName_accepted, 
+         overstory = `%overstory`, 
+         understory = `%understory`) %>%
+  mutate(Percent_Cover_raw = understory + overstory, .keep = "unused") %>%
+  mutate(Percent_Cover = case_when(Percent_Cover_raw > 100 ~ 100,
+                                   TRUE ~ Percent_Cover_raw),
+         .keep = "unused") %>%
+  mutate(Block_Name = "KBAY", .before = SiteName) %>%
+  mutate(Elevation_Position = case_when(Elevation_Position_raw == "High" ~ "Upper",
+                                        Elevation_Position_raw == "Mid" ~ "Mid",
+                                        Elevation_Position_raw == "Low" ~ "Low",
+                                        Elevation_Position_raw == "-1 m" ~ "Sub",
+                                        Elevation_Position_raw == "-1" ~ "Sub"),
+         .keep = "unused", .before = Species) %>%
+  mutate(Quadrat_Num = as.numeric(Quadrat_Num))
+
+# add blocks to KATM dataset
+A1 <- KATMKEFJWPWS_cover %>%
+  mutate(Block_Name = case_when(SiteName == "Observation Island" ~ "EPWS",
+                                SiteName == "Simpson Bay" ~ "EPWS",
+                                SiteName == "Olsen  Bay" ~ "EPWS",
+                                SiteName == "Port Fidalgo" ~ "EPWS",
+                                SiteName == "Galena Bay" ~ "EPWS",
+                                SiteName == "Northwest Bay" ~ "WPWS",
+                                SiteName == "Disk Island" ~ "WPWS",
+                                SiteName == "Herring Bay (Bear Cove)" ~ "WPWS",
+                                SiteName == "Herring Bay" ~ "WPWS",
+                                SiteName == "Johnson Bay" ~ "WPWS",
+                                SiteName == "Whale Bay" ~ "WPWS",
+                                SiteName == "Iktua Bay" ~ "WPWS",
+                                SiteName == "Hogan Bay" ~ "WPWS",
+                                SiteName == "Unakwik Inlet" ~ "NPWS",
+                                SiteName == "Perry Island" ~ "NPWS",
+                                SiteName == "Bettles Bay" ~ "NPWS",
+                                SiteName == "Esther Passage" ~ "NPWS",
+                                SiteName == "Cedar Bay" ~ "NPWS",
+                                SiteName == "Harris Bay" ~ "KEFJ",
+                                SiteName == "Nuka Passage" ~ "KEFJ",
+                                SiteName == "Nuka Bay" ~ "KEFJ",
+                                SiteName == "McCarty Fjord" ~ "KEFJ",
+                                SiteName == "Aialik Bay" ~ "KEFJ",
+                                SiteName == "Ninagiak Island" ~ "KATM",
+                                SiteName == "Takli Island" ~ "KATM",
+                                SiteName == "Amalik Bay" ~ "KATM",
+                                SiteName == "Kinak Bay" ~ "KATM",
+                                SiteName == "Kaflia Bay" ~ "KATM",
+                                SiteName == "Kukak Bay" ~ "KATM"),
+         .before = SiteName) %>%
+  mutate(SiteName = case_when(SiteName == "Olsen  Bay" ~ "Olsen Bay",
+                              TRUE ~ SiteName),
+         .keep = "unused", .before = SampleDate) %>%
+  select(-SiteID) %>%
+  mutate(Elevation_Position = case_when(Elevation_Position == "Mid (0.5 m MLLW)" ~ "Mid",
+                                        Elevation_Position == "Upper (1.5 m MLLW)" ~ "Upper"))
+
+
+# join datasets together
+allCover <- A1 %>%
+  bind_rows(K1)
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # MANIPULATE DATA                                                              ####
@@ -115,6 +194,46 @@ KBY_cats <- unique(KBAY_cover$`Original field ID`)
 
 # how many overlap?
 overlap <- intersect(KKW_cats, KBY_cats)
+
+# dataframe of all species/categories
+a <- KKW_cats
+length(a) <- 115
+b <- KBY_cats
+
+dat1_2 <- a %>%
+  mutate(ID1 = KKW_cats) %>%
+  group_by(KKW_cats) %>%
+  mutate(ID2 = row_number()) %>%
+  ungroup()
+
+dat2_2 <- b %>% 
+  mutate(ID1 = KBY_cats) %>%
+  group_by(KBY_cats) %>%
+  mutate(ID2 = row_number()) %>%
+  ungroup()
+
+all_species <- full_join(dat1_2, dat2_2, by = c("ID1", "ID2")) %>%
+  select(-starts_with("ID")) %>%
+  arrange(KBY_cats)
+
+rm(a)
+rm(b)
+
+
+
+
+
+
+
+
+
+  
+# plot overlap only KAT
+KATMKEFJWPWS_cover %>%
+  filter(Species %in% overlap) %>%
+  ggplot(aes(x = Species)) +
+  geom_bar() +
+  facet_wrap(.~SiteName)
 
 
 ############### SUBSECTION HERE

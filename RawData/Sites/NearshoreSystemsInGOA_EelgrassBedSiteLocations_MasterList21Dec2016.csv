@@ -1,0 +1,106 @@
+Region,Block_Number,Block_Name,Site_ID,Site_Name,Latitude,Longitude,Site_Type,Point_Location
+AKP,10,KATM,AKP_B10_EI_04,Amalik or Amalik Bay,58.082087,-154.535146,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_04,Amalik or Amalik Bay,58.08309,-154.534046,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_04,Amalik or Amalik Bay,58.081977,-154.533744,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_04,Amalik or Amalik Bay,58.083045,-154.533058,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_05,Takli or Takli Island,58.065787,-154.481884,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_05,Takli or Takli Island,58.065741,-154.481361,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_05,Takli or Takli Island,58.063197,-154.480873,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_05,Takli or Takli Island,58.063171,-154.479851,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_03,Kinak or Kinak Bay,58.158101,-154.44208,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_03,Kinak or Kinak Bay,58.159406,-154.441134,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_03,Kinak or Kinak Bay,58.158119,-154.440895,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_03,Kinak or Kinak Bay,58.15929,-154.440258,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_02,Kaflia or Kaflia Bay,58.262935,-154.210828,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_02,Kaflia or Kaflia Bay,58.263701,-154.210689,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_02,Kaflia or Kaflia Bay,58.262818,-154.208808,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_02,Kaflia or Kaflia Bay,58.263529,-154.208472,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_01,Kukak or Kukak Bay,58.302911,-154.195102,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_01,Kukak or Kukak Bay,58.304258,-154.194332,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_01,Kukak or Kukak Bay,58.302751,-154.193774,eelgrass,corner
+AKP,10,KATM,AKP_B10_EI_01,Kukak or Kukak Bay,58.303667,-154.192286,eelgrass,corner
+KEP,04,KBAY,KEP_B04_EE_01,Herring Island,59.464517,-151.709,eelgrass,center
+KEP,04,KBAY,KEP_B04_EE_03,Jakalof or Jakalof Bay,59.449,-151.499,eelgrass,center
+KEP,04,KBAY,KEP_B04_EE_04,Homer Spit - original,59.648533,-151.4365,eelgrass,center
+KEP,04,KBAY,KEP_B04_EE_02,Peterson Bay,59.582083,-151.264,eelgrass,center
+KEP,04,KBAY,KEP_B04_EE_05,Homer Spit - drone,59.7257,-151.141,eelgrass,center
+KEP,05,KEFJ,KEP_B05_EI_04,Nuka Pass or Nuka Passage,59.390686,-150.691392,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_04,Nuka Pass or Nuka Passage,59.391625,-150.690727,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_04,Nuka Pass or Nuka Passage,59.390309,-150.689214,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_04,Nuka Pass or Nuka Passage,59.391287,-150.687336,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_03,Nuka Bay or Nuka Bay,59.51949,-150.524626,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_03,Nuka Bay or Nuka Bay,59.520237,-150.523654,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_03,Nuka Bay or Nuka Bay,59.518573,-150.522455,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_03,Nuka Bay or Nuka Bay,59.519213,-150.520919,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_02,McCarty or McCarty Fjord,59.568622,-150.404334,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_02,McCarty or McCarty Fjord,59.57001,-150.40348,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_02,McCarty or McCarty Fjord,59.568433,-150.403231,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_02,McCarty or McCarty Fjord,59.56966,-150.402212,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_05,Harris or Harris Bay,59.722657,-149.949109,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_05,Harris or Harris Bay,59.722148,-149.948418,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_05,Harris or Harris Bay,59.723273,-149.946796,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_05,Harris or Harris Bay,59.722827,-149.945773,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_01,Aialik or Aialik Bay,59.89867,-149.644718,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_01,Aialik or Aialik Bay,59.899147,-149.643943,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_01,Aialik or Aialik Bay,59.89831,-149.642669,eelgrass,corner
+KEP,05,KEFJ,KEP_B05_EI_01,Aialik or Aialik Bay,59.898643,-149.641799,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_03,Bettles or Bettles Bay,60.949479,-148.317125,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_03,Bettles or Bettles Bay,60.949006,-148.315554,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_03,Bettles or Bettles Bay,60.951005,-148.315513,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_03,Bettles or Bettles Bay,60.950242,-148.314679,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_03,Whale or Whale Bay,60.206097,-148.290634,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_03,Whale or Whale Bay,60.20512,-148.290527,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_03,Whale or Whale Bay,60.20512,-148.290192,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_03,Whale or Whale Bay,60.20607,-148.289825,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_02,Esther or Esther Passage,60.933352,-148.036502,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_02,Esther or Esther Passage,60.934343,-148.035943,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_02,Esther or Esther Passage,60.933017,-148.035091,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_02,Esther or Esther Passage,60.934058,-148.034392,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_02,Iktua or Iktua Bay,60.105492,-147.999649,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_02,Iktua or Iktua Bay,60.106251,-147.9991,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_02,Iktua or Iktua Bay,60.105427,-147.995682,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_02,Iktua or Iktua Bay,60.105892,-147.99535,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_04,Perry or Perry Island,60.689781,-147.912623,eelgrass,corner
+PWS,07,NPWS,PWS_B07_EE_04,Perry or Perry Island,60.69066,-147.911386,eelgrass,corner
+PWS,07,NPWS,PWS_B07_EE_04,Perry or Perry Island,60.689605,-147.91129,eelgrass,corner
+PWS,07,NPWS,PWS_B07_EE_04,Perry or Perry Island,60.689872,-147.910831,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_04,Johnson or Johnson Bay,60.342731,-147.809891,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_04,Johnson or Johnson Bay,60.342262,-147.809723,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_04,Johnson or Johnson Bay,60.341839,-147.808167,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_04,Johnson or Johnson Bay,60.342529,-147.807648,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_05,Herring or Herring Bay,60.444897,-147.785461,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_05,Herring or Herring Bay,60.443837,-147.785267,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_05,Herring or Herring Bay,60.444939,-147.783905,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_05,Herring or Herring Bay,60.444042,-147.782959,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_01,Hogan or Hogan Bay,60.205402,-147.763855,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_01,Hogan or Hogan Bay,60.206753,-147.763657,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_01,Hogan or Hogan Bay,60.206894,-147.76271,eelgrass,corner
+PWS,08,WPWS,PWS_B08_EI_01,Hogan or Hogan Bay,60.205467,-147.762253,eelgrass,corner
+PWS,07,NPWS,PWS_B07_EE_05,Unakwik or Unakwik Inlet,60.95313,-147.611997,eelgrass,corner
+PWS,07,NPWS,PWS_B07_EE_05,Unakwik or Unakwik Inlet,60.954427,-147.610717,eelgrass,corner
+PWS,07,NPWS,PWS_B07_EE_05,Unakwik or Unakwik Inlet,60.952889,-147.610648,eelgrass,corner
+PWS,07,NPWS,PWS_B07_EE_05,Unakwik or Unakwik Inlet,60.954157,-147.60935,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_01,Cedar or Cedar Bay,60.974974,-147.4024,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_01,Cedar or Cedar Bay,60.975355,-147.40234,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_01,Cedar or Cedar Bay,60.974948,-147.399908,eelgrass,corner
+KEP,07,NPWS,PWS_B07_EE_01,Cedar or Cedar Bay,60.975337,-147.399667,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_01,Galena or Galena Bay,60.952701,-146.639448,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_01,Galena or Galena Bay,60.952028,-146.638543,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_01,Galena or Galena Bay,60.953459,-146.636895,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_01,Galena or Galena Bay,60.953004,-146.635277,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_02,Fidalgo or Port Fidalgo,60.854051,-146.272834,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_02,Fidalgo or Port Fidalgo,60.85547,-146.271134,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_02,Fidalgo or Port Fidalgo,60.853026,-146.270694,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_02,Fidalgo or Port Fidalgo,60.854852,-146.269667,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_03,Olsen or Olsen Bay,60.731214,-146.189815,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_03,Olsen or Olsen Bay,60.732106,-146.189619,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_03,Olsen or Olsen Bay,60.730958,-146.188715,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_03,Olsen or Olsen Bay,60.731816,-146.188376,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_04,Simpson or Simpson Bay,60.681623,-145.878824,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_04,Simpson or Simpson Bay,60.681359,-145.878265,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_04,Simpson or Simpson Bay,60.682279,-145.877302,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_04,Simpson or Simpson Bay,60.682117,-145.876938,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_05,Observation or Observation Island,60.601642,-145.733728,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_05,Observation or Observation Island,60.602186,-145.732587,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_05,Observation or Observation Island,60.601114,-145.732051,eelgrass,corner
+PWS,09,EPWS,PWS_B09_EE_05,Observation or Observation Island,60.601586,-145.73138,eelgrass,corner

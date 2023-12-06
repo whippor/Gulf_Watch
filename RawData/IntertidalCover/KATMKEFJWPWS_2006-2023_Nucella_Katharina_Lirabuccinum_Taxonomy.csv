@@ -1,0 +1,5 @@
+Kingdom,Phylum,Class,Order,Family,Genus,Species,Sampling_ScientificName,Type,Taxon_Authority,Taxon_AuthorityID
+Animalia,Mollusca,Polyplacophora,Chitonida,Mopaliidae,Katharina,Katharina tunicata,.,chiton,ITIS,78979
+Animalia,Mollusca,Gastropoda,Neogastropoda,Buccinidae,Lirabuccinum,Lirabuccinum dirum,Searlesia dira,mollusk,ITIS,567784
+Animalia,Mollusca,Gastropoda,Patellogastropoda,Lottiidae,Lottia,Lottia spp.,.,mollusk,ITIS,69731
+Animalia,Mollusca,Gastropoda,Neogastropoda,Muricidae,Nucella,Nucella spp.,.,mollusk,ITIS,73292

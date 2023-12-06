@@ -1,0 +1,415 @@
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gfc="http://www.isotc211.org/2005/gfc" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/gmd/gmd.xsd">
+<gmd:fileIdentifier gco:nilReason="missing"/>
+<gmd:language>
+<gco:CharacterString>eng;USA</gco:CharacterString>
+</gmd:language>
+<gmd:characterSet>
+<gmd:MD_CharacterSetCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="UTF-8">UTF-8</gmd:MD_CharacterSetCode>
+</gmd:characterSet>
+<gmd:hierarchyLevel>
+<gmd:MD_ScopeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+</gmd:hierarchyLevel>
+<gmd:contact gco:nilReason="missing"/>
+<gmd:dateStamp gco:nilReason="unknown">
+<gco:Date xsi:nil="true"/>
+</gmd:dateStamp>
+<gmd:metadataStandardName>
+<gco:CharacterString>ISO 19115</gco:CharacterString>
+</gmd:metadataStandardName>
+<gmd:dataSetURI gco:nilReason="unknown"/>
+<gmd:identificationInfo>
+<gmd:MD_DataIdentification>
+<gmd:citation>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>Stable carbon and nitrogen isotope data of nearshore producers and consumers in four regions of the Gulf of Alaska</gco:CharacterString>
+</gmd:title>
+<gmd:date gco:nilReason="missing"/>
+<gmd:citedResponsibleParty>
+<gmd:CI_ResponsibleParty>
+<gmd:individualName>
+<gco:CharacterString>Katrin Iken</gco:CharacterString>
+</gmd:individualName>
+<gmd:organisationName>
+<gco:CharacterString>University of Alaska Fairbanks, College of Fisheries and Ocean Sciences</gco:CharacterString>
+</gmd:organisationName>
+<gmd:positionName>
+<gco:CharacterString>Professor</gco:CharacterString>
+</gmd:positionName>
+<gmd:contactInfo>
+<gmd:CI_Contact>
+<gmd:phone>
+<gmd:CI_Telephone>
+<gmd:voice>
+<gco:CharacterString>(907) 474-5192</gco:CharacterString>
+</gmd:voice>
+</gmd:CI_Telephone>
+</gmd:phone>
+<gmd:address>
+<gmd:CI_Address>
+<gmd:deliveryPoint>
+<gco:CharacterString>University of Alaska Fairbanks</gco:CharacterString>
+</gmd:deliveryPoint>
+<gmd:deliveryPoint>
+<gco:CharacterString>245 O'Neill Bldg, School of Fisheries and Ocean Sciences</gco:CharacterString>
+</gmd:deliveryPoint>
+<gmd:city>
+<gco:CharacterString>Fairbanks</gco:CharacterString>
+</gmd:city>
+<gmd:administrativeArea>
+<gco:CharacterString>AK</gco:CharacterString>
+</gmd:administrativeArea>
+<gmd:postalCode>
+<gco:CharacterString>99775</gco:CharacterString>
+</gmd:postalCode>
+<gmd:country>
+<gco:CharacterString>US</gco:CharacterString>
+</gmd:country>
+<gmd:electronicMailAddress>
+<gco:CharacterString>kbiken@alaska.edu</gco:CharacterString>
+</gmd:electronicMailAddress>
+</gmd:CI_Address>
+</gmd:address>
+</gmd:CI_Contact>
+</gmd:contactInfo>
+<gmd:role>
+<gmd:CI_RoleCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="missing"/>
+</gmd:role>
+</gmd:CI_ResponsibleParty>
+</gmd:citedResponsibleParty>
+<gmd:presentationForm>
+<gmd:CI_PresentationFormCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="tableDigital">tableDigital</gmd:CI_PresentationFormCode>
+</gmd:presentationForm>
+</gmd:CI_Citation>
+</gmd:citation>
+<gmd:abstract>
+<gco:CharacterString>This dataset contains stable carbon and nitrogen isotope data from various marine consumers (suspended particulate organic matter, various macroalgal species) and consumers (mostly mussels [Mytilus trossulus] and also Black rockfish and Kelp greenling for some years) in four regions of the Gulf of Alaska (Western Primce William Sound, Kenai Fjords National Park, Kachemak Bay, Katmai National Park and Preserve). Data availability and extent differs by region.</gco:CharacterString>
+</gmd:abstract>
+<gmd:purpose>
+<gco:CharacterString>The underlying purpose of this dataset is to discern primary producer sources (phytoplankton versus macroalgae) in nearshore consumers over time.</gco:CharacterString>
+</gmd:purpose>
+<gmd:status>
+<gmd:MD_ProgressCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="onGoing">onGoing</gmd:MD_ProgressCode>
+</gmd:status>
+<gmd:pointOfContact>
+<gmd:CI_ResponsibleParty>
+<gmd:individualName>
+<gco:CharacterString>Katrin Iken</gco:CharacterString>
+</gmd:individualName>
+<gmd:organisationName>
+<gco:CharacterString>University of Alaska Fairbanks, College of Fisheries and Ocean Sciences</gco:CharacterString>
+</gmd:organisationName>
+<gmd:positionName>
+<gco:CharacterString>Professor</gco:CharacterString>
+</gmd:positionName>
+<gmd:contactInfo>
+<gmd:CI_Contact>
+<gmd:phone>
+<gmd:CI_Telephone>
+<gmd:voice>
+<gco:CharacterString>(907) 474-5192</gco:CharacterString>
+</gmd:voice>
+</gmd:CI_Telephone>
+</gmd:phone>
+<gmd:address>
+<gmd:CI_Address>
+<gmd:deliveryPoint>
+<gco:CharacterString>University of Alaska Fairbanks</gco:CharacterString>
+</gmd:deliveryPoint>
+<gmd:deliveryPoint>
+<gco:CharacterString>245 O'Neill Bldg, School of Fisheries and Ocean Sciences</gco:CharacterString>
+</gmd:deliveryPoint>
+<gmd:city>
+<gco:CharacterString>Fairbanks</gco:CharacterString>
+</gmd:city>
+<gmd:administrativeArea>
+<gco:CharacterString>AK</gco:CharacterString>
+</gmd:administrativeArea>
+<gmd:postalCode>
+<gco:CharacterString>99775</gco:CharacterString>
+</gmd:postalCode>
+<gmd:country>
+<gco:CharacterString>US</gco:CharacterString>
+</gmd:country>
+<gmd:electronicMailAddress>
+<gco:CharacterString>kbiken@alaska.edu</gco:CharacterString>
+</gmd:electronicMailAddress>
+</gmd:CI_Address>
+</gmd:address>
+</gmd:CI_Contact>
+</gmd:contactInfo>
+<gmd:role>
+<gmd:CI_RoleCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="missing"/>
+</gmd:role>
+</gmd:CI_ResponsibleParty>
+</gmd:pointOfContact>
+<gmd:resourceMaintenance>
+<gmd:MD_MaintenanceInformation>
+<gmd:maintenanceAndUpdateFrequency>
+<gmd:MD_MaintenanceFrequencyCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="annually">annually</gmd:MD_MaintenanceFrequencyCode>
+</gmd:maintenanceAndUpdateFrequency>
+<gmd:contact>
+<gmd:CI_ResponsibleParty>
+<gmd:individualName>
+<gco:CharacterString>Katrin Iken</gco:CharacterString>
+</gmd:individualName>
+<gmd:organisationName>
+<gco:CharacterString>University of Alaska Fairbanks, College of Fisheries and Ocean Sciences</gco:CharacterString>
+</gmd:organisationName>
+<gmd:positionName>
+<gco:CharacterString>Professor</gco:CharacterString>
+</gmd:positionName>
+<gmd:contactInfo>
+<gmd:CI_Contact>
+<gmd:phone>
+<gmd:CI_Telephone>
+<gmd:voice>
+<gco:CharacterString>(907) 474-5192</gco:CharacterString>
+</gmd:voice>
+</gmd:CI_Telephone>
+</gmd:phone>
+<gmd:address>
+<gmd:CI_Address>
+<gmd:deliveryPoint>
+<gco:CharacterString>University of Alaska Fairbanks</gco:CharacterString>
+</gmd:deliveryPoint>
+<gmd:deliveryPoint>
+<gco:CharacterString>245 O'Neill Bldg, School of Fisheries and Ocean Sciences</gco:CharacterString>
+</gmd:deliveryPoint>
+<gmd:city>
+<gco:CharacterString>Fairbanks</gco:CharacterString>
+</gmd:city>
+<gmd:administrativeArea>
+<gco:CharacterString>AK</gco:CharacterString>
+</gmd:administrativeArea>
+<gmd:postalCode>
+<gco:CharacterString>99775</gco:CharacterString>
+</gmd:postalCode>
+<gmd:country>
+<gco:CharacterString>US</gco:CharacterString>
+</gmd:country>
+<gmd:electronicMailAddress>
+<gco:CharacterString>kbiken@alaska.edu</gco:CharacterString>
+</gmd:electronicMailAddress>
+</gmd:CI_Address>
+</gmd:address>
+</gmd:CI_Contact>
+</gmd:contactInfo>
+<gmd:role>
+<gmd:CI_RoleCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="principalInvestigator">principalInvestigator</gmd:CI_RoleCode>
+</gmd:role>
+</gmd:CI_ResponsibleParty>
+</gmd:contact>
+</gmd:MD_MaintenanceInformation>
+</gmd:resourceMaintenance>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>OCEAN > PACIFIC OCEAN > NORTH PACIFIC OCEAN > GULF OF ALASKA</gco:CharacterString>
+</gmd:keyword>
+<gmd:type>
+<gmd:MD_KeywordTypeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place">place</gmd:MD_KeywordTypeCode>
+</gmd:type>
+<gmd:thesaurusName>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>GCMD Locations Keywords version 8.4.1</gco:CharacterString>
+</gmd:title>
+<gmd:date gco:nilReason="unknown"/>
+</gmd:CI_Citation>
+</gmd:thesaurusName>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>Palmaria</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Odonthalia floccosa</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Acrosiphonia</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Ulva lactuca</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Sebastes melanops</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>black rockfish</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Hexagrammos decagrammus</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>kelp greenling</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Laminaria saccharina</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Fucus distichus var. distichus</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>Mytilus trossulus</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>foolish mussel</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword gco:nilReason="missing"/>
+<gmd:keyword gco:nilReason="missing"/>
+<gmd:keyword gco:nilReason="missing"/>
+<gmd:keyword gco:nilReason="missing"/>
+<gmd:keyword gco:nilReason="missing"/>
+<gmd:keyword gco:nilReason="missing"/>
+<gmd:thesaurusName>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>ITIS</gco:CharacterString>
+</gmd:title>
+<gmd:date gco:nilReason="template"/>
+</gmd:CI_Citation>
+</gmd:thesaurusName>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>annually since 2014</gco:CharacterString>
+</gmd:keyword>
+<gmd:type>
+<gmd:MD_KeywordTypeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="temporal">temporal</gmd:MD_KeywordTypeCode>
+</gmd:type>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:descriptiveKeywords>
+<gmd:MD_Keywords>
+<gmd:keyword>
+<gco:CharacterString>EARTH SCIENCE > BIOSPHERE > ECOSYSTEMS > MARINE ECOSYSTEMS > COASTAL</gco:CharacterString>
+</gmd:keyword>
+<gmd:keyword>
+<gco:CharacterString>EARTH SCIENCE > BIOSPHERE > ECOLOGICAL DYNAMICS > ECOSYSTEM FUNCTIONS > FOOD-WEB DYNAMICS</gco:CharacterString>
+</gmd:keyword>
+<gmd:type>
+<gmd:MD_KeywordTypeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+</gmd:type>
+<gmd:thesaurusName>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>GCMD Science Keywords version 8.4.1</gco:CharacterString>
+</gmd:title>
+<gmd:date gco:nilReason="unknown"/>
+</gmd:CI_Citation>
+</gmd:thesaurusName>
+</gmd:MD_Keywords>
+</gmd:descriptiveKeywords>
+<gmd:resourceConstraints>
+<gmd:MD_Constraints>
+<gmd:useLimitation>
+<gco:CharacterString>These data are based upon work funded by the Exxon Valdez Oil Spill Trustee Council. Any opinions, findings, conclusions, or recommendations expressed herein are those of the author(s) and do not necessarily reflect the views or positions of funding entities. Standard scientific norms for attribution, credit, and potential co-authorship should be followed when using these data including to the Owners, Exxon Valdez Oil Spill Trustee Council and other sources of funding. While these data may be freely used, please let the Owner know when using these data so we can keep records of the usefulness and application of the data.</gco:CharacterString>
+</gmd:useLimitation>
+</gmd:MD_Constraints>
+</gmd:resourceConstraints>
+<gmd:language>
+<gco:CharacterString>eng;USA</gco:CharacterString>
+</gmd:language>
+<gmd:topicCategory>
+<gmd:MD_TopicCategoryCode>oceans</gmd:MD_TopicCategoryCode>
+</gmd:topicCategory>
+<gmd:topicCategory>
+<gmd:MD_TopicCategoryCode>biota</gmd:MD_TopicCategoryCode>
+</gmd:topicCategory>
+<gmd:environmentDescription>
+<gco:CharacterString>Excel, saved as comma separated values (csv)</gco:CharacterString>
+</gmd:environmentDescription>
+<gmd:extent>
+<gmd:EX_Extent>
+<gmd:geographicElement>
+<gmd:EX_GeographicBoundingBox>
+<gmd:westBoundLongitude>
+<gco:Decimal>-154.48</gco:Decimal>
+</gmd:westBoundLongitude>
+<gmd:eastBoundLongitude>
+<gco:Decimal>-147.72</gco:Decimal>
+</gmd:eastBoundLongitude>
+<gmd:southBoundLatitude>
+<gco:Decimal>58.06</gco:Decimal>
+</gmd:southBoundLatitude>
+<gmd:northBoundLatitude>
+<gco:Decimal>60.46</gco:Decimal>
+</gmd:northBoundLatitude>
+</gmd:EX_GeographicBoundingBox>
+</gmd:geographicElement>
+</gmd:EX_Extent>
+</gmd:extent>
+<gmd:extent>
+<gmd:EX_Extent>
+<gmd:temporalElement>
+<gmd:EX_TemporalExtent>
+<gmd:extent>
+<gml:TimePeriod gml:id="gmlid_1">
+<gml:description>once annually per site</gml:description>
+<gml:beginPosition>2014-01-01T00:00:00-08:00</gml:beginPosition>
+<gml:endPosition>2023-01-01T00:00:00-08:00</gml:endPosition>
+</gml:TimePeriod>
+</gmd:extent>
+</gmd:EX_TemporalExtent>
+</gmd:temporalElement>
+</gmd:EX_Extent>
+</gmd:extent>
+</gmd:MD_DataIdentification>
+</gmd:identificationInfo>
+<gmd:contentInfo>
+<gmd:MD_FeatureCatalogueDescription>
+<gmd:language>
+<gco:CharacterString>eng; USA</gco:CharacterString>
+</gmd:language>
+<gmd:includedWithDataset>
+<gco:Boolean>true</gco:Boolean>
+</gmd:includedWithDataset>
+<gmd:featureCatalogueCitation>
+<gmd:CI_Citation>
+<gmd:title>
+<gco:CharacterString>Stable carbon and nitrogen isotope data of nearshore producers and consumers in four regions of the Gulf of Alaska</gco:CharacterString>
+</gmd:title>
+<gmd:date gco:nilReason="missing"/>
+</gmd:CI_Citation>
+</gmd:featureCatalogueCitation>
+</gmd:MD_FeatureCatalogueDescription>
+</gmd:contentInfo>
+<gmd:dataQualityInfo>
+<gmd:DQ_DataQuality>
+<gmd:scope>
+<gmd:DQ_Scope>
+<gmd:level>
+<gmd:MD_ScopeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MX_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+</gmd:level>
+</gmd:DQ_Scope>
+</gmd:scope>
+<gmd:lineage>
+<gmd:LI_Lineage>
+<gmd:statement>
+<gco:CharacterString>Four study regions across the NGOA were Katmai National Park and Preserve (KATM), Kachemak Bay (KBAY), Kenai Fjords National Park (KEFJ), and Western Prince William Sound (WPWS). Samples of macroalgae are collected at each site and year in 3 replicates (if possible). Particulate organic matter as a proxy for phytoplankton is collected offshore (approx. 100 m distance from site) or nearshore (approx. 1 m distance from site) at each site and year (note, only offshore PONM is sampled in later collection years). Mussels are collected as 10 replicates (when available) per site and year. Black rockfish and Kelp greenling are collected for only a few years and on the regional, not the site level, with 10 replicates, when available. Macroalgae and mussels are collected by hand, POM is collected as a water sample then filtered onto a GF/F filter. Fishes are collected whole by hook and line fishing on the regional level. Animal samples are measured for body size (longest shell axis for mussels and tip of snout to end of tail for fish). Muscle tissue was subsampled from all animal consumers while macroalgae were used whole (or part of thallus). All samples were dried at 60C until constant weight. Samples were measured for stable carbon and nitrogen isotope composition on a continuous flow isotope ratio mass spectrometer (CF-IRMS) at the Alaska Stable Isotope Facility at the University of Alaska Fairbanks Water & Environmental Research Center. The CF-IRMS uses a Thermo Scientific Flash 2000 elemental analyzer and Thermo Scientific Conflo IV interfaced with a Thermo Scientific DeltaVPlus Mass Spectrometer. Instrument precision was ± 0.11 ‰ for both isotopes. Results are reported in delta (δ) notation as parts per thousand (‰) difference between samples and the standard according to the following equation: delta X = [(R sample/R standard) – 1] • 1000, where X is 13C or 15N of the sample and R is the corresponding ratio 13C/12C or 15N/14N with standards of Vienna Pee Dee Belemnite for delta13C and atmospheric N2 for delta15N. Stable isotope analysis also provided carbon and nitrogen concentrations (as percent) of the sample weight.</gco:CharacterString>
+</gmd:statement>
+<gmd:processStep>
+<gmd:LI_ProcessStep>
+<gmd:description gco:nilReason="missing"/>
+</gmd:LI_ProcessStep>
+</gmd:processStep>
+<gmd:source>
+<gmd:LI_Source>
+<gmd:sourceCitation gco:nilReason="missing"/>
+<gmd:sourceStep>
+<gmd:LI_ProcessStep>
+<gmd:description gco:nilReason="missing"/>
+</gmd:LI_ProcessStep>
+</gmd:sourceStep>
+</gmd:LI_Source>
+</gmd:source>
+</gmd:LI_Lineage>
+</gmd:lineage>
+</gmd:DQ_DataQuality>
+</gmd:dataQualityInfo>
+</gmd:MD_Metadata>

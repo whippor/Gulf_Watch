@@ -1,0 +1,105 @@
+Region,Block_Number,Block_Name,Site_ID,Site_Name,Latitude,Longitude,Site_Type,GRTS_Number,Date_Established
+AKP,10,KATM,AKP_B10_MI_01,Kukak or Kukak Bay,58.31023,-154.19458,mussel,NA,4-Jul-08
+AKP,10,KATM,AKP_B10_MI_02,Kaflia or Kaflia Bay,58.25666,-154.20183,mussel,NA,6-Jul-08
+AKP,10,KATM,AKP_B10_MI_03,Kinak or Kinak Bay,58.19109,-154.48509,mussel,NA,2-Jul-08
+AKP,10,KATM,AKP_B10_MI_04,Amalik or Amalik Bay,58.07922,-154.46515,mussel,NA,1-Jul-08
+AKP,10,KATM,AKP_B10_MI_05,Takli or Takli Island,58.06026,-154.45909,mussel,NA,30-Jun-08
+AKP,10,KATM,AKP_B10_RI_01,Kukak or Kukak Bay,58.316583,-154.206583,rocky,1,22-Jun-06
+AKP,10,KATM,AKP_B10_RI_02,Kaflia or Kaflia Bay,58.256944,-154.197694,rocky,15,24-Jun-06
+AKP,10,KATM,AKP_B10_RI_03,Kinak or Kinak Bay,58.186556,-154.46575,rocky,4,25-Jun-06
+AKP,10,KATM,AKP_B10_RI_04,Amalik or Amalik Bay,58.079222,-154.466,rocky,5,26-Jun-06
+AKP,10,KATM,AKP_B10_RI_05,Takli or Takli Island,58.0635,-154.484056,rocky,6,27-Jun-06
+AKP,10,KATM,AKP_B10_RS_01,Ninagiak or Ninagiak Island or Nina,58.45451,-154.01436,rocky,NA,4-Jul-07
+AKP,10,KATM,AKP_B10_SI_01,Kukak or Kukak Bay,58.30409,-154.19528,soft,NA,3-Jul-07
+AKP,10,KATM,AKP_B10_SI_02,Kaflia or Kaflia Bay,58.26091,-154.21548,soft,NA,2-Jul-07
+AKP,10,KATM,AKP_B10_SI_03,Kinak or Kinak Bay,58.16024,-154.43788,soft,NA,1-Jul-07
+AKP,10,KATM,AKP_B10_SI_04,Amalik or Amalik Bay,58.08463,-154.48701,soft,NA,29-Jun-07
+AKP,10,KATM,AKP_B10_SI_05,Takli or Takli Island,58.062317,-154.480567,soft,NA,28-Jun-07
+AKP,10,KATM,AKP_B10_SS_01,Ninagiak or Ninagiak Island or Nina,58.46155,-154.01201,soft,NA,4-Jul-07
+AKP,12,LACL,AKP_B12_SE_01,Chinitna or Chinitna Bay,59.875902,-152.927586,soft,1,25-May-09
+AKP,12,LACL,AKP_B12_SE_02,Tukendni or Tukendni Bay,60.22592,-152.550853,soft,3,23-May-09
+AKP,12,LACL,AKP_B12_SE_03,Chisik or Chisik Island,60.174123,-152.593689,soft,5,22-May-09
+AKP,12,LACL,AKP_B12_SE_04,Johnson Creek,60.000127,-152.623964,soft,6,26-May-09
+AKP,12,LACL,AKP_B12_SE_05,Polly Creek,60.291554,-152.40488,soft,10,29-May-09
+KEP,04,KBAY,KEP_B04_ME_01,Bishop's or Bishop's Beach,59.642783,-151.601783,mussel,NA,5-May-15
+KEP,04,KBAY,KEP_B04_ME_02,Bluff Point ,59.6567,-151.671167,mussel,NA,5-May-15
+KEP,04,KBAY,KEP_B04_ME_03,Cohen or Cohen Island,59.539133,-151.47695,mussel,NA,5-May-12
+KEP,04,KBAY,KEP_B04_ME_04,Outside,59.464233,-151.7085,mussel,NA,8-May-12
+KEP,04,KBAY,KEP_B04_ME_05,Port Graham,59.373333,-151.894167,mussel,NA,7-May-12
+KEP,04,KBAY,KEP_B04_ME_06,Elephant or Elephant Island,59.513961,-151.505881,mussel,NA,7-May-15
+KEP,04,KBAY,KEP_B04_RE_01,Bishop's or Bishop's Beach,59.642783,-151.601783,rocky,NA,12-May-13
+KEP,04,KBAY,KEP_B04_RE_02,Bluff Point ,59.6567,-151.671167,rocky,NA,12-May-13
+KEP,04,KBAY,KEP_B04_RE_03,Cohen or Cohen Island,59.539133,-151.47695,rocky,NA,4-Jun-03
+KEP,04,KBAY,KEP_B04_RE_04,Outside,59.464233,-151.7085,rocky,NA,5-Jun-03
+KEP,04,KBAY,KEP_B04_RE_05,Port Graham,59.373333,-151.894167,rocky,NA,8-May-04
+KEP,04,KBAY,KEP_B04_RE_06,Elephant or Elephant Island,59.513961,-151.505881,rocky,NA,7-Jun-03
+KEP,04,KBAY,KEP_B04_SE_01,Bear or Bear Cove,59.7219,-151.0527,soft,NA,24-Jun-05
+KEP,04,KBAY,KEP_B04_SE_02,China Poot or China Poot Bay,59.5688,-151.301733,soft,NA,6-Jun-04
+KEP,04,KBAY,KEP_B04_SE_03,Jakalof or Jakalof Bay,59.457383,-151.5274,soft,NA,2-Jun-04
+KEP,04,KBAY,KEP_B04_SE_04,Port Graham,59.34345,-151.8169,soft,NA,1-Jun-04
+KEP,05,KEFJ,KEP_B05_MI_01,Aialik or Aialik Bay,59.89483,-149.64517,mussel,NA,20-Jun-08
+KEP,05,KEFJ,KEP_B05_MI_02,McCarty or McCarty Fjord,59.53138,-150.33151,mussel,NA,18-Jun-08
+KEP,05,KEFJ,KEP_B05_MI_03,Nuka Bay,59.50903,-150.56155,mussel,NA,17-Jun-08
+KEP,05,KEFJ,KEP_B05_MI_04,Nuka Passage or Nuka Pass,59.41845,-150.63826,mussel,NA,16-Jun-08
+KEP,05,KEFJ,KEP_B05_MI_05,Harris or Harris Bay,59.7319,-149.91759,mussel,NA,19-Jun-08
+KEP,05,KEFJ,KEP_B05_RI_01,Aialik or Aialik Bay,59.87664,-149.63289,rocky,1,19-Jun-07
+KEP,05,KEFJ,KEP_B05_RI_02,McCarty or McCarty Fjord,59.50853,-150.34178,rocky,2,15-Jun-07
+KEP,05,KEFJ,KEP_B05_RI_03,Nuka Bay,59.53723,-150.60713,rocky,3,14-Jun-07
+KEP,05,KEFJ,KEP_B05_RI_04,Nuka Passage or Nuka Pass,59.42071,-150.64696,rocky,4,12-Jun-07
+KEP,05,KEFJ,KEP_B05_RI_05,Harris or Harris Bay,59.73766,-149.95837,rocky,5,17-Jun-07
+KEP,05,KEFJ,KEP_B05_SI_01,Aialik or Aialik Bay,59.8979,-149.64037,soft,NA,18-Jun-07
+KEP,05,KEFJ,KEP_B05_SI_02,McCarty or McCarty Fjord,59.56433,-150.40593,soft,NA,16-Jun-07
+KEP,05,KEFJ,KEP_B05_SI_03,Nuka Bay,59.52426,-150.63919,soft,NA,14-Jun-07
+KEP,05,KEFJ,KEP_B05_SI_04,Nuka Passage or Nuka Pass,59.3924,-150.68752,soft,NA,12-Jun-07
+KEP,05,KEFJ,KEP_B05_SI_05,Harris or Harris Bay,59.72334,-149.94107,soft,NA,17-Jun-07
+PWS,07,NPWS,PWS_B07_ME_01,Cedar or Cedar Bay,60.97401,-147.4021,mussel,NA,9-Jun-13
+PWS,07,NPWS,PWS_B07_ME_02,Esther or Esther Passage,60.93,-148.06332,mussel,NA,13-Jun-13
+PWS,07,NPWS,PWS_B07_ME_03,Bettles or Bettles Bay,60.94331,-148.30196,mussel,NA,6-Jun-13
+PWS,07,NPWS,PWS_B07_ME_04,Perry or Perry Island,60.7778,-147.9157,mussel,NA,22-Jun-12
+PWS,07,NPWS,PWS_B07_ME_05,Unakwik or Unakwik Inlet,60.95176,-147.61014,mussel,NA,11-Jun-13
+PWS,07,NPWS,PWS_B07_RE_01,Cedar or Cedar Bay,60.96614,-147.39491,rocky,7,9-Jun-12
+PWS,07,NPWS,PWS_B07_RE_02,Esther or Esther Passage,60.9257,-148.05872,rocky,2,12-Jun-13
+PWS,07,NPWS,PWS_B07_RE_03,Bettles or Bettles Bay,60.95496,-148.29942,rocky,3,6-Jun-13
+PWS,07,NPWS,PWS_B07_RE_04,Perry or Perry Island,60.6771,-147.91689,rocky,6,22-Jun-12
+PWS,07,NPWS,PWS_B07_RE_05,Unakwik or Unakwik Inlet,60.94948,-147.59444,rocky,11,10-Jun-13
+PWS,07,NPWS,PWS_B07_SE_01,Cedar or Cedar Bay,60.96042,-147.38977,soft,NA,9-Jun-13
+PWS,07,NPWS,PWS_B07_SE_02,Esther or Esther Passage,60.93349,-148.03279,soft,NA,12-Jun-13
+PWS,07,NPWS,PWS_B07_SE_03,Bettles or Bettles Bay,60.94865,-148.31696,soft,NA,6-Jun-13
+PWS,07,NPWS,PWS_B07_SE_04,Perry or Perry Island,60.67899,-147.88872,soft,NA,8-Jun-13
+PWS,07,NPWS,PWS_B07_SE_05,Unakwik or Unakwik Inlet,60.94949,-147.60268,soft,NA,11-Jun-13
+PWS,08,WPWS,PWS_B08_MI_01,Hogan or Hogan Bay,60.20707,-147.7625,mussel,NA,29-May-10
+PWS,08,WPWS,PWS_B08_MI_02,Iktua or Iktua Bay,60.12009,-147.99306,mussel,NA,28-May-10
+PWS,08,WPWS,PWS_B08_MI_03,Whale or Whale Bay,60.2265,-148.2505,mussel,NA,27-May-10
+PWS,08,WPWS,PWS_B08_MI_04,Johnson or Johnson Bay,60.33931,-147.83302,mussel,NA,26-May-10
+PWS,08,WPWS,PWS_B08_MI_05,Herring or Herring Bay,60.46685,-147.7104,mussel,NA,25-May-10
+PWS,08,WPWS,PWS_B08_RI_01,Hogan or Hogan Bay,60.20197,-147.75984,rocky,1,13-Jul-07
+PWS,08,WPWS,PWS_B08_RI_02,Iktua or Iktua Bay,60.13004,-147.99828,rocky,6,14-Jul-07
+PWS,08,WPWS,PWS_B08_RI_03,Whale or Whale Bay,60.22661,-148.25105,rocky,2,15-Jul-07
+PWS,08,WPWS,PWS_B08_RI_04,Johnson or Johnson Bay,60.33995,-147.83482,rocky,4,16-Jul-07
+PWS,08,WPWS,PWS_B08_RI_05,Herring or Herring Bay,60.45989,-147.71753,rocky,3,17-Jul-07
+PWS,08,WPWS,PWS_B08_RS_02,Herring - Bear or Herring Bay- Bear Cove,60.46931,-147.70929,rocky,NA,18-Jul-07
+PWS,08,WPWS,PWS_B08_RS_04,Disk or Disk Island,60.50433,-147.65466,rocky,NA,12-Jul-07
+PWS,08,WPWS,PWS_B08_RS_05,Northwest or Northwest Bay,60.55543,-147.61177,rocky,NA,11-Jul-07
+PWS,08,WPWS,PWS_B08_SI_01,Hogan or Hogan Bay,60.20708,-147.766358,soft,NA,13-Jul-07
+PWS,08,WPWS,PWS_B08_SI_02,Iktua or Iktua Bay,60.0995,-148.00528,soft,NA,14-Jul-07
+PWS,08,WPWS,PWS_B08_SI_03,Whale or Whale Bay,60.23246,-148.26189,soft,NA,15-Jul-07
+PWS,08,WPWS,PWS_B08_SI_04,Johnson or Johnson Bay,60.33883,-147.80721,soft,NA,16-Jul-07
+PWS,08,WPWS,PWS_B08_SI_05,Herring or Herring Bay,60.45647,-147.71164,soft,NA,18-Jun-11
+PWS,08,WPWS,PWS_B08_SS_02,Herring - Southwest or Herring Bay- Southwest,60.449013,-147.719629,soft,NA,17-Jul-07
+PWS,08,WPWS,PWS_B08_SS_04,Disk or Disk Island,60.49812,-147.66151,soft,NA,12-Jul-07
+PWS,08,WPWS,PWS_B08_SS_05,Northwest or Northwest Bay,60.55073,-147.57921,soft,NA,11-Jul-07
+PWS,09,EPWS,PWS_B09_ME_01,Galena or Galena Bay,60.94349,-146.67668,mussel,NA,8-Jun-12
+PWS,09,EPWS,PWS_B09_ME_02,Fidalgo or Port Fidalgo,60.86214,-146.24434,mussel,NA,7-Jun-12
+PWS,09,EPWS,PWS_B09_ME_03,Olsen or Olsen Bay,60.73042,-146.19449,mussel,NA,6-Jun-12
+PWS,09,EPWS,PWS_B09_ME_04,Simpson or Simpson Bay,60.67212,-145.88406,mussel,NA,4-Jun-12
+PWS,09,EPWS,PWS_B09_ME_05,Observation or Observation Island,60.59523,-145.73479,mussel,NA,5-Jun-12
+PWS,09,EPWS,PWS_B09_RE_01,Galena or Galena Bay,60.93251,-146.66501,rocky,2,8-Jun-12
+PWS,09,EPWS,PWS_B09_RE_02,Fidalgo or Port Fidalgo,60.86296,-146.23009,rocky,7,7-Jun-12
+PWS,09,EPWS,PWS_B09_RE_03,Olsen or Olsen Bay,60.73119,-146.18831,rocky,5,6-Jun-12
+PWS,09,EPWS,PWS_B09_RE_04,Simpson or Simpson Bay,60.68082,-145.87872,rocky,9,4-Jun-12
+PWS,09,EPWS,PWS_B09_RE_05,Observation or Observation Island,60.60207,-145.73062,rocky,4,5-Jun-12
+PWS,09,EPWS,PWS_B09_SE_01,Galena or Galena Bay,60.95308,-146.64136,soft,NA,8-Jun-12
+PWS,09,EPWS,PWS_B09_SE_02,Fidalgo or Port Fidalgo,60.85356,-146.2719,soft,NA,7-Jun-12
+PWS,09,EPWS,PWS_B09_SE_03,Olsen or Olsen Bay,60.74636,-146.19296,soft,NA,6-Jun-12
+PWS,09,EPWS,PWS_B09_SE_04,Simpson or Simpson Bay,60.67212,-145.88399,soft,NA,4-Jun-12
+PWS,09,EPWS,PWS_B09_SE_05,Observation or Observation Island,60.59482,-145.73584,soft,NA,5-Jun-12
