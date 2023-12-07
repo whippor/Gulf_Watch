@@ -264,12 +264,26 @@ tax_join <- TaxWormsTib_final %>%
   filter(valid_AphiaID != 325747)
 
 
-# proper taxonomy now included for all valid identifications
+# proper taxonomy now included for all valid taxonomic identifications
 allCover_tax <- allCover_update %>%
   left_join(tax_join, by = "Species") %>%
   select(-valid_name) %>%
   mutate(PercentCover = Percent_Cover, .after = "genus", .keep = "unused") %>%
   mutate(Percent_Cover = PercentCover, .after = "genus", .keep = "unused") 
+
+# add taxonomy to common names
+common <- allCover_tax %>%
+  filter(is.na(valid_AphiaID)) %>%
+  select(Species) 
+common_unique <- unique(common)
+
+common_frame <- tibble()
+columns <- c("Species", "kingdom", "phylum", "class", "order", "family", "genus")
+row1 <- c("barnacle", "Animalia", "Arthropoda", "Thecostraca", "NA", "NA", "NA")
+row2 <- c("non-coralline algal crust", "Plantae", "NA", "NA", "NA", "NA", "NA")
+row3 <- c()
+
+# write_csv(allCover_tax, "~/git/Gulf_Watch/ProcessedData/ProcessedIntertidal/allCoverQAQC.csv")
 
 rm(allCover_update, tax_join, unaccepted, TaxWormsTib, TaxWorms, TaxWorms_final)
 
@@ -290,18 +304,68 @@ allCover_tax %>%
   theme_bw() +
   labs(y = "Percent Cover", x = "Date")
 
+# how has Alaria cover changed through time across all sites?
+allCover_tax %>%
+  filter(Species == "Alaria marginata") %>%
+  mutate(yr = year(SampleDate)) %>%
+  group_by(yr, SiteName, Block_Name) %>%
+  summarise(PC = mean(Percent_Cover, na.rm = TRUE)) %>%
+  ggplot(aes(x = yr, y = PC, color = Block_Name)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_bw() +
+  labs(y = "Percent Cover", x = "Date")
 
-
-
-
+# how are species abundances changing across all sites
+allCover_tax %>%
+  mutate(yr = year(SampleDate)) %>%
+  filter(Species != "bare space") %>%
+  group_by(yr, Species, Block_Name) %>%
+  summarise(PC = mean(Percent_Cover, na.rm = TRUE)) %>%
+  ggplot(aes(x = yr, y = PC, color = Species)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_bw() +
+  labs(y = "Percent Cover", x = "Date") +
+  theme(legend.position="none")
   
-# plot overlap only KAT
-KATMKEFJWPWS_cover %>%
-  filter(Species %in% overlap) %>%
-  ggplot(aes(x = Species)) +
-  geom_bar() +
-  facet_wrap(.~SiteName)
+# how are order abundances changing across all sites
+allCover_tax %>%
+  mutate(yr = year(SampleDate)) %>%
+  filter(Species != "bare space") %>%
+  group_by(yr, order, Block_Name) %>%
+  summarise(PC = mean(Percent_Cover, na.rm = TRUE)) %>%
+  ggplot(aes(x = yr, y = PC, color = order)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_bw() +
+  labs(y = "Percent Cover", x = "Date") 
 
+# how are class abundances changing across all sites
+allCover_tax %>%
+  mutate(yr = year(SampleDate)) %>%
+  filter(Species != "bare space") %>%
+  group_by(yr, class, Block_Name) %>%
+  summarise(PC = mean(Percent_Cover, na.rm = TRUE)) %>%
+  ggplot(aes(x = yr, y = PC, color = class)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_bw() +
+  labs(y = "Percent Cover", x = "Date") +
+  facet_wrap(.~Block_Name)
+
+# how are phylum abundances changing across all sites
+allCover_tax %>%
+  mutate(yr = year(SampleDate)) %>%
+  filter(Species != "bare space") %>%
+  group_by(yr, phylum, Block_Name) %>%
+  summarise(PC = mean(Percent_Cover, na.rm = TRUE)) %>%
+  ggplot(aes(x = yr, y = PC, color = phylum)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_bw() +
+  labs(y = "Percent Cover", x = "Date") +
+  facet_wrap(.~Block_Name)
 
 ############### SUBSECTION HERE
 
