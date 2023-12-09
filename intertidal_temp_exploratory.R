@@ -1,101 +1,36 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #                                                                                ##
-# Gulfwatch intertidal tempertaure data QAQC                                     ##
-# Script created 2023-12-07                                                      ##
+# Gulfwatch intertidal community exploration                                     ##
+# Script created 2023-12-08                                                      ##
 # Data source: Alaska Gulf Watch                                                 ##
 # R code prepared by Ross Whippo                                                 ##
-# Last updated 2023-12-07                                                        ##
+# Last updated 2023-12-08                                                        ##
 #                                                                                ##
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # SUMMARY:
 
-# Script to join all intertidal hobo temperature data across all sites
+# Script exploring rocky intertidal temperature data collected by Gulfwatch
 
 
 # Required Files (check that script is loading latest version):
-# Intertidal_Temperature_EPWS_2012-2013.csv
-# Intertidal_Temperature_EPWS_2013-2014.csv
-# Intertidal_Temperature_EPWS_2014-2015.csv
-# Intertidal_Temperature_EPWS_2015-2016.csv
-# Intertidal_Temperature_EPWS_2016-2017.csv
-# Intertidal_Temperature_KATM_2006-2007.csv
-# Intertidal_Temperature_KATM_2007-2008.csv
-# Intertidal_Temperature_KATM_2008-2009.csv
-# Intertidal_Temperature_KATM_2009-2010.csv
-# Intertidal_Temperature_KATM_2010-2011.csv
-# Intertidal_Temperature_KATM_2011-2012.csv
-# Intertidal_Temperature_KATM_2012-2013.csv
-# Intertidal_Temperature_KATM_2013-2014.csv
-# Intertidal_Temperature_KATM_2014-2015.csv
-# Intertidal_Temperature_KATM_2015-2016.csv
-# Intertidal_Temperature_KATM_2016-2017.csv
-# Intertidal_Temperature_KATM_2017-2018.csv
-# Intertidal_Temperature_KATM_2018-2019.csv
-# Intertidal_Temperature_KATM_2019-2020.csv
-# Intertidal_Temperature_KATM_2020-2021.csv
-# Intertidal_Temperature_KATM_2021_2022.csv
-# Intertidal_Temperature_KATM_2022_2023.csv
-# Intertidal_Temperature_KBAY_2012-2013.csv
-# Intertidal_Temperature_KBAY_2013-2014.csv
-# Intertidal_Temperature_KBAY_2014-2015.csv
-# Intertidal_Temperature_KBAY_2015-2016.csv
-# Intertidal_Temperature_KBAY_2016-2017.csv
-# Intertidal_Temperature_KBAY_2017-2018.csv
-# Intertidal_Temperature_KBAY_2018-2019.csv
-# Intertidal_Temperature_KBAY_2019-2020.csv
-# Intertidal_Temperature_KBAY_2020-2021.csv
-# Intertidal_Temperature_KBAY_2021_2022.csv
-# Intertidal_Temperature_KBAY_2022_2023.csv
-# Intertidal_Temperature_KEFJ_2007-2008.csv
-# Intertidal_Temperature_KEFJ_2008-2009.csv
-# Intertidal_Temperature_KEFJ_2009-2010.csv
-# Intertidal_Temperature_KEFJ_2010-2011.csv
-# Intertidal_Temperature_KEFJ_2011-2012.csv
-# Intertidal_Temperature_KEFJ_2012-2013.csv
-# Intertidal_Temperature_KEFJ_2013-2014.csv
-# Intertidal_Temperature_KEFJ_2014-2015.csv
-# Intertidal_Temperature_KEFJ_2015-2016.csv
-# Intertidal_Temperature_KEFJ_2016-2017.csv
-# Intertidal_Temperature_KEFJ_2017-2018.csv
-# Intertidal_Temperature_KEFJ_2018-2019.csv
-# Intertidal_Temperature_KEFJ_2019-2020.csv
-# Intertidal_Temperature_KEFJ_2020-2021.csv
-# Intertidal_Temperature_KEFJ_2021_2022.csv
-# Intertidal_Temperature_KEFJ_2022_2023.csv
-# Intertidal_Temperature_NPWS_2012-2013.csv
-# Intertidal_Temperature_NPWS_2013-2014.csv
-# Intertidal_Temperature_NPWS_2014-2015.csv
-# Intertidal_Temperature_NPWS_2015-2016.csv
-# Intertidal_Temperature_NPWS_2016-2017.csv
-# Intertidal_Temperature_WPWS_2010-2011.csv
-# Intertidal_Temperature_WPWS_2011-2012.csv
-# Intertidal_Temperature_WPWS_2012-2013.csv
-# Intertidal_Temperature_WPWS_2013-2014.csv
-# Intertidal_Temperature_WPWS_2014-2015.csv
-# Intertidal_Temperature_WPWS_2015-2016.csv
-# Intertidal_Temperature_WPWS_2016-2017.csv
-# Intertidal_Temperature_WPWS_2017-2018.csv
-# Intertidal_Temperature_WPWS_2018-2019.csv
-# Intertidal_Temperature_WPWS_2019-2020.csv
-# Intertidal_Temperature_WPWS_2020-2021.csv
-# Intertidal_Temperature_WPWS_2021_2022.csv
-# Intertidal_Temperature_WPWS_2022_2023.csv
+# allTempQAQC.csv
 
 
 # Associated Scripts:
 # NONE
 
+# TO DO 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # TABLE OF CONTENTS                                                            ####
 #                                                                                 +
+# RECENT CHANGES TO SCRIPT                                                        +
 # LOAD PACKAGES                                                                   +
 # READ IN AND PREPARE DATA                                                        +
 # MANIPULATE DATA                                                                 +
 #                                                                                 +
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # LOAD PACKAGES                                                                ####
@@ -103,6 +38,8 @@
 
 library(tidyverse)
 library(viridis)
+library(lubridate)
+
 
 ## Gives count, mean, standard deviation, standard error of the mean, and confidence interval (default 95%).
 ##   data: a data frame.
@@ -154,27 +91,34 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
 # READ IN AND PREPARE DATA                                                     ####
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-# import and append all csv's at once!
-library(data.table)
-
-setwd("RawData/Temperature")
-allTemps <- 
-  list.files(pattern = "\\.csv$") %>% 
-  map_df(~fread(.))
-
+allTemps <- read_csv("~/git/Gulf_Watch/ProcessedData/ProcessedTempFull/allTempQAQC.csv", 
+                     col_types = cols(date = col_date(format = "%m/%d/%Y"), 
+                                      time = col_time(format = "%H:%M")))
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# MANIPULATE DATA                                                              ####
+# VISUALIZATIONS                                                               ####
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+# how are freezing events distributed through time and space?
+allTemps %>%
+  filter(block %notin% c("NPWS", "EPWS")) %>%
+  filter(exposure == "air") %>%
+  mutate(yrday = yday(date)) %>%
+  mutate(yy = year(date)) %>%
+  mutate(subzero = case_when(temperature <= 0 ~ "freeze",
+                             temperature > 0 ~ "nofreeze"
+                             )) %>%
+  ggplot(aes(x = yrday, y = temperature, color = subzero)) +
+  geom_point() +
+  scale_color_viridis(discrete = TRUE, option = "D", begin = 0.3, end = 0.9) +
+  facet_grid(yy~block)
 
-
-# export CSV
-write_csv(allTemps, "C:/Users/Ross.Whippo/Documents/git/Gulf_Watch/ProcessedData/ProcessedTempFull/allTempQAQC.csv")
-
+############### SUBSECTION HERE
 
 ####
 #<<<<<<<<<<<<<<<<<<<<<<<<<<END OF SCRIPT>>>>>>>>>>>>>>>>>>>>>>>>#
+
 # SCRATCH PAD ####
+
 
