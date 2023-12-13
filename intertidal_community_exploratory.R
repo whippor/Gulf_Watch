@@ -53,6 +53,7 @@ library(viridis)
 library(lubridate)
 library(GGally)
 library(worrms)
+library(scales)
 
 ## Gives count, mean, standard deviation, standard error of the mean, and confidence interval (default 95%).
 ##   data: a data frame.
@@ -104,45 +105,15 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
 # READ IN AND PREPARE DATA                                                     ####
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-# calculated percent cover of sessile organisms
-KATMKEFJWPWS_cover <- read_csv("RawData/IntertidalCover/KATMKEFJWPWS_2006-2023_Rocky_Intertidal_Percent_Cover.csv")
+allCover_tax <- read.csv("~/git/Gulf_Watch/ProcessedData/ProcessedIntertidal/allCoverQAQC.csv")
 
-# raw data, percent cover of sessile organisms
-KBAY_cover <- read_csv("RawData/IntertidalCover/KBAY2012-2023_Rocky_Intertidal_Percent_Cover.csv", 
-                       col_types = cols(Date = col_date(format = "%m/%d/%Y"), 
-                                        Replicate = col_character(), `Quadrat(m2)` = col_character()))
+# Seastar cover data
 
-# raw data, all layers of point contact counts
-# KATMKEFJWPWS_rawcover <- read_csv("RawData/KATMKEFJWPWS_2006-2023_Rocky_Intertidal_Cover.csv", 
-#                               col_types = cols(SampleDate = col_date(format = "%Y-%M-%d")))
-
-# join datasets together
-
-# simplify KBAY and standardize names
-K1 <- KBAY_cover %>% 
-  select(SiteName = Site, 
-         SampleDate = Date, 
-         Year, 
-         Quadrat_Num = Replicate, 
-         Elevation_Position_raw = Stratum, 
-         Species = ScientificName_accepted, 
-         overstory = `%overstory`, 
-         understory = `%understory`) %>%
-  mutate(Percent_Cover_raw = understory + overstory, .keep = "unused") %>%
-  mutate(Percent_Cover = case_when(Percent_Cover_raw > 100 ~ 100,
-                                   TRUE ~ Percent_Cover_raw),
-         .keep = "unused") %>%
-  mutate(Block_Name = "KBAY", .before = SiteName) %>%
-  mutate(Elevation_Position = case_when(Elevation_Position_raw == "High" ~ "Upper",
-                                        Elevation_Position_raw == "Mid" ~ "Mid",
-                                        Elevation_Position_raw == "Low" ~ "Low",
-                                        Elevation_Position_raw == "-1 m" ~ "Sub",
-                                        Elevation_Position_raw == "-1" ~ "Sub"),
-         .keep = "unused", .before = Species) %>%
-  mutate(Quadrat_Num = as.numeric(Quadrat_Num))
-
-# add blocks to KATM dataset
-A1 <- KATMKEFJWPWS_cover %>%
+# all but KBAY
+star_KAT <- read_csv("RawData/IntertidalCover/KATMKEFJWPWS_2006-2023_Sea_Star_Count.csv")
+# summarise to 100m2 for joining
+star_KAT1 <- star_KAT %>%
+  mutate(dens100 = Density_individual200SqM/2) %>%
   mutate(Block_Name = case_when(SiteName == "Observation Island" ~ "EPWS",
                                 SiteName == "Simpson Bay" ~ "EPWS",
                                 SiteName == "Olsen  Bay" ~ "EPWS",
@@ -176,116 +147,43 @@ A1 <- KATMKEFJWPWS_cover %>%
   mutate(SiteName = case_when(SiteName == "Olsen  Bay" ~ "Olsen Bay",
                               TRUE ~ SiteName),
          .keep = "unused", .before = SampleDate) %>%
-  select(-SiteID) %>%
-  mutate(Elevation_Position = case_when(Elevation_Position == "Mid (0.5 m MLLW)" ~ "Mid",
-                                        Elevation_Position == "Upper (1.5 m MLLW)" ~ "Upper"))
+  select(Block_Name:SiteName, Year, Species, dens100)
 
+# KBAY
+star_KBA <- read_csv("RawData/IntertidalCover/KBAY2012-2023_Sea_Star_Anemone_Count.csv")
+# filter for seastar species and prepare to join (chose to only keep "low" stratum to 
+# match up with other regions' sampling set at 0 MLLW.)
+star_KBA1 <- star_KBA %>%
+  filter(Species %in% c("Evasterias troschelii", "Solaster spp.", "Henricia leviuscula",
+                        "Orthasterias koehleri", "Pycnopodia helianthoides", 
+                        "Pisaster ochraceus", "Lethasterias nanimensis", "Asterias sp.",
+                        "Dermasterias imbricata", "Solaster stimpsoni")) %>%
+  mutate(SiteName = Site, .keep = "unused") %>%
+  mutate(SampleDate = mdy(Date), .keep = "unused") %>%
+  mutate(dens100 = `Abundance (# ind/100 m2)`, .keep = "unused") %>%
+  select(SiteName, SampleDate, Year, Species, dens100, Stratum)
+star_KBA2 <- star_KBA1 %>%
+  tibble()
+star_KBA3 <- star_KBA2 %>%
+  complete(SiteName, Year, Stratum, Species) %>%
+  mutate(zerodens = replace_na(dens100, 0), .keep = "unused") %>%
+  mutate(dens100 = zerodens, .keep = "unused")
+star_KBA4 <- star_KBA3 %>%
+  group_by(SiteName, Year, Species) %>%
+  summarise(sumstar = sum(dens100)) %>%
+  mutate(dens100 = sumstar, .keep = "unused") %>%
+  mutate(Block_Name = "KBAY", .before = "SiteName")
+# Join star data
+allStar <- star_KAT1 %>%
+  bind_rows(star_KBA4)
 
-# join datasets together
-allCover <- A1 %>%
-  bind_rows(K1)
-
-rm(A1, K1)
+rm(star_KAT1, star_KBA1, star_KBA2, star_KBA3, star_KBA4)
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # MANIPULATE DATA                                                              ####
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-# how many species/categories identified in both surveys
-KKW_cats <- unique(KATMKEFJWPWS_cover$Species)
-KBY_cats <- unique(KBAY_cover$`Original field ID`)
 
-# how many overlap?
-overlap <- intersect(KKW_cats, KBY_cats)
-
-# dataframe of all species/categories
-a <- KKW_cats
-length(a) <- 115
-a <- tibble(a)
-colnames(a) <- "KKW_cats"
-b <- tibble(KBY_cats)
-
-dat1_2 <- a %>%
-  mutate(ID1 = KKW_cats) %>%
-  group_by(KKW_cats) %>%
-  mutate(ID2 = row_number()) %>%
-  ungroup()
-
-dat2_2 <- b %>% 
-  mutate(ID1 = KBY_cats) %>%
-  group_by(KBY_cats) %>%
-  mutate(ID2 = row_number()) %>%
-  ungroup()
-
-all_species <- full_join(dat1_2, dat2_2, by = c("ID1", "ID2")) %>%
-  select(-starts_with("ID")) %>%
-  arrange(KBY_cats)
-
-rm(a,b,dat1_2,dat2_2)
-
-
-# check all names in WORMS database and join taxonomy
-
-sp_list <- c(KKW_cats, KBY_cats)
-sp_list <- unique(sp_list)
-
-TaxWorms <- wm_records_names(name = c(sp_list))
-TaxWormsTib <- data.table::rbindlist(TaxWorms)
-
-# find unaccepted names in the dataset and replace
-unaccepted <- TaxWormsTib %>%
-  filter(status == "unaccepted")
-
-allCover_update <- allCover %>%
-  mutate(newSp = case_when(Species == "Corallina frondescens" ~ "Bossiella frondescens",
-                           Species == "Pachyarthron cretaceum" ~ "Corallina officinalis",
-                           Species == "Colpomenia bullosa" ~ "Dactylosiphon bullosus",
-                           Species == "Saccharina sessilis" ~ "Hedophyllum sessile",
-                           Species == "Eurystomella bilabiata" ~ "Integripelta bilabiata",
-                           Species == "Pododesmus macroschisma" ~ "Pododesmus macrochisma",
-                           Species == "Neoptilota asplenioides" ~ "Ptilota asplenioides",
-                           Species == "Saccharina subsimplex" ~ "Saccharina latissima",
-                           Species == "Polyostea bipinnata" ~ "Savoiea bipinnata",
-                           Species == "Pterosiphonia bipinnata" ~ "Savoiea bipinnata",
-                           Species == "Scagelia occidentale" ~ "Scagelia americana",
-                           Species == "Stomachetosella cruenta" ~ "Stomacrustula cruenta",
-                           Species == "Polysiphonia\xa0sp." ~ "Polysiphonia sp.",
-                           TRUE ~ Species), .keep = "unused") %>%
-  mutate(Species = newSp, .before = Percent_Cover, .keep = "unused")
-
-# final table with correct taxonomy
-TaxWorms_final <- wm_records_names(name = c(unique(allCover_update$Species)))
-TaxWormsTib_final <- data.table::rbindlist(TaxWorms_final)
-
-tax_join <- TaxWormsTib_final %>%
-  select(valid_name, valid_AphiaID, kingdom:genus) %>%
-  mutate(Species = valid_name, .before = valid_AphiaID) %>%
-  distinct(.keep_all = TRUE) %>%
-  filter(valid_AphiaID != 325747)
-
-
-# proper taxonomy now included for all valid taxonomic identifications
-allCover_tax <- allCover_update %>%
-  left_join(tax_join, by = "Species") %>%
-  select(-valid_name) %>%
-  mutate(PercentCover = Percent_Cover, .after = "genus", .keep = "unused") %>%
-  mutate(Percent_Cover = PercentCover, .after = "genus", .keep = "unused") 
-
-# add taxonomy to common names
-common <- allCover_tax %>%
-  filter(is.na(valid_AphiaID)) %>%
-  select(Species) 
-common_unique <- unique(common)
-
-common_frame <- tibble()
-columns <- c("Species", "kingdom", "phylum", "class", "order", "family", "genus")
-row1 <- c("barnacle", "Animalia", "Arthropoda", "Thecostraca", "NA", "NA", "NA")
-row2 <- c("non-coralline algal crust", "Plantae", "NA", "NA", "NA", "NA", "NA")
-row3 <- c()
-
-# write_csv(allCover_tax, "~/git/Gulf_Watch/ProcessedData/ProcessedIntertidal/allCoverQAQC.csv")
-
-rm(allCover_update, tax_join, unaccepted, TaxWormsTib, TaxWorms, TaxWorms_final)
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # VISUALIZATIONS                                                               ####
@@ -294,6 +192,8 @@ rm(allCover_update, tax_join, unaccepted, TaxWormsTib, TaxWorms, TaxWorms_final)
 
 # how has fucus cover changed through time across all sites?
 allCover_tax %>%
+  filter(Year %in% c(2013:2022)) %>%
+  filter(Block_Name %notin% c("NPWS", "EPWS")) %>%
   filter(Species == "Fucus distichus") %>%
   mutate(yr = year(SampleDate)) %>%
   group_by(yr, SiteName, Block_Name) %>%
@@ -301,8 +201,10 @@ allCover_tax %>%
   ggplot(aes(x = yr, y = PC, color = Block_Name)) +
   geom_point() +
   geom_smooth(method = "lm") +
+  scale_color_viridis(discrete = TRUE, option = "F", begin = 0.2, end = 0.8) +
   theme_bw() +
-  labs(y = "Percent Cover", x = "Date")
+  labs(title = "Gulfwatch Fucus Cover", y = "Percent Cover", x = "Date") +  
+  scale_x_continuous(breaks= pretty_breaks())
 
 # how has Alaria cover changed through time across all sites?
 allCover_tax %>%
@@ -355,17 +257,80 @@ allCover_tax %>%
   facet_wrap(.~Block_Name)
 
 # how are phylum abundances changing across all sites
+
 allCover_tax %>%
+  filter(Year %in% c(2013:2022)) %>%
+  filter(Block_Name %notin% c("NPWS", "EPWS")) %>%
   mutate(yr = year(SampleDate)) %>%
-  filter(Species != "bare space") %>%
+  filter(!is.na(phylum)) %>%
   group_by(yr, phylum, Block_Name) %>%
   summarise(PC = mean(Percent_Cover, na.rm = TRUE)) %>%
   ggplot(aes(x = yr, y = PC, color = phylum)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
+  scale_color_viridis(discrete = TRUE, option = "H", begin = 0.2, end = 0.8) +
   theme_bw() +
-  labs(y = "Percent Cover", x = "Date") +
-  facet_wrap(.~Block_Name)
+  labs(title = "Gulfwatch Cover by Phylum", y = "Percent Cover", x = "Date") +
+  facet_wrap(.~Block_Name) +
+  scale_x_continuous(breaks= pretty_breaks())
+
+# SEASTAR TEMPS
+
+# Ranked list of most sub sublethal exposures
+# ranks
+# KBAY 2020
+# KATM 2017
+# KATM 2020
+# WPWS 2020
+# KEFJ 2020
+# KATM 2022 (21)
+# KBAY 2021
+# KEFJ 2017
+# WPWS 2021
+# KATM 2022
+# KBAY 2022 (21, 22)
+# KATM 2021
+
+# What was change from 2019-2021 in seastar abundance?
+#test <- 
+allStar %>%
+  filter(Year %in% c(2019, 2021)) %>%
+  filter(Block_Name %notin% c("NPWS", "EPWS")) %>%
+  group_by(Block_Name, SiteName, Year) %>%
+  summarise(total = mean(dens100)) %>%
+  ggplot() +
+  geom_point(aes(x = Year, y = total, color = Block_Name)) +
+  geom_line(aes(x = Year, y = total, group = SiteName, color = Block_Name))
+
+# What was change from 2013-2022 in seastar abundance?
+#test <- 
+allStar %>%
+  filter(Year %in% c(2013:2022)) %>%
+  filter(Block_Name %notin% c("NPWS", "EPWS")) %>%
+  group_by(Block_Name, SiteName, Year) %>%
+  summarise(total = mean(dens100)) %>%
+  ggplot() +
+  geom_point(aes(x = Year, y = total, color = Block_Name)) +
+  geom_line(aes(x = Year, y = total, group = SiteName, color = Block_Name))
+
+allStar %>%
+  filter(Year %in% c(2013:2022)) %>%
+  filter(Block_Name %notin% c("NPWS", "EPWS")) %>%
+  group_by(Block_Name, SiteName, Year) %>%
+  summarise(total = mean(dens100)) %>%
+  ggplot(aes(x = Year, y = total)) +
+  geom_point(aes(color = Block_Name)) +
+  geom_smooth(method = "loess", aes(color = Block_Name), se = FALSE) +
+  scale_color_viridis(discrete = TRUE, option = "F", begin = 0.2, end = 0.8) +
+  theme_bw() +
+  labs(title = "Gulfwatch Seastar Density", y = "(mean) density/100m^2") +
+  scale_x_continuous(breaks= pretty_breaks())
+
+
+
+
+
+
 
 ############### SUBSECTION HERE
 
@@ -374,4 +339,14 @@ allCover_tax %>%
 
 # SCRATCH PAD ####
 
+df <- tibble(
+  group = c(1:2, 1, 2),
+  item_id = c(1:2, 2, 3),
+  item_name = c("a", "a", "b", "b"),
+  value1 = c(1, NA, 3, 4),
+  value2 = 4:7
+)
+df
 
+
+df %>% complete(group, item_id, item_name)
