@@ -183,6 +183,26 @@ rm(star_KAT1, star_KBA1, star_KBA2, star_KBA3, star_KBA4)
 # MANIPULATE DATA                                                              ####
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+# what species changed abundance >10% from before the heatwave to after (2013-2016?)
+preheat <- allCover_tax %>%
+  filter(Year == 2013) %>%
+  filter(Block_Name %notin% c("NPWS", "EPWS")) %>%
+  select(Block_Name, SiteName, Year, Elevation_Position, Species, Percent_Cover) %>%
+  group_by(Block_Name, SiteName, Year, Elevation_Position, Species) %>%
+  summarise(meanCover = mean(Percent_Cover)) %>%
+  unite(Block_Name, SiteName, Elevation_Position, Species)
+postheat <- allCover_tax %>%
+  filter(Year == 2016) %>%
+  filter(Block_Name %notin% c("NPWS", "EPWS")) %>%
+  select(Block_Name, SiteName, Year, Elevation_Position, Species, Percent_Cover)  %>%
+  group_by(Block_Name, SiteName, Year, Elevation_Position, Species) %>%
+  summarise(meanCover = mean(Percent_Cover)) %>%
+  unite(Block_Name, SiteName, Elevation_Position, Species)
+heated <- preheat %>%
+  left_join(postheat, by = "Block_Name") %>%
+  replace(is.na(.), 0) %>%
+  mutate(change = meanCover.y - meanCover.x) %>%
+  filter(change >= 10)
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -220,6 +240,8 @@ allCover_tax %>%
 
 # how are species abundances changing across all sites
 allCover_tax %>%
+  filter(Year %in% c(2013:2022)) %>%
+  filter(Block_Name %notin% c("NPWS", "EPWS")) %>%
   mutate(yr = year(SampleDate)) %>%
   filter(Species != "bare space") %>%
   group_by(yr, Species, Block_Name) %>%
@@ -227,9 +249,34 @@ allCover_tax %>%
   ggplot(aes(x = yr, y = PC, color = Species)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE) +
+  scale_color_viridis(discrete = TRUE, option = "H") +
   theme_bw() +
   labs(y = "Percent Cover", x = "Date") +
-  theme(legend.position="none")
+  theme(legend.position="none") +
+  facet_wrap(.~Block_Name) +
+  scale_x_continuous(breaks= pretty_breaks()) +
+  theme(legend.position='bottom') +
+  guides(fill=guide_legend(ncol=3))
+
+# how is species diversity changing across all sites
+allCover_tax %>%
+  filter(Year %in% c(2013:2022)) %>%
+  filter(Block_Name %notin% c("NPWS", "EPWS")) %>%
+  mutate(yr = year(SampleDate)) %>%
+  filter(!is.na(phylum)) %>%
+  group_by(yr, Species, Block_Name) %>%
+  summarise(PC = mean(Percent_Cover, na.rm = TRUE)) %>%
+  ggplot(aes(x = yr, y = PC)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_viridis(discrete = TRUE, option = "H") +
+  theme_bw() +
+  labs(y = "Percent Cover", x = "Date") +
+  theme(legend.position="none") +
+  facet_wrap(.~Block_Name) +
+  scale_x_continuous(breaks= pretty_breaks()) +
+  theme(legend.position='bottom') +
+  guides(fill=guide_legend(ncol=3))
   
 # how are order abundances changing across all sites
 allCover_tax %>%
@@ -257,7 +304,6 @@ allCover_tax %>%
   facet_wrap(.~Block_Name)
 
 # how are phylum abundances changing across all sites
-
 allCover_tax %>%
   filter(Year %in% c(2013:2022)) %>%
   filter(Block_Name %notin% c("NPWS", "EPWS")) %>%
@@ -332,6 +378,7 @@ allStar %>%
 
 
 
+
 ############### SUBSECTION HERE
 
 ####
@@ -339,14 +386,4 @@ allStar %>%
 
 # SCRATCH PAD ####
 
-df <- tibble(
-  group = c(1:2, 1, 2),
-  item_id = c(1:2, 2, 3),
-  item_name = c("a", "a", "b", "b"),
-  value1 = c(1, NA, 3, 4),
-  value2 = 4:7
-)
-df
 
-
-df %>% complete(group, item_id, item_name)
