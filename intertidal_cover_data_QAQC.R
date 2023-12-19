@@ -4,7 +4,7 @@
 # Script created 2023-12-01                                                      ##
 # Data source: Alaska Gulf Watch                                                 ##
 # R code prepared by Ross Whippo                                                 ##
-# Last updated 2023-12-07                                                        ##
+# Last updated 2023-12-15                                                        ##
 #                                                                                ##
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -97,12 +97,16 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
 KATMKEFJWPWS_cover <- read_csv("RawData/IntertidalCover/KATMKEFJWPWS_2006-2023_Rocky_Intertidal_Percent_Cover.csv")
 
 # raw data, percent cover of sessile organisms
-KBAY_cover <- read_csv("RawData/IntertidalCover/KBAY2012-2023_Rocky_Intertidal_Percent_Cover.csv", 
+KBAY_cover_raw <- read_csv("RawData/IntertidalCover/KBAY2012-2023_Rocky_Intertidal_Percent_Cover.csv", 
                        col_types = cols(Date = col_date(format = "%m/%d/%Y"), 
                                         Replicate = col_character(), `Quadrat(m2)` = col_character()))
 
 
 # join datasets together
+
+# remove KBAY duplicate rows
+KBAY_cover <- KBAY_cover_raw %>%
+  distinct()
 
 # simplify KBAY and standardize names
 K1 <- KBAY_cover %>% 
@@ -111,11 +115,11 @@ K1 <- KBAY_cover %>%
          Year, 
          Quadrat_Num = Replicate, 
          Elevation_Position_raw = Stratum, 
-         Species = ScientificName_accepted, 
+         Species_raw = `Original field ID`, 
          overstory = `%overstory`, 
          understory = `%understory`) %>%
   mutate(Percent_Cover_raw = understory + overstory, .keep = "unused") %>%
-  mutate(Percent_Cover = case_when(Percent_Cover_raw > 100 ~ 100,
+  mutate(Percent_Cover_100 = case_when(Percent_Cover_raw > 100 ~ 100,
                                    TRUE ~ Percent_Cover_raw),
          .keep = "unused") %>%
   mutate(Block_Name = "KBAY", .before = SiteName) %>%
@@ -123,11 +127,34 @@ K1 <- KBAY_cover %>%
                                         Elevation_Position_raw == "Mid" ~ "Mid",
                                         Elevation_Position_raw == "Low" ~ "Low",
                                         Elevation_Position_raw == "-1 m" ~ "Sub",
-                                        Elevation_Position_raw == "-1" ~ "Sub"),
-         .keep = "unused", .before = Species) %>%
-  mutate(Quadrat_Num = as.numeric(Quadrat_Num))
+                                        Elevation_Position_raw == "-1" ~ "Sub",
+                                        Elevation_Position_raw == "L" ~ "Low",
+                                        Elevation_Position_raw == "M" ~ "Mid",
+                                        Elevation_Position_raw == "H" ~ "Upper"),
+         .keep = "unused", .before = Species_raw) %>%
+  mutate(Species = case_when(Species_raw == "Bare substrate" ~ "bare substrate",
+                             Species_raw == "sponge (encrusting)" ~ "unidentified sponge",
+                             Species_raw == "Sponge (Ophlitospongia)" ~ "unidentified sponge",
+                             Species_raw == "Balanidae" ~ "barnacle",
+                             Species_raw == "Ascidiacea" ~ "unidentified tunicate",
+                             Species_raw == "Hydroidea" ~ "unidentified hydroid",
+                             Species_raw == "Devaleraea mollis" ~ "Palmaria hecatensis/Devaleraea mollis",
+                             Species_raw == "Palmaria hecatensis" ~ "Palmaria hecatensis/Devaleraea mollis",
+                             Species_raw == "Bryozoa" ~ "bryozoan",
+                             Species_raw == "Rhodophyta" ~ "unidentified red alga",
+                             Species_raw == "Mastocarpus papillatus (tetrasporophyte-Petrocelis)" ~ "Mastocarpus papillatus",
+                             Species_raw == "Mazzaella/Mastocarpus complex" ~ "Mazzaella sp.",
+                             Species_raw == "Neorhodomela oregonensis/Odonthalia floccosa complex" ~ "Neorhodomela sp.",
+                             Species_raw == "upright coralline" ~ "Corallina sp.",
+                             Species_raw == "Pyropia/Boreophyllum complex" ~ "Boreophyllum / Pyropia / Wildemania spp.",
+                             TRUE ~ Species_raw), .keep = "unused", .after = Elevation_Position) %>%
+  mutate(Quadrat_Num = as.numeric(Quadrat_Num))  %>%
+  group_by(Block_Name, SiteName, SampleDate, Year, Quadrat_Num, Elevation_Position, Species) %>%
+  summarise(Percent_Cover_sums = sum(Percent_Cover_100)) %>%
+  mutate(Percent_Cover = Percent_Cover_sums, .keep = "unused") %>%
+  ungroup() 
 
-# add blocks to KATM dataset
+# add blocks to KATM dataset and harmonize species with KBAY
 A1 <- KATMKEFJWPWS_cover %>%
   mutate(Block_Name = case_when(SiteName == "Observation Island" ~ "EPWS",
                                 SiteName == "Simpson Bay" ~ "EPWS",
@@ -164,14 +191,28 @@ A1 <- KATMKEFJWPWS_cover %>%
          .keep = "unused", .before = SampleDate) %>%
   select(-SiteID) %>%
   mutate(Elevation_Position = case_when(Elevation_Position == "Mid (0.5 m MLLW)" ~ "Mid",
-                                        Elevation_Position == "Upper (1.5 m MLLW)" ~ "Upper"))
+                                        Elevation_Position == "Upper (1.5 m MLLW)" ~ "Upper")) %>%
+  mutate(Species_fixed = case_when(Species == "Blidingia minima var. minima" ~ "Blidingia minima",
+                                   Species == "Phycodrys fimbriata" ~ "Phycodrys sp.",
+                                   Species == "Constantinea subulifera" ~ "Constantinea spp.",
+                                   Species == "Spirorbidae" ~ "Spirorbis sp.",
+                                   Species == "foliose coralline algae" ~ "Corallina sp.",
+                                   Species == "Ulothrix flacca" ~ "Ulothrix sp.",
+                                   Species == "barnacle spat" ~ "barnacle",
+                                   Species == "encrusting bryozoan" ~ "bryozoan",
+                                   Species == "foliose bryozoan" ~ "bryozoan",
+                                   Species == "unidentified red blade algae" ~ "unidentified red alga",
+                                   Species == "unidentified filamentous red algae" ~ "unidentified red alga",
+                                   TRUE ~ Species), .keep = "unused", .after = Elevation_Position) %>%
+  mutate(Species = Species_fixed, .keep = "unused", .after = Elevation_Position) %>%
+  group_by(Block_Name, SiteName, SampleDate, Year, Quadrat_Num, Elevation_Position, Species) %>%
+  summarise(Percent_Cover_dupes = sum(Percent_Cover)) %>%
+  mutate(Percent_Cover = Percent_Cover_dupes, .keep = "unused")
 
 
 # join datasets together
 allCover <- A1 %>%
   bind_rows(K1)
-
-rm(A1, K1)
 
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -179,15 +220,15 @@ rm(A1, K1)
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # how many species/categories identified in both surveys
-KKW_cats <- unique(KATMKEFJWPWS_cover$Species)
-KBY_cats <- unique(KBAY_cover$`Original field ID`)
+KKW_cats <- unique(A1$Species)
+KBY_cats <- unique(K1$Species)
 
 # how many overlap?
 overlap <- intersect(KKW_cats, KBY_cats)
 
 # dataframe of all species/categories
 a <- KKW_cats
-length(a) <- 115
+length(a) <- 109
 a <- tibble(a)
 colnames(a) <- "KKW_cats"
 b <- tibble(KBY_cats)
@@ -208,8 +249,6 @@ all_species <- full_join(dat1_2, dat2_2, by = c("ID1", "ID2")) %>%
   select(-starts_with("ID")) %>%
   arrange(KBY_cats)
 
-rm(a,b,dat1_2,dat2_2)
-
 
 # check all names in WORMS database and join taxonomy
 
@@ -223,6 +262,7 @@ TaxWormsTib <- data.table::rbindlist(TaxWorms)
 unaccepted <- TaxWormsTib %>%
   filter(status == "unaccepted")
 
+# update to accepted names, and harmonize species across KAT and KBAY (results in lumping)
 allCover_update <- allCover %>%
   mutate(newSp = case_when(Species == "Corallina frondescens" ~ "Bossiella frondescens",
                            Species == "Pachyarthron cretaceum" ~ "Corallina officinalis",
@@ -256,29 +296,29 @@ common_wide <- common_frame %>%
 common_wide <- common_wide %>%
   rbind(c("barnacle", "NA", "Animalia", "Arthropoda", "Thecostraca", "NA", "NA", "NA")) %>%
   rbind(c("non-coralline algal crust", "NA", "Plantae", "NA", "NA", "NA", "NA", "NA")) %>%
-  rbind(c("unidentified sponge", "NA", "Porifera", "NA", "NA", "NA", "NA")) %>%
+  rbind(c("unidentified sponge", "NA", "Porifera", "NA", "NA", "NA", "NA", "NA")) %>%
   rbind(c("Boreophyllum / Pyropia / Wildemania spp.", "NA", "Plantae", "Rhodophyta", "Bangiophyceae", "Bangiales", "Bangiaceae", "NA")) %>%
   rbind(c("encrusting coralline algae", "NA", "Plantae", "Rhodophyta", "Florideophyceae", "Corallinales", "NA", "NA")) %>%
   rbind(c("Palmaria hecatensis/Devaleraea mollis", "NA", "Plantae", "Rhodophyta", "Florideophyceae", "Palmariales", "Palmariaceae", "NA")) %>%
   rbind(c("encrusting bryozoan", "NA", "Bryozoa", "NA", "NA", "NA", "NA", "NA")) %>%
-  rbind(c("Spirorbidae", "NA", "Animalia", "Annelida", "Polychaeta", "Sabellida", "Spirorbinae", "NA")) %>%
+  rbind(c("Spirorbis sp.", "NA", "Animalia", "Annelida", "Polychaeta", "Sabellida", "Spirorbinae", "Spirorbis")) %>%
   rbind(c("Ptilota asplenoides", "NA", "Plantae", "Rhodophyta", "Florideophyceae", "Ceramiales", "Wrangeliaceae", "Ptilota")) %>%
-  rbind(c("unidentified filamentous red algae", "NA", "Plantae", "Rhodophyta", "NA", "NA", "NA", "NA")) %>%
+  rbind(c("unidentified red alga", "NA", "Plantae", "Rhodophyta", "NA", "NA", "NA", "NA")) %>%
   rbind(c("unidentified anemone", "NA", "Animalia", "Cnidaria", "Hexacorallia", "Actinaria", "NA", "NA")) %>%
-  rbind(c("barnacle spat", "NA", "Animalia", "Arthropoda", "Thecostraca", "NA", "NA", "NA")) %>%
-  rbind(c("Blidingia minima var. minima", "NA", "Plantae", "Chlorophyta", "Ulvophyceae", "Ulvales", "Kornmanniaceae", "Blidingia")) %>%
-  rbind(c("foliose coralline algae", "NA", "Plantae", "Rhodophyta", "Florideophyceae", "Corallinales", "NA", "NA")) %>%
+  rbind(c("Corallina sp.", "NA", "Plantae", "Rhodophyta", "Florideophyceae", "Corallinales", "NA", "NA")) %>%
   rbind(c("unidentified brown algae", "NA", "Chromista", "Heterokontophyta", "NA", "NA", "NA", "NA")) %>%
   rbind(c("unidentified green algae", "NA", "Plantae", "Chlorophyta", "NA", "NA", "NA", "NA")) %>%
   rbind(c("unidentified tunicate", "NA", "Animalia", "Chordata", "Ascidiacea", "NA", "NA", "NA")) %>%
-  rbind(c("unidentified hydroid", "NA", "Animalia", "Cnidaria", "Hydrozoa", "NA", "NA", "NA")) %>%
   rbind(c("unidentified worm", "NA", "Animalia", "NA", "NA", "NA", "NA", "NA")) %>%
-  rbind(c("foliose bryozoan", "NA", "Bryozoa", "NA", "NA", "NA", "NA", "NA")) %>%
-  rbind(c("unidentified red blade algae", "NA", "Plantae", "Rhodophyta", "NA", "NA", "NA", "NA")) %>%
+  rbind(c("bryozoan", "NA", "Bryozoa", "NA", "NA", "NA", "NA", "NA")) %>%
   rbind(c("Polysiphonia sp.", "NA", "Plantae", "Rhodophyta", "Florideophyceae", "Ceriamiales", "Rhodomelaceae", "Polysiphonia")) %>%
-  rbind(c("Hydroidea", "NA", "Animalia", "Cnidaria", "Hydrozoa", "NA", "NA", "NA")) %>%
+  rbind(c("unidentified hydroid", "NA", "Animalia", "Cnidaria", "Hydrozoa", "NA", "NA", "NA")) %>%
   rbind(c("Pyropia/Boreophyllum complex", "NA", "Plantae", "Rhodophyta", "Bangiophyceae", "Bangiales", "Bangiaceae", "NA")) %>%
   rbind(c("Bangia sp.", "NA", "Plantae", "Rhodophyta", "Bangiophyceae", "Bangiales", "Bangiaceae", "NA")) %>%
+  rbind(c("Devaleraea callophylloides", "NA", "Plantae", "Rhodophyta", "Florideophyceae", "Pamariales", "Palmariaceae", "Devaleraea")) %>%
+  rbind(c("Mazzaella sp.", "NA", "Plantae", "Rhodophyta", "Florideophyceae", "Gigartinales", "Gigartinaceae", "Mazzaella")) %>%
+  rbind(c("Acrosiphonia spp.", "NA", "Plantae", "Chlorophyta", "Ulvophyceae", "Acrosiphoniales", "Acrosiphoniaceae", "Acrosiphonia")) %>%
+  rbind(c("diatom mat", "NA", "Chromista", "Heterokontophyta", "Bacillariophyceae", "NA", "NA", "NA")) %>%
   filter(!row_number() == 1) %>%
   mutate(valid_AphiaID = as.numeric(AphiaID), .after = Species, .keep = "unused")
 tax_join_final <- tax_join %>%
@@ -291,9 +331,20 @@ allCover_tax <- allCover_update %>%
   select(-valid_name) %>%
   mutate(PercentCover = Percent_Cover, .after = "genus", .keep = "unused") %>%
   mutate(Percent_Cover = PercentCover, .after = "genus", .keep = "unused") 
+# filter out all 'total kelp' and 'Not Listed' values
+allCover_tax <- allCover_tax %>%
+  filter(Species %notin% c('total kelp', 'Not Listed'))
+
+# remove final duplicated row (subsimplex/latissima confusion)
+allCover_tax <- allCover_tax %>%
+  group_by(Block_Name, SiteName, SampleDate, Year, Quadrat_Num, Elevation_Position,
+           Species, valid_AphiaID, kingdom, phylum, class, order, family, genus) %>%
+  summarise(Percent_Cover_dupes = sum(Percent_Cover)) %>%
+  mutate(Percent_Cover = Percent_Cover_dupes)
 
 
 # WRITE CSV OUPUT
 # write_csv(allCover_tax, "~/git/Gulf_Watch/ProcessedData/ProcessedIntertidal/allCoverQAQC.csv")
 
-rm(allCover_update, tax_join, unaccepted, TaxWormsTib, TaxWorms, TaxWorms_final, common_frame, common_wide, tax_join_final, TaxWormsTib_final)
+rm(a,b,dat1_2,dat2_2, A1, K1, allCover_update, tax_join, unaccepted, TaxWormsTib, 
+   TaxWorms, TaxWorms_final, common_frame, common_wide, tax_join_final, TaxWormsTib_final)
