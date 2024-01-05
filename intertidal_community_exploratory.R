@@ -4,7 +4,7 @@
 # Script created 2023-12-01                                                      ##
 # Data source: Alaska Gulf Watch                                                 ##
 # R code prepared by Ross Whippo                                                 ##
-# Last updated 2023-12-05                                                        ##
+# Last updated 2024-01-05                                                        ##
 #                                                                                ##
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -509,30 +509,29 @@ Isotope_data_all_regions_2014_2023 %>%
 # ID nas in dataframe
 which(is.na(allCover_wide[,4:109]), arr.ind=TRUE)
 
+# list of aphia IDs for trait download
+traitaxaID <- allCover_tax %>%
+  filter(!is.na(valid_AphiaID)) %>% 
+  distinct(valid_AphiaID)
+species <- as_vector(traitaxaID)
 
 
+# TRAIT SCRAPE
 
+library(worrms)
 
+# scrape by AphiaID
+spp_attr <- species %>%
+  wm_attr_data_() 
+attr_wide <- spp_attr %>%
+  pivot_wider(id_cols = id, names_from = measurementType, values_from = measurementValue)
 
+# get taxanomic info
+spp_tax <- species %>%
+wm_classification_()
+spp_wide <- spp_tax %>%
+  pivot_wider(id_cols = id, names_from = rank, values_from = scientificname)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# put tables together
+tax_attr <- spp_wide %>%
+  left_join(attr_wide, by = "id")
