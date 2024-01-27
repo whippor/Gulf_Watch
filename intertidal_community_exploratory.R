@@ -54,6 +54,10 @@ library(GGally)
 library(worrms)
 library(scales)
 library(vegan)
+library(sf)
+library(leaflet)
+library(leafem)
+library(av)
 
 ## Gives count, mean, standard deviation, standard error of the mean, and confidence interval (default 95%).
 ##   data: a data frame.
@@ -179,9 +183,35 @@ allStar <- star_KAT1 %>%
 
 rm(star_KAT1, star_KBA1, star_KBA2, star_KBA3, star_KBA4)
 
+
+# SITE DATA
+
+intertidalSites_all <- read_csv("RawData/Sites/NearshoreSystemsInGOA_IntertidalSiteLocations_MasterList21Dec2016.csv")
+
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # MANIPULATE DATA                                                              ####
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Map of sites
+
+# Load basemap of area
+SouthCentralAK <- leaflet() %>% 
+  setView(lng = -151.45, lat = 59.55, zoom = 6)
+
+n <- length(unique(intertidalSites_all$Block_Name))
+factorPal <- colorFactor(viridis(n, option = "D"), levels = unique(intertidalSites_all$Block_Name))
+
+SouthCentralAK %>% 
+  addTiles() %>%
+  addCircles(data = intertidalSites_all,
+             radius = 4000,
+             fillColor = ~factorPal(Block_Name),
+             opacity = 1,
+             fillOpacity = 1,
+             label = ~Block_Name,
+             stroke = FALSE)
+
+
 
 # FILTER OUT ANEMONES IN allCover_tax
 allCover_tax_whole <- allCover_tax
@@ -493,6 +523,10 @@ ssMDS <- metaMDS(SS_wide[,3:13], distance = "altGower")
 #<<<<<<<<<<<<<<<<<<<<<<<<<<END OF SCRIPT>>>>>>>>>>>>>>>>>>>>>>>>#
 
 # SCRATCH PAD ####
+  
+test <- allCover_tax %>%
+    filter(Block_Name == "KBAY") %>%
+    distinct(SiteName)
 
 # quick isotope exploration
 Isotope_data_all_regions_2014_2023 <- read_csv("RawData/Isotopes/Isotope_data_all_regions_2014-2023.csv")

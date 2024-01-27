@@ -242,8 +242,31 @@ allTemps %>%
   #scale_x_date(date_labels = "%b") +
   facet_grid(yy~block)
 
+# KBAY only
+KBAYminmax <-
+allTemps %>%
+  filter(block == "KBAY") %>%
+  mutate(yrm = format(date, "%Y-%m")) %>%
+  group_by(date, yrm) %>%
+  summarise(across(.cols = temperature,
+                   .fns = list(min = min, max = max),
+                   .names = "{col}_{fn}")) %>%
+  ungroup() %>%
+  group_by(yrm) %>%
+  summarise(across(.cols = temperature_min:temperature_max,
+                   .fns = mean)) %>%
+  pivot_longer(temperature_min:temperature_max, 
+               names_to = "measurement", 
+               values_to = "temp")
 
+  ggplot(KBAYminmax, aes(x = yrm, y = temp, color = measurement, group = measurement)) +
+  geom_point() +
+  geom_line() +
+  scale_y_continuous(limits = c(-10, 25), breaks = seq(from = -10, to = 25, by = 5)) +
 
+  scale_color_viridis(discrete = TRUE, option = "E", begin = 0.3, end = 0.8) +
+  theme_bw() +
+    theme(axis.text.x=element_text(angle=90, hjust=1)) 
 
 
 
