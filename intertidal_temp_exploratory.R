@@ -1,12 +1,12 @@
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#                                                                                ##
-# Gulfwatch intertidal community exploration                                     ##
-# Script created 2023-12-08                                                      ##
-# Data source: Alaska Gulf Watch                                                 ##
-# R code prepared by Ross Whippo                                                 ##
-# Last updated 2023-12-08                                                        ##
-#                                                                                ##
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#                                                                             ##
+# Gulfwatch intertidal community exploration                                  ##
+# Script created 2023-12-08                                                   ##
+# Data source: Alaska Gulf Watch                                              ##
+# R code prepared by Ross Whippo                                              ##
+# Last updated 2023-12-08                                                     ##
+#                                                                             ##
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # SUMMARY:
 
@@ -22,19 +22,19 @@
 
 # TO DO 
 
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# TABLE OF CONTENTS                                                            ####
-#                                                                                 +
-# RECENT CHANGES TO SCRIPT                                                        +
-# LOAD PACKAGES                                                                   +
-# READ IN AND PREPARE DATA                                                        +
-# MANIPULATE DATA                                                                 +
-#                                                                                 +
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# TABLE OF CONTENTS                                                         ####
+#                                                                              +
+# RECENT CHANGES TO SCRIPT                                                     +
+# LOAD PACKAGES                                                                +
+# READ IN AND PREPARE DATA                                                     +
+# MANIPULATE DATA                                                              +
+#                                                                              +
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# LOAD PACKAGES                                                                ####
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# LOAD PACKAGES                                                             ####
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 library(tidyverse)
 library(viridis)
@@ -88,18 +88,18 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
 `%notin%` <- Negate(`%in%`)
 
 
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# READ IN AND PREPARE DATA                                                     ####
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# READ IN AND PREPARE DATA                                                  ####
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 allTemps <- read_csv("~/git/Gulf_Watch/ProcessedData/ProcessedTempFull/allTempQAQC.csv", 
                      col_types = cols(date = col_date(format = "%m/%d/%Y"), 
                                       time = col_time(format = "%H:%M")))
 
 
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# VISUALIZATIONS                                                               ####
-#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# VISUALIZATIONS                                                            ####
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # how are air temps distributed through time and space?
 allTemps %>%
@@ -214,7 +214,33 @@ TwoHrCount <- SCPLethalCount %>%
 
 # SCRATCH PAD ####
 
+# filter 2007-2013
 
+wh <- allTemps %>%
+  filter(block %notin% c("NPWS", "EPWS")) %>%
+  filter(temperature <= 0) %>%
+  mutate(yy = year(date)) %>%
+  filter(yy %in% c(2007:2013)) %>%
+  mutate(mm = month(date, label = TRUE)) %>%
+  mutate(morder = factor(mm, levels = c("Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+                                        "Jan", "Feb", "Mar", "Apr", "May", "Jun"))) %>%
+  mutate(whelk = case_when(temperature > -3.99 ~ "sublethal",
+                           (temperature <= -3.99) & (temperature >= -7.99) ~ "SCP",
+                           temperature <= -8.0 ~ "lethal")) %>%
+  mutate(timeduration = 1) %>%
+  group_by(block, site, yy, morder, whelk) %>%
+  summarise(lengthtime = sum(timeduration)) %>%
+  ungroup() %>%
+  group_by(block, morder, whelk) %>%
+  summarise(meantime = mean(lengthtime)) %>%
+  mutate(increment = ((meantime*30)-29)/60) %>%
+  ggplot() +
+  geom_col(aes(x = morder, y = increment, fill = whelk)) +
+  scale_fill_viridis(discrete = TRUE, option = "turbo", begin = 0, end = 0.35) +
+  theme_bw() +
+  labs(x = "Month", y = "Mean Hours") +
+  #scale_x_date(date_labels = "%b") +
+  facet_wrap(.~block, nrow = 1)
 
 
 # by day of year
@@ -222,7 +248,8 @@ allTemps %>%
   filter(block %notin% c("NPWS", "EPWS")) %>%
   filter(temperature <= 0) %>%
   mutate(yy = year(date)) %>%
-  filter(yy %in% c(2013:2022)) %>%
+  filter(yy %in% c(2007:2013)) %>%
+  filter(block %in% c("KATM", "KEFJ")) %>%
   mutate(yearDay = yday(date)) %>%
   mutate(seastar = case_when(temperature > -2.50 ~ "sublethal",
                              (temperature <= -2.50) & (temperature >= -7.99) ~ "SCP",

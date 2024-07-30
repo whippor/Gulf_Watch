@@ -524,6 +524,61 @@ ssMDS <- metaMDS(SS_wide[,3:13], distance = "altGower")
 
 # SCRATCH PAD ####
   
+  
+# create datasets for R intro workshop
+  
+anem <- read_csv("RawData/IntertidalCover/KBAY2012-2023_Sea_Star_Anemone_Count.csv")
+  
+# scorpions dataset
+anem_spp <- anem %>%
+  filter(Species == "Urticina crassicornis" &
+           Site %in% c("Bluff Point", "Elephant Island")) %>%
+  select(Site, `Abundance (# ind/100 m2)`) %>%
+  arrange(Site)
+
+write_csv(anem_spp, "~/git/RIntroduction/anemsites.csv")
+
+# daphnia dataset
+anem_years <- anem %>%
+  filter(Phylum == "Cnidaria") %>%
+  filter(Year %in% c("2022", "2023")) %>%
+  select(Site, Year, `Abundance (# ind/100 m2)`) %>%
+  group_by(Site, Year) %>%
+  summarise(mean = mean(`Abundance (# ind/100 m2)`)) %>%
+  pivot_wider(names_from = Year, values_from = mean)
+
+write_csv(anem_years, "~/git/RIntroduction/WorkshopData/anemyears.csv")
+  
+# heights dataset
+anemdensity <- anem %>%
+  filter(Phylum == "Cnidaria" &
+           Stratum %in% c("low", "med", "high")) %>%
+  mutate(Stratum = case_when(Stratum == "low" ~ "low",
+                             Stratum == "med" ~ "low",
+                             Stratum == "high" ~ "high")) %>%
+  group_by(Site, Year, Stratum) %>%
+  summarise(mean = mean(`Abundance (# ind/100 m2)`)) %>%
+  ungroup() %>%
+  select(Stratum, mean) %>%
+  arrange(Stratum)
+
+write_csv(anemdensity, "~/git/RIntroduction/WorkshopData/anem_stratum.csv")
+
+# bromeliad dataset
+anem_sites <- anem %>%
+  filter(Phylum == "Cnidaria" &
+           Site %in% c("Bluff Point",
+                       "Elephant Island",
+                       "Cohen Island",
+                       "Outside Beach") &
+           between(`Abundance (# ind/100 m2)`, 7, 200)) %>%
+  select(Site, `Abundance (# ind/100 m2)`) %>%
+  arrange(Site)
+
+write_csv(anem_sites, "~/git/RIntroduction/WorkshopData/anem_sites.csv")
+  
+  
+
 test <- allCover_tax %>%
     filter(Block_Name == "KBAY") %>%
     distinct(SiteName)
