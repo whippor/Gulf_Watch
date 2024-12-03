@@ -157,7 +157,7 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
 # import and append all csv's at once!
 library(data.table)
 
-setwd("RawData/Temperature")
+setwd("C:/Users/Ross.Whippo/Documents/git/Gulf_Watch/RawData/Temperature")
 allTemps <- 
   list.files(pattern = "\\.csv$") %>% 
   map_df(~fread(.))

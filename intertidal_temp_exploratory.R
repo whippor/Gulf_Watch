@@ -125,7 +125,7 @@ ss <- allTemps %>%
   filter(temperature <= 0) %>%
   mutate(yy = year(date)) %>%
   filter(yy %in% c(2013:2022)) %>%
-  mutate(mm = month(date, label = TRUE)) %>%
+  mutate(mm = lubridate::month(date, label = TRUE)) %>%
   mutate(morder = factor(mm, levels = c("Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
                                         "Jan", "Feb", "Mar", "Apr", "May", "Jun"))) %>%
   mutate(seastar = case_when(temperature > -2.50 ~ "sublethal",
@@ -154,7 +154,7 @@ wh <- allTemps %>%
   filter(temperature <= 0) %>%
   mutate(yy = year(date)) %>%
   filter(yy %in% c(2013:2022)) %>%
-  mutate(mm = month(date, label = TRUE)) %>%
+  mutate(mm = lubridate::month(date, label = TRUE)) %>%
   mutate(morder = factor(mm, levels = c("Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
                                         "Jan", "Feb", "Mar", "Apr", "May", "Jun"))) %>%
   mutate(whelk = case_when(temperature > -3.99 ~ "sublethal",
@@ -221,7 +221,7 @@ wh <- allTemps %>%
   filter(temperature <= 0) %>%
   mutate(yy = year(date)) %>%
   filter(yy %in% c(2007:2013)) %>%
-  mutate(mm = month(date, label = TRUE)) %>%
+  mutate(mm = lubridate::month(date, label = TRUE)) %>%
   mutate(morder = factor(mm, levels = c("Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
                                         "Jan", "Feb", "Mar", "Apr", "May", "Jun"))) %>%
   mutate(whelk = case_when(temperature > -3.99 ~ "sublethal",
